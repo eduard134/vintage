@@ -1,235 +1,289 @@
+@import "./colors.scss";
+@import "./reset.scss";
+
 body {
-    overflow-x: hidden;
+  overflow-x: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 .bground {
-    margin: 5vh auto;
+  margin: 5vh auto;
 
+  > .i2 {
+    width: 50vh;
+    display: block;
+    margin-top: -1vh;
+    padding-left: 15.5vh;
+  }
 
-    >.i2 {
-        width: 50vh;
-        display: block;
-        margin-top: -1vh;
-        padding-left: 15.5vh;
+  > .i3 {
+    float: right;
+    margin-right: -6.5vh;
+    margin-top: -68vh;
+    width: 70vh;
+  }
+}
+
+.bgmain {
+  position: relative;
+  overflow: hidden;
+
+  > img:first-of-type {
+    position: absolute;
+    left: 15%;
+    top: 10%;
+    height: 90%;
+  }
+
+  > img:last-of-type {
+    position: absolute;
+    right: 5%;
+    top: 0;
+    height: 70%;
+  }
+
+  > div {
+    position: relative;
+    z-index: 1;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 60px 0 90px;
+
+    > h1 {
+      font-size: 64px;
+      text-align: center;
+      font-weight: 600;
     }
 
-    >.i3 {
-        float: right;
-        margin-right: -6.5vh;
-        margin-top: -68vh;
-        width: 70vh;
+    > h2 {
+      font-size: 21px;
+      font-weight: 400;
+      margin-top: 30px;
     }
+
+    > a {
+      text-decoration: none;
+      color: white;
+      background-color: $fountain-blue;
+      font-size: 21px;
+      padding: 10px 30px;
+      border-radius: 30px;
+      margin-top: 50px;
+      font-weight: 400;
+    }
+  }
 }
 
 .div {
-    >h1 {
-        justify-content: center;
-        text-align: center;
-        margin-left: 2vh;
-        display: flex;
-        margin-top: -65vh;
-        font-size: 9vh;
-        font-weight: 100;
-    }
+  > h1 {
+    justify-content: center;
+    text-align: center;
+    margin-left: 2vh;
+    display: flex;
+    margin-top: -65vh;
+    font-size: 9vh;
+    font-weight: 100;
+  }
 
-    >p {
-        justify-content: center;
-        display: flex;
-        font-size: 3vh;
-        font-weight: 100;
-        margin-top: -4.5vh;
-        margin-bottom: 6vh;
-        margin-left: 8vh;
+  > p {
+    justify-content: center;
+    display: flex;
+    font-size: 3vh;
+    font-weight: 100;
+    margin-top: -4.5vh;
+    margin-bottom: 6vh;
+    margin-left: 8vh;
+  }
 
-    }
-
-    >button {
-        margin-left: 88vh;
-        display: flex;
-        font-size: 4vh;
-        font-weight: 100;
-        border-radius: 5vh;
-        padding: 1vh 5vh;
-        background-color: #489FB5;
-        color: white;
-        border: none;
-        cursor: pointer;
-        box-shadow: #489fb54b 0px 1.4vh 2.8vh, #489fb517 0px 1vh 1vh;
-    }
-
+  > button {
+    margin-left: 88vh;
+    display: flex;
+    font-size: 4vh;
+    font-weight: 100;
+    border-radius: 5vh;
+    padding: 1vh 5vh;
+    background-color: #489fb5;
+    color: white;
+    border: none;
+    cursor: pointer;
+    box-shadow: #489fb54b 0px 1.4vh 2.8vh, #489fb517 0px 1vh 1vh;
+  }
 }
 
 .produse {
-    margin-top: 20vh;
-    background-color: rgba(128, 128, 128, 0.124);
+  margin-top: 20vh;
+  background-color: rgba(128, 128, 128, 0.124);
 
-    >.boxuri {
-        display: flex;
-        >.box1 {
-            margin: 5vh;
-            border-radius: 6vh;
-            background-color: rgba(128, 128, 128, 0.124);
+  > .boxuri {
+    display: flex;
+    > .box1 {
+      margin: 5vh;
+      border-radius: 6vh;
+      background-color: rgba(128, 128, 128, 0.124);
 
-            >img {
-                width: 30vh;
-                padding: 0 3vh;
-                margin-top: 4vh;
-            }
+      > img {
+        width: 30vh;
+        padding: 0 3vh;
+        margin-top: 4vh;
+      }
 
-            >.pret {
-                margin-left: 10vh;
-                color: rgba(128, 128, 128, 0.6);
-                font-size: 2.5vh;
+      > .pret {
+        margin-left: 10vh;
+        color: rgba(128, 128, 128, 0.6);
+        font-size: 2.5vh;
 
-                >span {
-                    color: black;
-                }
-            }
-
-            >button {
-                float: right;
-                border: none;
-                background-color: rgba(0, 0, 0, 0.787);
-                margin: -1vh -1vh -1vh -1vh;
-                width: 6vh;
-                height: 6vh;
-                border-radius: 2vh;
-                cursor: pointer;
-
-                >img {
-                    margin-top: 0.1vh;
-                    width: 3vh;
-                    height: 3vh;
-                }
-            }
-
+        > span {
+          color: black;
         }
+      }
 
-        >.box2 {
-            margin: 5vh -1.5vh;
-            border-radius: 6vh;
-            background-color: rgba(128, 128, 128, 0.124);
-
-            >img {
-                width: 30vh;
-                padding: 0 3vh;
-                margin-top: 4vh;
-            }
-
-            >.pret {
-                margin-left: 10vh;
-                color: rgba(128, 128, 128, 0.6);
-                font-size: 2.5vh;
-
-                >span {
-                    color: black;
-                }
-            }
-
-            >button {
-                float: right;
-                border: none;
-                background-color: rgba(0, 0, 0, 0.787);
-                margin: -1vh -1vh -1vh -1vh;
-                width: 6vh;
-                height: 6vh;
-                border-radius: 2vh;
-                cursor: pointer;
-
-                >img {
-                    margin-top: 0.1vh;
-                    width: 3vh;
-                    height: 3vh;
-                }
-            }
-        }
-
-        >.box3 {
-            margin: 5vh;
-            border-radius: 6vh;
-            background-color: rgba(128, 128, 128, 0.124);
-
-            >img {
-                width: 30vh;
-                padding: 0 3vh;
-                margin-top: 4vh;
-            }
-
-            >.pret {
-                margin-left: 10vh;
-                color: rgba(128, 128, 128, 0.6);
-                font-size: 2.5vh;
-
-                >span {
-                    color: black;
-                }
-            }
-
-            >button {
-                margin-top: 0.2vh;
-                float: right;
-                border: none;
-                background-color: rgba(0, 0, 0, 0.787);
-                margin: -1vh -1vh -1vh -1vh;
-                width: 6vh;
-                height: 6vh;
-                border-radius: 2vh;
-                cursor: pointer;
-
-                >img {
-                    margin-top: 0.1vh;
-                    width: 3vh;
-                    height: 3vh;
-                }
-            }
-        }
-
-        >.box4 {
-            margin: 5vh -1.5vh;
-            border-radius: 6vh;
-            background-color: rgba(128, 128, 128, 0.124);
-
-            >img {
-                width: 20vh;
-                padding: 1vh 8vh;
-                margin-top: 6vh;
-            }
-
-            >.pret {
-                margin-left: 10vh;
-                color: rgba(128, 128, 128, 0.6);
-                font-size: 2.5vh;
-
-                >span {
-                    color: black;
-                }
-            }
-
-            >button {
-                float: right;
-                border: none;
-                background-color: rgba(0, 0, 0, 0.787);
-                margin: -1vh -1vh -1vh -1vh;
-                width: 6vh;
-                height: 6vh;
-                border-radius: 2vh;
-                cursor: pointer;
-
-                >img {
-                    margin-top: 0.1vh;
-                    width: 3vh;
-                    height: 3vh;
-                }
-            }
-        }
-    }
-
-    >h1 {
-        align-items: flex-end;
+      > button {
         float: right;
-        margin: -34vh 8vh;
-        line-height: 1.3;
-        font-size: 7vh;
-        font-weight: 100;
+        border: none;
+        background-color: rgba(0, 0, 0, 0.787);
+        margin: -1vh -1vh -1vh -1vh;
+        width: 6vh;
+        height: 6vh;
+        border-radius: 2vh;
+        cursor: pointer;
+
+        > img {
+          margin-top: 0.1vh;
+          width: 3vh;
+          height: 3vh;
+        }
+      }
     }
+
+    > .box2 {
+      margin: 5vh -1.5vh;
+      border-radius: 6vh;
+      background-color: rgba(128, 128, 128, 0.124);
+
+      > img {
+        width: 30vh;
+        padding: 0 3vh;
+        margin-top: 4vh;
+      }
+
+      > .pret {
+        margin-left: 10vh;
+        color: rgba(128, 128, 128, 0.6);
+        font-size: 2.5vh;
+
+        > span {
+          color: black;
+        }
+      }
+
+      > button {
+        float: right;
+        border: none;
+        background-color: rgba(0, 0, 0, 0.787);
+        margin: -1vh -1vh -1vh -1vh;
+        width: 6vh;
+        height: 6vh;
+        border-radius: 2vh;
+        cursor: pointer;
+
+        > img {
+          margin-top: 0.1vh;
+          width: 3vh;
+          height: 3vh;
+        }
+      }
+    }
+
+    > .box3 {
+      margin: 5vh;
+      border-radius: 6vh;
+      background-color: rgba(128, 128, 128, 0.124);
+
+      > img {
+        width: 30vh;
+        padding: 0 3vh;
+        margin-top: 4vh;
+      }
+
+      > .pret {
+        margin-left: 10vh;
+        color: rgba(128, 128, 128, 0.6);
+        font-size: 2.5vh;
+
+        > span {
+          color: black;
+        }
+      }
+
+      > button {
+        margin-top: 0.2vh;
+        float: right;
+        border: none;
+        background-color: rgba(0, 0, 0, 0.787);
+        margin: -1vh -1vh -1vh -1vh;
+        width: 6vh;
+        height: 6vh;
+        border-radius: 2vh;
+        cursor: pointer;
+
+        > img {
+          margin-top: 0.1vh;
+          width: 3vh;
+          height: 3vh;
+        }
+      }
+    }
+
+    > .box4 {
+      margin: 5vh -1.5vh;
+      border-radius: 6vh;
+      background-color: rgba(128, 128, 128, 0.124);
+
+      > img {
+        width: 20vh;
+        padding: 1vh 8vh;
+        margin-top: 6vh;
+      }
+
+      > .pret {
+        margin-left: 10vh;
+        color: rgba(128, 128, 128, 0.6);
+        font-size: 2.5vh;
+
+        > span {
+          color: black;
+        }
+      }
+
+      > button {
+        float: right;
+        border: none;
+        background-color: rgba(0, 0, 0, 0.787);
+        margin: -1vh -1vh -1vh -1vh;
+        width: 6vh;
+        height: 6vh;
+        border-radius: 2vh;
+        cursor: pointer;
+
+        > img {
+          margin-top: 0.1vh;
+          width: 3vh;
+          height: 3vh;
+        }
+      }
+    }
+  }
+
+  > h1 {
+    align-items: flex-end;
+    float: right;
+    margin: -34vh 8vh;
+    line-height: 1.3;
+    font-size: 7vh;
+    font-weight: 100;
+  }
 }

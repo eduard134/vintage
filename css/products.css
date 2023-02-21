@@ -54,7 +54,7 @@
 .produse > .row2 {
   display: flex;
   margin: 8vh 30vh;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 .produse > .row2 > .pr4 {
   background-color: rgba(72, 159, 181, 0.2901960784);
