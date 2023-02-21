@@ -135,6 +135,7 @@ table {
 
 .produse {
   margin: 5vh auto;
+  text-decoration: none;
 }
 .produse .row1 {
   display: flex;

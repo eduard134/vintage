@@ -3,7 +3,7 @@
 
 .produse {
   margin: 5vh auto;
-
+text-decoration: none;
   .row1 {
     display: flex;
     margin: 0 30vh;
@@ -15,7 +15,7 @@
       border-radius: 1.5vh;
       > p {
         font-size: 3vh;
-        margin-left: 17.5vh;
+        margin-left: 17.5vh;  
       }
       > img {
         width: 27vh;
