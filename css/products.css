@@ -135,53 +135,52 @@ table {
 
 .produse {
   margin: 5vh auto;
-  overflow-x: hidden;
 }
-.produse > .row1 {
+.produse .row1 {
   display: flex;
   margin: 0 30vh;
   justify-content: space-between;
 }
-.produse > .row1 > .pr1 {
+.produse .row1 > a {
   background-color: rgba(72, 159, 181, 0.2901960784);
   width: 45vh;
   height: 32vh;
   border-radius: 1.5vh;
 }
-.produse > .row1 > .pr1 > p {
+.produse .row1 > a > p {
   font-size: 3vh;
   margin-left: 17.5vh;
 }
-.produse > .row1 > .pr1 > img {
+.produse .row1 > a > img {
   width: 27vh;
   margin-left: 12vh;
   margin-top: -4vh;
 }
-.produse > .row1 > .pr2 {
+.produse .row1 > a {
   background-color: rgba(72, 159, 181, 0.2901960784);
   width: 45vh;
   height: 32vh;
   border-radius: 1.5vh;
 }
-.produse > .row1 > .pr2 > p {
+.produse .row1 > a > p {
   font-size: 3vh;
   margin-left: 17.5vh;
 }
-.produse > .row1 > .pr2 > img {
+.produse .row1 > a > img {
   width: 18vh;
   margin-left: 13vh;
 }
-.produse > .row1 > .pr3 {
+.produse .row1 > a {
   background-color: rgba(72, 159, 181, 0.2901960784);
   width: 45vh;
   height: 32vh;
   border-radius: 1.5vh;
 }
-.produse > .row1 > .pr3 > p {
+.produse .row1 > a > p {
   font-size: 3vh;
   margin-left: 11.1vh;
 }
-.produse > .row1 > .pr3 > img {
+.produse .row1 > a > img {
   width: 25vh;
   margin-left: 11vh;
   margin-top: -5vh;
@@ -191,32 +190,32 @@ table {
   margin: 8vh 30vh;
   justify-content: space-between;
 }
-.produse > .row2 > .pr4 {
+.produse > .row2 > a {
   background-color: rgba(72, 159, 181, 0.2901960784);
   width: 45vh;
   height: 32vh;
   border-radius: 1.5vh;
 }
-.produse > .row2 > .pr4 > p {
+.produse > .row2 > a > p {
   font-size: 3vh;
   margin-left: 10.2vh;
 }
-.produse > .row2 > .pr4 > img {
+.produse > .row2 > a > img {
   width: 22vh;
   margin-left: 13vh;
   margin-top: -2vh;
 }
-.produse > .row2 > .pr5 {
+.produse > .row2 > a {
   background-color: rgba(72, 159, 181, 0.2901960784);
   width: 45vh;
   height: 32vh;
   border-radius: 1.5vh;
 }
-.produse > .row2 > .pr5 > p {
+.produse > .row2 > a > p {
   font-size: 3vh;
   margin-left: 19vh;
 }
-.produse > .row2 > .pr5 > img {
+.produse > .row2 > a > img {
   width: 45vh;
   margin-left: 1vh;
   margin-top: -1vh;

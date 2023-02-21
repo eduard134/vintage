@@ -3,12 +3,12 @@
 
 .produse {
   margin: 5vh auto;
-  overflow-x: hidden;
-  > .row1 {
+
+  .row1 {
     display: flex;
     margin: 0 30vh;
     justify-content: space-between;
-    > .pr1 {
+    > a {
       background-color: #489fb54a;
       width: 45vh;
       height: 32vh;
@@ -23,7 +23,7 @@
         margin-top: -4vh;
       }
     }
-    > .pr2 {
+    > a {
       background-color: #489fb54a;
       width: 45vh;
       height: 32vh;
@@ -37,7 +37,7 @@
         margin-left: 13vh;
       }
     }
-    > .pr3 {
+    > a {
       background-color: #489fb54a;
       width: 45vh;
       height: 32vh;
@@ -57,7 +57,7 @@
     display: flex;
     margin: 8vh 30vh;
     justify-content: space-between;
-    > .pr4 {
+    > a {
       background-color: #489fb54a;
       width: 45vh;
       height: 32vh;
@@ -72,7 +72,7 @@
         margin-top: -2vh;
       }
     }
-    > .pr5 {
+    > a {
       background-color: #489fb54a;
       width: 45vh;
       height: 32vh;
