@@ -7,24 +7,6 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-.bground {
-  margin: 5vh auto;
-
-  > .i2 {
-    width: 50vh;
-    display: block;
-    margin-top: -1vh;
-    padding-left: 15.5vh;
-  }
-
-  > .i3 {
-    float: right;
-    margin-right: -6.5vh;
-    margin-top: -68vh;
-    width: 70vh;
-  }
-}
-
 .bgmain {
   position: relative;
   overflow: hidden;
@@ -53,16 +35,29 @@ body {
     background-color: rgba(255, 255, 255, 0.5);
     padding: 60px 0 90px;
 
+    @media only screen and (max-width: 1024px) {
+      padding: 30px 20px 30px;
+    }
+
     > h1 {
       font-size: 64px;
       text-align: center;
       font-weight: 600;
+
+      @media only screen and (max-width: 1024px) {
+        font-size: 36px;
+      }
     }
 
     > h2 {
       font-size: 21px;
       font-weight: 400;
       margin-top: 30px;
+
+      @media only screen and (max-width: 1024px) {
+        font-size: 18px;
+        text-align: center;
+      }
     }
 
     > a {
@@ -74,43 +69,11 @@ body {
       border-radius: 30px;
       margin-top: 50px;
       font-weight: 400;
+
+      @media only screen and (max-width: 1024px) {
+        margin-top: 30px;
+      }
     }
-  }
-}
-
-.div {
-  > h1 {
-    justify-content: center;
-    text-align: center;
-    margin-left: 2vh;
-    display: flex;
-    margin-top: -65vh;
-    font-size: 9vh;
-    font-weight: 100;
-  }
-
-  > p {
-    justify-content: center;
-    display: flex;
-    font-size: 3vh;
-    font-weight: 100;
-    margin-top: -4.5vh;
-    margin-bottom: 6vh;
-    margin-left: 8vh;
-  }
-
-  > button {
-    margin-left: 88vh;
-    display: flex;
-    font-size: 4vh;
-    font-weight: 100;
-    border-radius: 5vh;
-    padding: 1vh 5vh;
-    background-color: #489fb5;
-    color: white;
-    border: none;
-    cursor: pointer;
-    box-shadow: #489fb54b 0px 1.4vh 2.8vh, #489fb517 0px 1vh 1vh;
   }
 }
 
