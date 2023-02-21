@@ -11,21 +11,32 @@ body {
   position: relative;
   overflow: hidden;
 
-  > img:first-of-type {
+  >img:first-of-type {
     position: absolute;
     left: 15%;
     top: 10%;
     height: 90%;
+
+    @media only screen and (max-width: 1024px) {
+      display: none;
+    }
   }
 
-  > img:last-of-type {
+  >img:last-of-type {
     position: absolute;
     right: 5%;
     top: 0;
     height: 70%;
+
+    @media only screen and (max-width: 1024px) {
+      position: absolute;
+      right: 2%;
+      top: 10%;
+      height: 90%;
+    }
   }
 
-  > div {
+  >div {
     position: relative;
     z-index: 1;
     margin: 0 auto;
@@ -36,10 +47,11 @@ body {
     padding: 60px 0 90px;
 
     @media only screen and (max-width: 1024px) {
-      padding: 30px 20px 30px;
+      padding: 50px 20px 30px;
+      background-color: rgba(255, 255, 255, 0.724)
     }
 
-    > h1 {
+    >h1 {
       font-size: 64px;
       text-align: center;
       font-weight: 600;
@@ -49,7 +61,7 @@ body {
       }
     }
 
-    > h2 {
+    >h2 {
       font-size: 21px;
       font-weight: 400;
       margin-top: 30px;
@@ -60,7 +72,7 @@ body {
       }
     }
 
-    > a {
+    >a {
       text-decoration: none;
       color: white;
       background-color: $fountain-blue;
@@ -69,9 +81,10 @@ body {
       border-radius: 30px;
       margin-top: 50px;
       font-weight: 400;
+      box-shadow: #489fb54b 0px 1.4vh 2.8vh, #489fb517 0px 1vh 1vh; 
 
       @media only screen and (max-width: 1024px) {
-        margin-top: 30px;
+        margin-top: 50px;
       }
     }
   }
@@ -80,31 +93,36 @@ body {
 .produse {
   margin-top: 20vh;
   background-color: rgba(128, 128, 128, 0.124);
+  @media only screen and (max-width: 1024px){
+    margin-top: 60px;
+  }
 
-  > .boxuri {
+
+  >.boxuri {
     display: flex;
-    > .box1 {
+
+    >.box1 {
       margin: 5vh;
       border-radius: 6vh;
       background-color: rgba(128, 128, 128, 0.124);
 
-      > img {
+      >img {
         width: 30vh;
         padding: 0 3vh;
         margin-top: 4vh;
       }
 
-      > .pret {
+      >.pret {
         margin-left: 10vh;
         color: rgba(128, 128, 128, 0.6);
         font-size: 2.5vh;
 
-        > span {
+        >span {
           color: black;
         }
       }
 
-      > button {
+      >button {
         float: right;
         border: none;
         background-color: rgba(0, 0, 0, 0.787);
@@ -113,37 +131,41 @@ body {
         height: 6vh;
         border-radius: 2vh;
         cursor: pointer;
+        
 
-        > img {
+        >img {
           margin-top: 0.1vh;
           width: 3vh;
           height: 3vh;
         }
       }
+      @media only screen and (max-width: 1024px){
+        padding: auto;
+      }
     }
 
-    > .box2 {
+    >.box2 {
       margin: 5vh -1.5vh;
       border-radius: 6vh;
       background-color: rgba(128, 128, 128, 0.124);
 
-      > img {
+      >img {
         width: 30vh;
         padding: 0 3vh;
         margin-top: 4vh;
       }
 
-      > .pret {
+      >.pret {
         margin-left: 10vh;
         color: rgba(128, 128, 128, 0.6);
         font-size: 2.5vh;
 
-        > span {
+        >span {
           color: black;
         }
       }
 
-      > button {
+      >button {
         float: right;
         border: none;
         background-color: rgba(0, 0, 0, 0.787);
@@ -153,7 +175,7 @@ body {
         border-radius: 2vh;
         cursor: pointer;
 
-        > img {
+        >img {
           margin-top: 0.1vh;
           width: 3vh;
           height: 3vh;
@@ -161,28 +183,28 @@ body {
       }
     }
 
-    > .box3 {
+    >.box3 {
       margin: 5vh;
       border-radius: 6vh;
       background-color: rgba(128, 128, 128, 0.124);
 
-      > img {
+      >img {
         width: 30vh;
         padding: 0 3vh;
         margin-top: 4vh;
       }
 
-      > .pret {
+      >.pret {
         margin-left: 10vh;
         color: rgba(128, 128, 128, 0.6);
         font-size: 2.5vh;
 
-        > span {
+        >span {
           color: black;
         }
       }
 
-      > button {
+      >button {
         margin-top: 0.2vh;
         float: right;
         border: none;
@@ -193,7 +215,7 @@ body {
         border-radius: 2vh;
         cursor: pointer;
 
-        > img {
+        >img {
           margin-top: 0.1vh;
           width: 3vh;
           height: 3vh;
@@ -201,28 +223,28 @@ body {
       }
     }
 
-    > .box4 {
+    >.box4 {
       margin: 5vh -1.5vh;
       border-radius: 6vh;
       background-color: rgba(128, 128, 128, 0.124);
 
-      > img {
+      >img {
         width: 20vh;
         padding: 1vh 8vh;
         margin-top: 6vh;
       }
 
-      > .pret {
+      >.pret {
         margin-left: 10vh;
         color: rgba(128, 128, 128, 0.6);
         font-size: 2.5vh;
 
-        > span {
+        >span {
           color: black;
         }
       }
 
-      > button {
+      >button {
         float: right;
         border: none;
         background-color: rgba(0, 0, 0, 0.787);
@@ -232,7 +254,7 @@ body {
         border-radius: 2vh;
         cursor: pointer;
 
-        > img {
+        >img {
           margin-top: 0.1vh;
           width: 3vh;
           height: 3vh;
@@ -241,7 +263,7 @@ body {
     }
   }
 
-  > h1 {
+  >h1 {
     align-items: flex-end;
     float: right;
     margin: -34vh 8vh;

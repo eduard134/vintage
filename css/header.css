@@ -139,9 +139,15 @@ table {
   align-items: center;
   padding: 0 10vw;
 }
-.header div:first-of-type > img {
+.header div:first-of-type > a > img {
   width: 110px;
   height: 110px;
+}
+@media only screen and (max-width: 1024px) {
+  .header div:first-of-type > a > img {
+    width: 60px;
+    height: 60px;
+  }
 }
 .header div:last-of-type {
   height: 40px;
