@@ -1,0 +1,200 @@
+body {
+  overflow-x: hidden;
+}
+
+.bground {
+  margin: 5vh auto;
+}
+.bground > .i2 {
+  width: 50vh;
+  display: block;
+  margin-top: -1vh;
+  padding-left: 15.5vh;
+}
+.bground > .i3 {
+  float: right;
+  margin-right: -6.5vh;
+  margin-top: -68vh;
+  width: 70vh;
+}
+
+.div > h1 {
+  justify-content: center;
+  text-align: center;
+  margin-left: 2vh;
+  display: flex;
+  margin-top: -65vh;
+  font-size: 9vh;
+  font-weight: 100;
+}
+.div > p {
+  justify-content: center;
+  display: flex;
+  font-size: 3vh;
+  font-weight: 100;
+  margin-top: -4.5vh;
+  margin-bottom: 6vh;
+  margin-left: 8vh;
+}
+.div > button {
+  margin-left: 88vh;
+  display: flex;
+  font-size: 4vh;
+  font-weight: 100;
+  border-radius: 5vh;
+  padding: 1vh 5vh;
+  background-color: #489FB5;
+  color: white;
+  border: none;
+  cursor: pointer;
+  box-shadow: rgba(72, 159, 181, 0.2941176471) 0px 1.4vh 2.8vh, rgba(72, 159, 181, 0.0901960784) 0px 1vh 1vh;
+}
+
+.produse {
+  margin-top: 20vh;
+  background-color: rgba(128, 128, 128, 0.124);
+}
+.produse > .boxuri {
+  display: flex;
+}
+.produse > .boxuri > .box1 {
+  margin: 5vh;
+  border-radius: 6vh;
+  background-color: rgba(128, 128, 128, 0.124);
+}
+.produse > .boxuri > .box1 > img {
+  width: 30vh;
+  padding: 0 3vh;
+  margin-top: 4vh;
+}
+.produse > .boxuri > .box1 > .pret {
+  margin-left: 10vh;
+  color: rgba(128, 128, 128, 0.6);
+  font-size: 2.5vh;
+}
+.produse > .boxuri > .box1 > .pret > span {
+  color: black;
+}
+.produse > .boxuri > .box1 > button {
+  float: right;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.787);
+  margin: -1vh -1vh -1vh -1vh;
+  width: 6vh;
+  height: 6vh;
+  border-radius: 2vh;
+  cursor: pointer;
+}
+.produse > .boxuri > .box1 > button > img {
+  margin-top: 0.1vh;
+  width: 3vh;
+  height: 3vh;
+}
+.produse > .boxuri > .box2 {
+  margin: 5vh -1.5vh;
+  border-radius: 6vh;
+  background-color: rgba(128, 128, 128, 0.124);
+}
+.produse > .boxuri > .box2 > img {
+  width: 30vh;
+  padding: 0 3vh;
+  margin-top: 4vh;
+}
+.produse > .boxuri > .box2 > .pret {
+  margin-left: 10vh;
+  color: rgba(128, 128, 128, 0.6);
+  font-size: 2.5vh;
+}
+.produse > .boxuri > .box2 > .pret > span {
+  color: black;
+}
+.produse > .boxuri > .box2 > button {
+  float: right;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.787);
+  margin: -1vh -1vh -1vh -1vh;
+  width: 6vh;
+  height: 6vh;
+  border-radius: 2vh;
+  cursor: pointer;
+}
+.produse > .boxuri > .box2 > button > img {
+  margin-top: 0.1vh;
+  width: 3vh;
+  height: 3vh;
+}
+.produse > .boxuri > .box3 {
+  margin: 5vh;
+  border-radius: 6vh;
+  background-color: rgba(128, 128, 128, 0.124);
+}
+.produse > .boxuri > .box3 > img {
+  width: 30vh;
+  padding: 0 3vh;
+  margin-top: 4vh;
+}
+.produse > .boxuri > .box3 > .pret {
+  margin-left: 10vh;
+  color: rgba(128, 128, 128, 0.6);
+  font-size: 2.5vh;
+}
+.produse > .boxuri > .box3 > .pret > span {
+  color: black;
+}
+.produse > .boxuri > .box3 > button {
+  margin-top: 0.2vh;
+  float: right;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.787);
+  margin: -1vh -1vh -1vh -1vh;
+  width: 6vh;
+  height: 6vh;
+  border-radius: 2vh;
+  cursor: pointer;
+}
+.produse > .boxuri > .box3 > button > img {
+  margin-top: 0.1vh;
+  width: 3vh;
+  height: 3vh;
+}
+.produse > .boxuri > .box4 {
+  margin: 5vh -1.5vh;
+  border-radius: 6vh;
+  background-color: rgba(128, 128, 128, 0.124);
+}
+.produse > .boxuri > .box4 > img {
+  width: 20vh;
+  padding: 1vh 8vh;
+  margin-top: 6vh;
+}
+.produse > .boxuri > .box4 > .pret {
+  margin-left: 10vh;
+  color: rgba(128, 128, 128, 0.6);
+  font-size: 2.5vh;
+}
+.produse > .boxuri > .box4 > .pret > span {
+  color: black;
+}
+.produse > .boxuri > .box4 > button {
+  float: right;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.787);
+  margin: -1vh -1vh -1vh -1vh;
+  width: 6vh;
+  height: 6vh;
+  border-radius: 2vh;
+  cursor: pointer;
+}
+.produse > .boxuri > .box4 > button > img {
+  margin-top: 0.1vh;
+  width: 3vh;
+  height: 3vh;
+}
+.produse > h1 {
+  align-items: flex-end;
+  float: right;
+  margin: -34vh 8vh;
+  line-height: 1.3;
+  font-size: 7vh;
+  font-weight: 100;
+}/*# sourceMappingURL=home.css.map */

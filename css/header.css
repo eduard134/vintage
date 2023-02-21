@@ -1,0 +1,45 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+.header div:first-of-type {
+  padding: 15px 125px;
+}
+.header div:first-of-type img {
+  width: 110px;
+  height: 110px;
+}
+.header div:last-of-type {
+  width: 95px;
+  height: 40px;
+  background-color: #489FB5;
+  border-radius: 10px;
+  display: block;
+  margin: 55px 125px;
+  position: relative;
+  float: right;
+}
+.header div:last-of-type a {
+  margin: 5px;
+}
+.header div:last-of-type a img {
+  width: 25px;
+  margin: 5px;
+}
+.header div:nth-child(2) {
+  justify-content: center;
+  text-align: center;
+  width: 100px;
+  display: flex;
+  width: 450px;
+}
+.header div:nth-child(2) a {
+  text-decoration: none;
+  color: #1b264f;
+  margin: 20px;
+}
+.header div:nth-child(2) a:hover {
+  color: #489FB5;
+}/*# sourceMappingURL=header.css.map */

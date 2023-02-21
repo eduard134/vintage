@@ -1,0 +1,88 @@
+.produse{
+    margin: 5vh auto;
+    overflow-x: hidden;
+    >.row1{
+        display:  flex;
+        margin: 0 30vh;
+        justify-content: space-between;
+        >.pr1{
+            background-color: #489fb54a;
+            width: 45vh;
+            height: 32vh;
+            border-radius: 1.5vh;
+            >p{
+                font-size: 3vh;
+                margin-left: 17.5vh;
+            }   
+            >img{
+                width: 27vh;
+                margin-left: 12vh;
+                margin-top: -4vh;
+            }
+        }
+        >.pr2{
+            background-color: #489fb54a;
+            width: 45vh;
+            height: 32vh;
+            border-radius: 1.5vh;
+            >p{
+                font-size: 3vh;
+                margin-left: 17.5vh;
+            }
+            >img{
+                width: 18vh;
+                margin-left: 13vh;
+            }
+        }
+        >.pr3{
+            background-color: #489fb54a;
+            width: 45vh;
+            height: 32vh;
+            border-radius: 1.5vh;
+            >p{
+                font-size: 3vh;
+                margin-left: 11.1vh;
+            }
+            >img{
+                width: 25vh;
+                margin-left: 11vh;
+                margin-top: -5vh;
+            }
+        }
+    } 
+    >.row2{
+        display:  flex;
+        margin: 8vh 30vh;
+        justify-content: space-between;
+        >.pr4{
+            background-color: #489fb54a;
+            width: 45vh;
+            height: 32vh;
+            border-radius: 1.5vh;
+            >p{
+                font-size: 3vh;
+                margin-left: 10.2vh;
+            }
+            >img{
+                width: 22vh;
+                margin-left: 13vh;
+                margin-top: -2vh;
+            }
+        }
+        >.pr5{
+            background-color: #489fb54a;
+            width: 45vh;
+            height: 32vh;
+            border-radius: 1.5vh;
+            >p{
+                font-size: 3vh;
+                margin-left: 19vh;
+            }
+            >img{
+                width: 45vh;
+                margin-left: 1vh;
+                margin-top: -1vh;
+            }
+        }
+    }
+}
