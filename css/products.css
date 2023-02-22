@@ -146,44 +146,21 @@ table {
   width: 45vh;
   height: 32vh;
   border-radius: 1.5vh;
+  text-decoration: none;
 }
 .produse .row1 > a > p {
   font-size: 3vh;
-  margin-left: 17.5vh;
+  text-align: center;
+  margin-top: 10%;
+  color: #1B264F;
 }
 .produse .row1 > a > img {
-  width: 27vh;
-  margin-left: 12vh;
-  margin-top: -4vh;
-}
-.produse .row1 > a {
-  background-color: rgba(72, 159, 181, 0.2901960784);
-  width: 45vh;
-  height: 32vh;
-  border-radius: 1.5vh;
-}
-.produse .row1 > a > p {
-  font-size: 3vh;
-  margin-left: 17.5vh;
-}
-.produse .row1 > a > img {
-  width: 18vh;
-  margin-left: 13vh;
-}
-.produse .row1 > a {
-  background-color: rgba(72, 159, 181, 0.2901960784);
-  width: 45vh;
-  height: 32vh;
-  border-radius: 1.5vh;
-}
-.produse .row1 > a > p {
-  font-size: 3vh;
-  margin-left: 11.1vh;
-}
-.produse .row1 > a > img {
-  width: 25vh;
-  margin-left: 11vh;
-  margin-top: -5vh;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  position: relative;
+  top: 10px;
 }
 .produse > .row2 {
   display: flex;
@@ -195,28 +172,18 @@ table {
   width: 45vh;
   height: 32vh;
   border-radius: 1.5vh;
+  text-decoration: none;
 }
 .produse > .row2 > a > p {
   font-size: 3vh;
-  margin-left: 10.2vh;
+  text-align: center;
+  margin-top: 10%;
+  color: #1B264F;
 }
 .produse > .row2 > a > img {
-  width: 22vh;
-  margin-left: 13vh;
-  margin-top: -2vh;
-}
-.produse > .row2 > a {
-  background-color: rgba(72, 159, 181, 0.2901960784);
-  width: 45vh;
-  height: 32vh;
-  border-radius: 1.5vh;
-}
-.produse > .row2 > a > p {
-  font-size: 3vh;
-  margin-left: 19vh;
-}
-.produse > .row2 > a > img {
-  width: 45vh;
-  margin-left: 1vh;
-  margin-top: -1vh;
+  width: 50%;
+  margin: auto;
+  display: block;
+  position: relative;
+  top: 10px;
 }/*# sourceMappingURL=products.css.map */
