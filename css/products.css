@@ -155,17 +155,24 @@ table {
   color: #1B264F;
 }
 .produse .row1 > a > img {
-  width: 50%;
   margin-left: auto;
   margin-right: auto;
   display: block;
-  position: relative;
-  top: 10px;
+}
+.produse .row1 > a > .asortate {
+  margin-top: 20px;
+  width: 60%;
+}
+.produse .row1 > a > .cookies {
+  width: 50%;
+}
+.produse .row1 > a > .magiun {
+  width: 70%;
 }
 .produse > .row2 {
   display: flex;
-  margin: 8vh 30vh;
-  justify-content: space-between;
+  margin: 2vh 30vh;
+  justify-content: center;
 }
 .produse > .row2 > a {
   background-color: rgba(72, 159, 181, 0.2901960784);
@@ -173,6 +180,7 @@ table {
   height: 32vh;
   border-radius: 1.5vh;
   text-decoration: none;
+  margin: 15px;
 }
 .produse > .row2 > a > p {
   font-size: 3vh;
@@ -181,9 +189,14 @@ table {
   color: #1B264F;
 }
 .produse > .row2 > a > img {
-  width: 50%;
   margin: auto;
   display: block;
   position: relative;
   top: 10px;
+}
+.produse > .row2 > a > .ciocolata {
+  width: 55%;
+}
+.produse > .row2 > a > .altele {
+  width: 70%;
 }/*# sourceMappingURL=products.css.map */
