@@ -21,25 +21,35 @@
         color: $dark;
       }
       > img {
-        width: 50%;
         margin-left: auto;
         margin-right: auto;
         display: block;
-        position: relative;
-        top: 10px;
+      }
+      > .asortate {
+        margin-top: 20px;
+        width: 60%;
+      }
+      > .cookies {
+        width: 50%;
+      }
+      > .magiun {
+        width: 70%;
       }
     }
   }
   > .row2 {
     display: flex;
-    margin: 8vh 30vh;
-    justify-content: space-between;
+    margin: 2vh 30vh;
+
+    justify-content: center;
+
     > a {
       background-color: #489fb54a;
       width: 45vh;
       height: 32vh;
       border-radius: 1.5vh;
       text-decoration: none;
+      margin: 15px;
       > p {
         font-size: 3vh;
         text-align: center;
@@ -47,11 +57,16 @@
         color: $dark;
       }
       > img {
-        width: 50%;
         margin: auto;
         display: block;
         position: relative;
         top: 10px;
+      }
+      >.ciocolata{
+        width: 55%;
+      }
+      >.altele{
+        width: 70%;
       }
     }
   }
