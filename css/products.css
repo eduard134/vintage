@@ -136,10 +136,23 @@ table {
 .produse {
   margin: 5vh auto;
 }
+@media only screen and (max-width: 1024px) {
+  .produse {
+    justify-content: center;
+    align-items: center;
+  }
+}
 .produse .row1 {
   display: flex;
-  margin: 0 30vh;
+  margin: 0vh 30vh;
   justify-content: space-between;
+}
+@media only screen and (max-width: 1024px) {
+  .produse .row1 {
+    margin: 0 1vh;
+    padding: 1vh 1vh;
+    justify-content: center;
+  }
 }
 .produse .row1 > a {
   background-color: rgba(72, 159, 181, 0.2901960784);
@@ -148,11 +161,24 @@ table {
   border-radius: 1.5vh;
   text-decoration: none;
 }
+@media only screen and (max-width: 1024px) {
+  .produse .row1 > a {
+    width: 14vh;
+    height: 14vh;
+    margin: 10px;
+  }
+}
 .produse .row1 > a > p {
   font-size: 3vh;
   text-align: center;
   margin-top: 10%;
   color: #1B264F;
+}
+@media only screen and (max-width: 1024px) {
+  .produse .row1 > a > p {
+    font-size: 2vh;
+    font-weight: 500;
+  }
 }
 .produse .row1 > a > img {
   margin-left: auto;
@@ -166,6 +192,11 @@ table {
 .produse .row1 > a > .cookies {
   width: 50%;
 }
+@media only screen and (max-width: 1024px) {
+  .produse .row1 > a > .cookies {
+    margin-top: 10px;
+  }
+}
 .produse .row1 > a > .magiun {
   width: 70%;
 }
@@ -173,6 +204,12 @@ table {
   display: flex;
   margin: 2vh 30vh;
   justify-content: center;
+}
+@media only screen and (max-width: 1024px) {
+  .produse > .row2 {
+    margin: 0;
+    padding: 1vh;
+  }
 }
 .produse > .row2 > a {
   background-color: rgba(72, 159, 181, 0.2901960784);
@@ -182,11 +219,24 @@ table {
   text-decoration: none;
   margin: 15px;
 }
+@media only screen and (max-width: 1024px) {
+  .produse > .row2 > a {
+    width: 14vh;
+    height: 14vh;
+    margin: 10px;
+  }
+}
 .produse > .row2 > a > p {
   font-size: 3vh;
   text-align: center;
   margin-top: 10%;
   color: #1B264F;
+}
+@media only screen and (max-width: 1024px) {
+  .produse > .row2 > a > p {
+    font-size: 2vh;
+    font-weight: 500;
+  }
 }
 .produse > .row2 > a > img {
   margin: auto;
