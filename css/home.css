@@ -258,6 +258,7 @@ body {
   .produse > .boxuri > .box1 {
     margin: 2vh;
     position: relative;
+    height: 175px;
   }
 }
 .produse > .boxuri > .box1 > img {
@@ -285,12 +286,12 @@ body {
 }
 @media only screen and (max-width: 1024px) {
   .produse > .boxuri > .box1 > .pret {
-    display: inline;
     margin: 0px;
     position: absolute;
-    top: 60%;
-    left: 40%;
+    top: 70%;
+    left: 50%;
     transform: translate(-50%, -50%);
+    font-size: 1.5vh;
   }
 }
 .produse > .boxuri > .box1 > button {
@@ -312,6 +313,11 @@ body {
   .produse > .boxuri > .box1 > button {
     margin: 0px;
     padding: 10px;
+    position: absolute;
+    top: 95%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5vh;
   }
 }
 .produse > .boxuri > .box2 {
@@ -322,6 +328,8 @@ body {
 @media only screen and (max-width: 1024px) {
   .produse > .boxuri > .box2 {
     margin: 2vh;
+    position: relative;
+    height: 175px;
   }
 }
 .produse > .boxuri > .box2 > img {
@@ -347,6 +355,16 @@ body {
 .produse > .boxuri > .box2 > .pret > span {
   color: black;
 }
+@media only screen and (max-width: 1024px) {
+  .produse > .boxuri > .box2 > .pret {
+    margin: 0px;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5vh;
+  }
+}
 .produse > .boxuri > .box2 > button {
   float: right;
   border: none;
@@ -362,6 +380,17 @@ body {
   width: 3vh;
   height: 3vh;
 }
+@media only screen and (max-width: 1024px) {
+  .produse > .boxuri > .box2 > button {
+    margin: 0px;
+    padding: 10px;
+    position: absolute;
+    top: 95%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5vh;
+  }
+}
 .produse > .boxuri > .box3 {
   margin: 5vh;
   border-radius: 6vh;
@@ -370,6 +399,8 @@ body {
 @media only screen and (max-width: 1024px) {
   .produse > .boxuri > .box3 {
     margin: 2vh;
+    position: relative;
+    height: 175px;
   }
 }
 .produse > .boxuri > .box3 > img {
@@ -395,6 +426,16 @@ body {
 .produse > .boxuri > .box3 > .pret > span {
   color: black;
 }
+@media only screen and (max-width: 1024px) {
+  .produse > .boxuri > .box3 > .pret {
+    margin: 0px;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5vh;
+  }
+}
 .produse > .boxuri > .box3 > button {
   margin-top: 0.2vh;
   float: right;
@@ -411,6 +452,17 @@ body {
   width: 3vh;
   height: 3vh;
 }
+@media only screen and (max-width: 1024px) {
+  .produse > .boxuri > .box3 > button {
+    margin: 0px;
+    padding: 10px;
+    position: absolute;
+    top: 95%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5vh;
+  }
+}
 .produse > .boxuri > .box4 {
   margin: 5vh -1.5vh;
   border-radius: 6vh;
@@ -419,6 +471,8 @@ body {
 @media only screen and (max-width: 1024px) {
   .produse > .boxuri > .box4 {
     margin: 2vh;
+    position: relative;
+    height: 175px;
   }
 }
 .produse > .boxuri > .box4 > img {
@@ -431,7 +485,7 @@ body {
     width: 12.5vh;
     padding: 0;
     position: absolute;
-    top: 20%;
+    top: 15%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -443,6 +497,16 @@ body {
 }
 .produse > .boxuri > .box4 > .pret > span {
   color: black;
+}
+@media only screen and (max-width: 1024px) {
+  .produse > .boxuri > .box4 > .pret {
+    margin: 0px;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5vh;
+  }
 }
 .produse > .boxuri > .box4 > button {
   float: right;
@@ -459,10 +523,21 @@ body {
   width: 3vh;
   height: 3vh;
 }
+@media only screen and (max-width: 1024px) {
+  .produse > .boxuri > .box4 > button {
+    margin: 0px;
+    padding: 10px;
+    position: absolute;
+    top: 95%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5vh;
+  }
+}
 .produse > h1 {
   align-items: flex;
   float: right;
-  margin: 7.5vh 10vh;
+  margin: 7.5vh 5vh;
   line-height: 1.3;
   font-size: 7vh;
   font-weight: 100;
