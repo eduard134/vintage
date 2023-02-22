@@ -120,6 +120,10 @@ body {
         >span {
           color: black;
         }
+        @media only screen and (max-width: 1024px){
+          font-size: 2vh;
+          margin-left: 2vh;
+        }
       }
 
       >button {
@@ -131,17 +135,28 @@ body {
         height: 6vh;
         border-radius: 2vh;
         cursor: pointer;
-        
 
         >img {
           margin-top: 0.1vh;
           width: 3vh;
           height: 3vh;
         }
+        @media only screen and (max-width: 1024px){
+          width: 5vh;
+          height: 5vh;
+        }
       }
       @media only screen and (max-width: 1024px){
+        margin-left: 19px;
+        margin-right: 7vh;
         margin-top: 30vh;
-        
+        width: 20vh;
+        height: 20vh;
+        >img {
+          margin-top: 1vh;
+          margin-left: -3vh;
+          width: 20vh;
+        }
       }
     }
 
@@ -164,6 +179,10 @@ body {
         >span {
           color: black;
         }
+        @media only screen and (max-width: 1024px){
+          font-size: 2vh;
+          margin-left: 2vh;
+        }
       }
 
       >button {
@@ -181,9 +200,21 @@ body {
           width: 3vh;
           height: 3vh;
         }
+        @media only screen and (max-width: 1024px){
+          width: 5vh;
+          height: 5vh;
+        }
       }
       @media only screen and (max-width: 1024px){
+        margin-left: -25px;
         margin-top: 30vh;
+        width: 20vh;
+        height: 20vh;
+        >img {
+          margin-top: 1vh;
+          margin-left: -3vh;
+          width: 20vh;
+        }
       }
     }
 
