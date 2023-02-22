@@ -141,12 +141,10 @@ table {
 }
 .header div:first-of-type > a > img {
   width: 110px;
-  height: 110px;
 }
 @media only screen and (max-width: 1024px) {
   .header div:first-of-type > a > img {
-    width: 60px;
-    height: 60px;
+    width: 80px;
   }
 }
 .header div:last-of-type {

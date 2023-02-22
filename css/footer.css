@@ -131,4 +131,57 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+footer {
+  display: flex;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  background-color: #efefef;
+  justify-content: center;
+  align-items: center;
+}
+footer > .r1 {
+  line-height: 2.5vh;
+  padding: 2.5vh 10vh;
+}
+footer > .r1 > .title {
+  font-size: 2vh;
+  font-weight: 500;
+}
+footer > .r1 > div > a {
+  text-decoration: none;
+  color: black;
+}
+footer > .r2 {
+  line-height: 2.5vh;
+  padding: 2.5vh 10vh;
+}
+footer > .r2 > .title {
+  font-size: 2vh;
+  font-weight: 500;
+}
+footer > .r2 > div > a {
+  text-decoration: none;
+  color: black;
+}
+footer > .r3 {
+  line-height: 2.5vh;
+  padding: 2.5vh 10vh;
+}
+footer > .r3 > .title {
+  font-size: 2vh;
+  font-weight: 500;
+}
+footer > .r3 > div > a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+footer > .r3 > div > a > img {
+  width: 25px;
 }/*# sourceMappingURL=footer.css.map */
