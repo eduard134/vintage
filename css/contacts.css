@@ -145,8 +145,11 @@ table {
 }
 .box > .b-left > .text {
   margin-bottom: 5vh;
-  line-height: 0.5;
+  line-height: 1.5;
   display: block;
+}
+.box > .b-left > .text > h1 {
+  font-size: 30px;
 }
 .box > .b-left > .text > .p1 {
   color: #489FB5;

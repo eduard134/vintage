@@ -12,8 +12,11 @@
 
         >.text {
             margin-bottom: 5vh;
-            line-height: .5;
+            line-height: 1.5;
             display: block;
+            >h1{
+                font-size: 30px;
+            }
 
             >.p1 {
                 color: #489FB5;
