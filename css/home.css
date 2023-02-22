@@ -282,7 +282,7 @@ body {
   .produse > .boxuri > .box1 {
     margin-left: 19px;
     margin-right: 7vh;
-    margin-top: 30vh;
+    margin-top: 25vh;
     width: 20vh;
     height: 20vh;
   }
@@ -340,7 +340,7 @@ body {
 @media only screen and (max-width: 1024px) {
   .produse > .boxuri > .box2 {
     margin-left: -25px;
-    margin-top: 30vh;
+    margin-top: 25vh;
     width: 20vh;
     height: 20vh;
   }
@@ -368,6 +368,12 @@ body {
 .produse > .boxuri > .box3 > .pret > span {
   color: black;
 }
+@media only screen and (max-width: 1024px) {
+  .produse > .boxuri > .box3 > .pret {
+    font-size: 2vh;
+    margin-left: 2vh;
+  }
+}
 .produse > .boxuri > .box3 > button {
   margin-top: 0.2vh;
   float: right;
@@ -385,8 +391,22 @@ body {
   height: 3vh;
 }
 @media only screen and (max-width: 1024px) {
+  .produse > .boxuri > .box3 > button {
+    width: 5vh;
+    height: 5vh;
+  }
+}
+@media only screen and (max-width: 1024px) {
   .produse > .boxuri > .box3 {
-    margin-top: 30vh;
+    margin-left: -30vh;
+    margin-top: 50vh;
+    width: 20vh;
+    height: 20vh;
+  }
+  .produse > .boxuri > .box3 > img {
+    margin-top: 1vh;
+    margin-left: -3vh;
+    width: 20vh;
   }
 }
 .produse > .boxuri > .box4 {
@@ -407,6 +427,12 @@ body {
 .produse > .boxuri > .box4 > .pret > span {
   color: black;
 }
+@media only screen and (max-width: 1024px) {
+  .produse > .boxuri > .box4 > .pret {
+    font-size: 2vh;
+    margin-left: 2vh;
+  }
+}
 .produse > .boxuri > .box4 > button {
   float: right;
   border: none;
@@ -423,8 +449,21 @@ body {
   height: 3vh;
 }
 @media only screen and (max-width: 1024px) {
+  .produse > .boxuri > .box4 > button {
+    width: 5vh;
+    height: 5vh;
+  }
+}
+@media only screen and (max-width: 1024px) {
   .produse > .boxuri > .box4 {
-    margin-top: 30vh;
+    margin-top: 50vh;
+    width: 20vh;
+    height: 20vh;
+  }
+  .produse > .boxuri > .box4 > img {
+    margin-top: 1vh;
+    margin-left: -3vh;
+    width: 20vh;
   }
 }
 .produse > h1 {
@@ -437,6 +476,8 @@ body {
 }
 @media only screen and (max-width: 1024px) {
   .produse > h1 {
-    margin-top: -65vh;
+    margin-top: -74vh;
+    line-height: 1;
+    margin-right: 70px;
   }
 }/*# sourceMappingURL=home.css.map */
