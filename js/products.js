@@ -23,7 +23,7 @@ const products=[
     },
     {
       id:3,
-      image: "paleuri.png",
+      image: "Paleuri cu zmeura.png",
       name: "Paleuri cu Magiun de Zmeură și Fulgi de Cocos",
       pret1: "28.50",
       pret2: "60.50",
@@ -107,7 +107,7 @@ const products=[
     },
     {
       id:12,
-      image: "Fursec de Porumb.png",
+      image: "Fursec de porumb.png",
       name: "Fursec de Porumb",
       pret1: "23.00",
       pret2: "47.00",
@@ -119,7 +119,7 @@ const products=[
     },
     {
       id:13,
-      image: "Fursec de Ovăz.png",
+      image: "Fursec de ovaz.png",
       name: "Fursec de Ovăz",
       pret1: "89.00",
       kg1: "1.8kg", 
@@ -127,7 +127,7 @@ const products=[
     },
     {
       id:14,
-      image: "Fursec Urechiușe.png",
+      image: "Fursec urechiuse.png",
       name: "Fursec Urechiușe",
       pret1: "26.50",
       pret2: "43.50",
@@ -139,7 +139,7 @@ const products=[
     },
     {
       id:15,
-      image: "Foitaj cu Cereale.png",
+      image: "Foitaj cu cereale.png",
       name: "Fursec cu Cereale",
       pret1: "29.00",
       pret2: "59.50",
@@ -151,7 +151,7 @@ const products=[
     },
     {
       id:16,
-      image: "Fursec Cornulețe.png",
+      image: "Fursec cornulete1.png",
       name: "Fursec Cornulețe",
       pret1: "32.50",
       pret2: "61.50",
@@ -187,7 +187,7 @@ const products=[
     },
     {
       id:19,
-      image: "Deliciu White Marshmello.png",
+      image: "Deliciu White MArshmello.png",
       name: "Fursec White Marshmello",
       pret1: "142.50",
       kg1: "2kg", 
@@ -195,7 +195,7 @@ const products=[
     },
     {
       id:20,
-      image: "Inelușe Glazurate.png",
+      image: "Ineluse glazurate2.png",
       name: "Inelușe Glazurate",
       pret1: "42.00",
       pret2: "80.00",
@@ -207,7 +207,7 @@ const products=[
     },
     {
       id:21,
-      image: "Inelușe pe Ciocolată.png",
+      image: "Ineluse pe ciocolata.png",
       name: "Inelușe pe Ciocolată",
       pret1: "31.00",
       pret2: "70.00",
@@ -219,7 +219,7 @@ const products=[
     },
     {
       id:22,
-      image: "Fursec Frutta Glazurată.png",
+      image: "Fursec Frutta Glazurata.png",
       name: "Inelușe pe Ciocolată",
       pret1: "40.50",
       pret2: "189.00",
@@ -229,8 +229,8 @@ const products=[
     },
     {
       id:23,
-      image: "Deliciu Black Marshmellow.png",
-      name: "Deliciu Black Marshmellow",
+      image: "Deliciu Black Marshmello.png",
+      name: "Deliciu Black Marshmello",
       pret1: "41.50",
       pret2: "150.00",
       kg1: "0.5kg", 
@@ -251,7 +251,7 @@ const products=[
     },
     {
       id:25,
-      image: "Bezele.png",
+      image: "Bezele1.png",
       name: "Bezele",
       pret1: "21.00",
       kg1: "100g", 
@@ -259,7 +259,7 @@ const products=[
     },
     {
       id:26,
-      image: "Inelușe Delicioase.png",
+      image: "Ineluse delicioase.png",
       name: "Inelușe Deliciose",
       pret1: "31.00",
       pret2: "53.00",
@@ -271,7 +271,7 @@ const products=[
     },
     {
       id:27,
-      image: "Muffin cu Ciocuri de Ciocolată, 15 Bucăți.png",
+      image: "Muffin cu cioburi de ciocolată.png",
       name: "Muffin cu Ciocuri de Ciocolată, 15 Bucăți",
       pret1: "120.00",
       kg1: "buc.",
@@ -279,7 +279,7 @@ const products=[
     },
     {
       id:28,
-      image: "Dame în cocos.png",
+      image: "dame_in_cocos.png",
       name: "Dame în cocos",
       pret1: "41.50",
       pret2: "80.00",
@@ -291,7 +291,7 @@ const products=[
     },
     {
       id:29,
-      image: "Muffin cu Vișină.png",
+      image: "Muffin cu visina.png",
       name: "Muffin cu Vișină",
       pret1: "120.00",
       kg1: "buc.", 
@@ -299,7 +299,7 @@ const products=[
     },
     {
       id:30,
-      image: "Biscuiți Matinali.png",
+      image: "Biscuiti Matinali.png",
       name: "Biscuiți Matinali",
       pret1: "31.00",
       pret2: "33.50",
@@ -310,7 +310,7 @@ const products=[
     },
     {
       id:31,
-      image: "Biscuiți.png",
+      image: "cookies3.png",
       name: "Biscuiți",
       pret1: "34.00",
       pret2: "65.50",

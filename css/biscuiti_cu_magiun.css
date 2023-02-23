@@ -1,0 +1,456 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.boxuri {
+  justify-content: center;
+  flex-wrap: wrap;
+  display: flex;
+  margin: 2vh;
+}
+@media only screen and (max-width: 1024px) {
+  .boxuri > .box1,
+  .boxuri .box2,
+  .boxuri .box3,
+  .boxuri .box1 {
+    width: 40%;
+    justify-content: space-between;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .boxuri {
+    flex-wrap: wrap;
+  }
+}
+.boxuri > .box1 {
+  margin: 5vh;
+  border-radius: 6vh;
+  background-color: rgba(128, 128, 128, 0.124);
+}
+@media only screen and (max-width: 1024px) {
+  .boxuri > .box1 {
+    margin: 2vh;
+    position: relative;
+    height: 175px;
+  }
+}
+.boxuri > .box1 > img {
+  width: 22vh;
+  height: 15vh;
+  padding: 1vh 8vh;
+  margin-top: 6vh;
+}
+@media only screen and (max-width: 1024px) {
+  .boxuri > .box1 > img {
+    width: 17.5vh;
+    padding: 0;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+.boxuri > .box1 > .pret {
+  margin-left: 10vh;
+  color: rgba(128, 128, 128, 0.6);
+  font-size: 2.5vh;
+}
+.boxuri > .box1 > .pret > span {
+  color: black;
+}
+@media only screen and (max-width: 1024px) {
+  .boxuri > .box1 > .pret {
+    margin: 0px;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5vh;
+  }
+}
+.boxuri > .box1 > button {
+  float: right;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.787);
+  margin: -1vh -1vh -1vh -1vh;
+  width: 6vh;
+  height: 6vh;
+  border-radius: 2vh;
+  cursor: pointer;
+}
+.boxuri > .box1 > button > img {
+  margin-top: 0.1vh;
+  width: 3vh;
+  height: 3vh;
+}
+@media only screen and (max-width: 1024px) {
+  .boxuri > .box1 > button {
+    margin: 0px;
+    padding: 10px;
+    position: absolute;
+    top: 95%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5vh;
+  }
+}
+.boxuri > .box2 {
+  margin: 5vh;
+  border-radius: 6vh;
+  background-color: rgba(128, 128, 128, 0.124);
+}
+@media only screen and (max-width: 1024px) {
+  .boxuri > .box2 {
+    margin: 2vh;
+    position: relative;
+    height: 175px;
+  }
+}
+.boxuri > .box2 > img {
+  width: 21vh;
+  height: 15vh;
+  padding: 1vh 8vh;
+  margin-top: 6vh;
+}
+@media only screen and (max-width: 1024px) {
+  .boxuri > .box2 > img {
+    width: 17.5vh;
+    padding: 0;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+.boxuri > .box2 > .pret {
+  margin-left: 11vh;
+  color: rgba(128, 128, 128, 0.6);
+  font-size: 2.5vh;
+}
+.boxuri > .box2 > .pret > span {
+  color: black;
+}
+@media only screen and (max-width: 1024px) {
+  .boxuri > .box2 > .pret {
+    margin: 0px;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5vh;
+  }
+}
+.boxuri > .box2 > button {
+  float: right;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.787);
+  margin: -1vh -1vh -1vh -1vh;
+  width: 6vh;
+  height: 6vh;
+  border-radius: 2vh;
+  cursor: pointer;
+}
+.boxuri > .box2 > button > img {
+  margin-top: 0.1vh;
+  width: 3vh;
+  height: 3vh;
+}
+@media only screen and (max-width: 1024px) {
+  .boxuri > .box2 > button {
+    margin: 0px;
+    padding: 10px;
+    position: absolute;
+    top: 95%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5vh;
+  }
+}
+.boxuri > .box3 {
+  margin: 5vh;
+  border-radius: 6vh;
+  background-color: rgba(128, 128, 128, 0.124);
+}
+@media only screen and (max-width: 1024px) {
+  .boxuri > .box3 {
+    margin: 2vh;
+    position: relative;
+    height: 175px;
+  }
+}
+.boxuri > .box3 > img {
+  width: 22vh;
+  height: 15vh;
+  padding: 1vh 8vh;
+  margin-top: 6vh;
+}
+@media only screen and (max-width: 1024px) {
+  .boxuri > .box3 > img {
+    width: 17.5vh;
+    padding: 0;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+.boxuri > .box3 > .pret {
+  margin-left: 12vh;
+  color: rgba(128, 128, 128, 0.6);
+  font-size: 2.5vh;
+}
+.boxuri > .box3 > .pret > span {
+  color: black;
+}
+@media only screen and (max-width: 1024px) {
+  .boxuri > .box3 > .pret {
+    margin: 0px;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5vh;
+  }
+}
+.boxuri > .box3 > button {
+  float: right;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.787);
+  margin: -1vh -1vh -1vh -1vh;
+  width: 6vh;
+  height: 6vh;
+  border-radius: 2vh;
+  cursor: pointer;
+}
+.boxuri > .box3 > button > img {
+  margin-top: 0.1vh;
+  width: 3vh;
+  height: 3vh;
+}
+@media only screen and (max-width: 1024px) {
+  .boxuri > .box3 > button {
+    margin: 0px;
+    padding: 10px;
+    position: absolute;
+    top: 95%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5vh;
+  }
+}
+.boxuri > .box4 {
+  margin: 5vh;
+  border-radius: 6vh;
+  background-color: rgba(128, 128, 128, 0.124);
+}
+@media only screen and (max-width: 1024px) {
+  .boxuri > .box4 {
+    margin: 2vh;
+    position: relative;
+    height: 175px;
+  }
+}
+.boxuri > .box4 > img {
+  width: 22vh;
+  height: 15vh;
+  padding: 1vh 8vh;
+  margin-top: 6vh;
+}
+@media only screen and (max-width: 1024px) {
+  .boxuri > .box4 > img {
+    width: 17.5vh;
+    padding: 0;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+.boxuri > .box4 > .pret {
+  margin-left: 12vh;
+  color: rgba(128, 128, 128, 0.6);
+  font-size: 2.5vh;
+}
+.boxuri > .box4 > .pret > span {
+  color: black;
+}
+@media only screen and (max-width: 1024px) {
+  .boxuri > .box4 > .pret {
+    margin: 0px;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5vh;
+  }
+}
+.boxuri > .box4 > button {
+  float: right;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.787);
+  margin: -1vh -1vh -1vh -1vh;
+  width: 6vh;
+  height: 6vh;
+  border-radius: 2vh;
+  cursor: pointer;
+}
+.boxuri > .box4 > button > img {
+  margin-top: 0.1vh;
+  width: 3vh;
+  height: 3vh;
+}
+@media only screen and (max-width: 1024px) {
+  .boxuri > .box4 > button {
+    margin: 0px;
+    padding: 10px;
+    position: absolute;
+    top: 95%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5vh;
+  }
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  padding: 50px 0 0;
+  font-size: 30px;
+}
+
+footer {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+}/*# sourceMappingURL=biscuiti_cu_magiun.css.map */
