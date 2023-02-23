@@ -98,46 +98,46 @@
 
   .ani {
     text-align: center;
-    justify-content: space-between;
-
+    position: relative;
     div {
       display: inline-block;
       font-size: 3vh;
-      margin: 2.5vh 3.5vw;
-      padding-bottom: 1vh;
+      margin: 20px 3.5vw;
+  
     }
   }
 
   .sageata {
+    position: relative;
     div {
-      text-align: center;
-      justify-content: space-between;
-      margin-top: -.9vh;
+      position: absolute;
+      top: 100%;
+      left: 28%;
       z-index: 5;
 
       img {
         display: inline-block;
-        margin: 0 10vh;
+        margin: 0 9.5vh;
         width: 2vh;
       }
     }
 
     hr {
-      width: 68vh;
-      margin: -1.8vh 70vh;
+      position: absolute;
+      width: 64vh;
+      margin: 0;
+      left: 33.5%;
       background-color: rgb(0, 0, 0);
       height: .15vh;
     }
   }
 
   .desc {
-    text-align: center;
-    justify-content: space-between;
-    padding-top: 1vh;
+    padding-top: 3vh;
 
     div {
       display: inline-block;
-      font-size: 10px;
+      font-size: 15px;
       color: rgba(129, 129, 129, 0.844);
     }
     >.d1{
