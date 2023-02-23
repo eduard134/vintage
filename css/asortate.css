@@ -138,24 +138,36 @@ table {
   flex-wrap: wrap;
   display: flex;
   margin: 2vh;
-  overflow-x: hidden;
+}
+@media only screen and (max-width: 1024px) {
+  .boxuri {
+    height: auto;
+  }
 }
 .boxuri > .row {
   display: flex;
-  flex-basis: 50%;
-}
-@media only screen and (max-width: 1024px) {
-  .boxuri > .row > .box1,
-  .boxuri > .row .box2,
-  .boxuri > .row .box3 {
-    width: 40%;
-    margin-bottom: 20px;
-    justify-content: space-between;
-  }
 }
 @media only screen and (max-width: 1024px) {
   .boxuri > .row {
     flex-wrap: wrap;
+  }
+}
+.boxuri > .row > .box1,
+.boxuri > .row .box2,
+.boxuri > .row .box3 .box4,
+.boxuri > .row .box5,
+.boxuri > .row .box6 {
+  text-decoration: none;
+}
+@media only screen and (max-width: 1024px) {
+  .boxuri > .row > .box1,
+  .boxuri > .row .box2,
+  .boxuri > .row .box3 .box4,
+  .boxuri > .row .box5,
+  .boxuri > .row .box6 {
+    width: 40%;
+    margin-bottom: 20px;
+    justify-content: space-between;
   }
 }
 .boxuri > .row > .box1 {
@@ -370,20 +382,6 @@ table {
     left: 85%;
     transform: translate(-50%, -50%);
     font-size: 1.5vh;
-  }
-}
-@media only screen and (max-width: 1024px) {
-  .boxuri .row > .box1,
-  .boxuri .row .box2,
-  .boxuri .row .box3 {
-    width: 40%;
-    margin-bottom: 20px;
-    justify-content: space-between;
-  }
-}
-@media only screen and (max-width: 1024px) {
-  .boxuri .row {
-    flex-wrap: wrap;
   }
 }
 .boxuri .row > .box4 {

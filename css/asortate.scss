@@ -2,493 +2,456 @@
 @import "./reset.scss";
 
 .boxuri {
-    justify-content: center;
-    flex-wrap: wrap;
-    display: flex;
-    margin: 2vh;
-    overflow-x: hidden;
+  justify-content: center;
+  flex-wrap: wrap;
+  display: flex;
+  margin: 2vh;
 
-    >.row{
-        display: flex;
-        flex-basis: 50%;
-        >.box1,
-        .box2,
-        .box3{
-            @media only screen and (max-width: 1024px) {
-                width: 40%;
-                margin-bottom: 20px;
-                justify-content: space-between;
-            }
-    
+  @media only screen and (max-width: 1024px) {
+    height: auto;
+  }
+  > .row {
+    display: flex;
+    @media only screen and (max-width: 1024px) {
+      flex-wrap: wrap;
+    }
+    > .box1,
+    .box2,
+    .box3
+    .box4,
+    .box5,
+    .box6 {
+      text-decoration: none;
+      @media only screen and (max-width: 1024px) {
+        width: 40%;
+        margin-bottom: 20px;
+        justify-content: space-between; 
+      }
+    }
+    > .box1 {
+      margin: 5vh;
+      border-radius: 6vh;
+      background-color: rgba(128, 128, 128, 0.124);
+      @media only screen and (max-width: 1024px) {
+        margin: 2vh;
+        position: relative;
+        height: 175px;
+      }
+
+      > img {
+        width: 20vh;
+        padding: 1vh 8vh;
+        margin-top: 6vh;
+        @media only screen and (max-width: 1024px) {
+            width: 17.5vh;
+            padding: 0;
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+      }
+
+      > .pret {
+        margin-left: 10vh;
+        color: rgba(128, 128, 128, 0.6);
+        font-size: 2.5vh;
+
+        > span {
+          color: black;
         }
         @media only screen and (max-width: 1024px) {
-            flex-wrap: wrap;
+            margin: 0px;
+            position: absolute;
+            top: 70%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 1.5vh;
+          }
+      }
+
+      > button {
+        float: right;
+        border: none;
+        background-color: rgba(0, 0, 0, 0.787);
+        margin: -1vh -1vh -1vh -1vh;
+        width: 6vh;
+        height: 6vh;
+        border-radius: 2vh;
+        cursor: pointer;
+
+        > img {
+          margin-top: 0.1vh;
+          width: 3vh;
+          height: 3vh;
         }
-    
-        >.box1 {
-            margin: 5vh;
-            border-radius: 6vh;
-            background-color: rgba(128, 128, 128, 0.124);
-    
-    
-            @media only screen and (max-width: 1024px) {
-                margin: 2vh;
-                position: relative;
-                height: 175px;
-            }
-    
-            >img {
-                width: 20vh;
-                padding: 1vh 8vh;
-                margin-top: 6vh;
-    
-                @media only screen and (max-width: 1024px) {
-                    width: 17.5vh;
-                    padding: 0;
-                    position: absolute;
-                    top: 20%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                }
-            }
-    
-            >.pret {
-                margin-left: 10vh;
-                color: rgba(128, 128, 128, 0.6);
-                font-size: 2.5vh;
-    
-                >span {
-                    color: black;
-                }
-    
-                @media only screen and (max-width: 1024px) {
-                    margin: 0px;
-                    position: absolute;
-                    top: 70%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                    font-size: 1.5vh;
-                }
-            }
-    
-            >button {
-                float: right;
-                border: none;
-                background-color: rgba(0, 0, 0, 0.787);
-                margin: -1vh -1vh -1vh -1vh;
-                width: 6vh;
-                height: 6vh;
-                border-radius: 2vh;
-                cursor: pointer;
-    
-                >img {
-                    margin-top: 0.1vh;
-                    width: 3vh;
-                    height: 3vh;
-                }
-    
-                @media only screen and (max-width: 1024px) {
-                    margin: 0px;
-                    padding: 10px;
-                    position: absolute;
-                    top: 95%;
-                    left: 85%;
-                    transform: translate(-50%, -50%);
-                    font-size: 1.5vh;
-                }
-            }
-        }
-    
-        >.box2 {
-            margin: 5vh;
-            border-radius: 6vh;
-            background-color: rgba(128, 128, 128, 0.124);
-    
-            @media only screen and (max-width: 1024px) {
-                margin: 2vh;
-                position: relative;
-                height: 175px;
-            }
-    
-            >img {
-                width: 20vh;
-                padding: 1vh 8vh;
-                margin-top: 6vh;
-    
-                @media only screen and (max-width: 1024px) {
-                    width: 20vh;
-                    padding: 0;
-                    position: absolute;
-                    top: 20%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                }
-            }
-    
-            >.pret {
-                margin-left: 10vh;
-                color: rgba(128, 128, 128, 0.6);
-                font-size: 2.5vh;
-    
-                >span {
-                    color: black;
-                }
-    
-                @media only screen and (max-width: 1024px) {
-                    margin: 0px;
-                    position: absolute;
-                    top: 70%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                    font-size: 1.5vh;
-                }
-            }
-    
-            >button {
-                float: right;
-                border: none;
-                background-color: rgba(0, 0, 0, 0.787);
-                margin: -1vh -1vh -1vh -1vh;
-                width: 6vh;
-                height: 6vh;
-                border-radius: 2vh;
-                cursor: pointer;
-    
-                >img {
-                    margin-top: 0.1vh;
-                    width: 3vh;
-                    height: 3vh;
-                }
-    
-                @media only screen and (max-width: 1024px) {
-                    margin: 0px;
-                    padding: 10px;
-                    position: absolute;
-                    top: 95%;
-                    left: 85%;
-                    transform: translate(-50%, -50%);
-                    font-size: 1.5vh;
-                }
-            }
-        }
-    
-        >.box3 {
-            margin: 5vh;
-            border-radius: 6vh;
-            background-color: rgba(128, 128, 128, 0.124);
-    
-            @media only screen and (max-width: 1024px) {
-                margin: 2vh;
-                position: relative;
-                height: 175px;
-            }
-    
-            >img {
-                width: 20vh;
-                padding: 1vh 8vh;
-                margin-top: 6vh;
-    
-                @media only screen and (max-width: 1024px) {
-                    width: 20vh;
-                    padding: 0;
-                    position: absolute;
-                    top: 20%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                }
-            }
-    
-            >.pret {
-                margin-left: 10vh;
-                color: rgba(128, 128, 128, 0.6);
-                font-size: 2.5vh;
-    
-                >span {
-                    color: black;
-                }
-    
-                @media only screen and (max-width: 1024px) {
-                    margin: 0px;
-                    position: absolute;
-                    top: 70%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                    font-size: 1.5vh;
-                }
-            }
-    
-            >button {
-                margin-top: 0.2vh;
-                float: right;
-                border: none;
-                background-color: rgba(0, 0, 0, 0.787);
-                margin: -1vh -1vh -1vh -1vh;
-                width: 6vh;
-                height: 6vh;
-                border-radius: 2vh;
-                cursor: pointer;
-    
-                >img {
-                    margin-top: 0.1vh;
-                    width: 3vh;
-                    height: 3vh;
-                }
-    
-                @media only screen and (max-width: 1024px) {
-                    margin: 0px;
-                    padding: 10px;
-                    position: absolute;
-                    top: 95%;
-                    left: 85%;
-                    transform: translate(-50%, -50%);
-                    font-size: 1.5vh;
-                }
-            }
-        }
+        @media only screen and (max-width: 1024px) {
+            margin: 0px;
+            padding: 10px;
+            position: absolute;
+            top: 95%;
+            left: 85%;
+            transform: translate(-50%, -50%);
+            font-size: 1.5vh;
+          }
+      }
     }
 
-    
-    .row{
-        >.box1,
-        .box2,
-        .box3{
-            @media only screen and (max-width: 1024px) {
-                width: 40%;
-                margin-bottom: 20px;
-                justify-content: space-between;
-            }
-    
-        }
-    
+    > .box2 {
+      margin: 5vh;
+      border-radius: 6vh;
+      background-color: rgba(128, 128, 128, 0.124);
+      @media only screen and (max-width: 1024px) {
+        margin: 2vh;
+        position: relative;
+        height: 175px;
+      }
+
+      > img {
+        width: 20vh;
+        padding: 1vh 8vh;
+        margin-top: 6vh;
         @media only screen and (max-width: 1024px) {
-            flex-wrap: wrap;
+            width: 20vh;
+            padding: 0;
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+      }
+
+      > .pret {
+        margin-left: 10vh;
+        color: rgba(128, 128, 128, 0.6);
+        font-size: 2.5vh;
+
+        > span {
+          color: black;
         }
-        >.box4 {
-            margin: 5vh;
-            border-radius: 6vh;
-            background-color: rgba(128, 128, 128, 0.124);
-    
-            @media only screen and (max-width: 1024px) {
-                margin: 2vh;
-                position: relative;
-                height: 175px;
-            }
-    
-            >img {
-                width: 20vh;
-                padding: 1vh 8vh;
-                margin-top: 6vh;
-    
-                @media only screen and (max-width: 1024px) {
-                    width: 12.5vh;
-                    padding: 0;
-                    position: absolute;
-                    top: 15%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                }
-            }
-    
-            >.pret {
-                margin-left: 10vh;
-                color: rgba(128, 128, 128, 0.6);
-                font-size: 2.5vh;
-    
-                >span {
-                    color: black;
-                }
-    
-                @media only screen and (max-width: 1024px) {
-                    margin: 0px;
-                    position: absolute;
-                    top: 70%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                    font-size: 1.5vh;
-                }
-            }
-    
-            >button {
-                float: right;
-                border: none;
-                background-color: rgba(0, 0, 0, 0.787);
-                margin: -1vh -1vh -1vh -1vh;
-                width: 6vh;
-                height: 6vh;
-                border-radius: 2vh;
-                cursor: pointer;
-    
-                >img {
-                    margin-top: 0.1vh;
-                    width: 3vh;
-                    height: 3vh;
-                }
-    
-                @media only screen and (max-width: 1024px) {
-                    margin: 0px;
-                    padding: 10px;
-                    position: absolute;
-                    top: 95%;
-                    left: 85%;
-                    transform: translate(-50%, -50%);
-                    font-size: 1.5vh;
-                }
-            }
+        @media only screen and (max-width: 1024px) {
+            margin: 0px;
+            position: absolute;
+            top: 70%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 1.5vh;
+          }
+      }
+
+      > button {
+        float: right;
+        border: none;
+        background-color: rgba(0, 0, 0, 0.787);
+        margin: -1vh -1vh -1vh -1vh;
+        width: 6vh;
+        height: 6vh;
+        border-radius: 2vh;
+        cursor: pointer;
+
+        > img {
+          margin-top: 0.1vh;
+          width: 3vh;
+          height: 3vh;
         }
-    
-        >.box5 {
-            margin: 5vh;
-            border-radius: 6vh;
-            background-color: rgba(128, 128, 128, 0.124);
-    
-            @media only screen and (max-width: 1024px) {
-                margin: 2vh;
-                position: relative;
-                height: 175px;
-            }
-    
-            >img {
-                width: 20vh;
-                padding: 1vh 8vh;
-                margin-top: 6vh;
-    
-                @media only screen and (max-width: 1024px) {
-                    width: 12.5vh;
-                    padding: 0;
-                    position: absolute;
-                    top: 15%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                }
-            }
-    
-            >.pret {
-                margin-left: 10vh;
-                color: rgba(128, 128, 128, 0.6);
-                font-size: 2.5vh;
-    
-                >span {
-                    color: black;
-                }
-    
-                @media only screen and (max-width: 1024px) {
-                    margin: 0px;
-                    position: absolute;
-                    top: 70%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                    font-size: 1.5vh;
-                }
-            }
-    
-            >button {
-                float: right;
-                border: none;
-                background-color: rgba(0, 0, 0, 0.787);
-                margin: -1vh -1vh -1vh -1vh;
-                width: 6vh;
-                height: 6vh;
-                border-radius: 2vh;
-                cursor: pointer;
-    
-                >img {
-                    margin-top: 0.1vh;
-                    width: 3vh;
-                    height: 3vh;
-                }
-    
-                @media only screen and (max-width: 1024px) {
-                    margin: 0px;
-                    padding: 10px;
-                    position: absolute;
-                    top: 95%;
-                    left: 85%;
-                    transform: translate(-50%, -50%);
-                    font-size: 1.5vh;
-                }
-            }
-        }
-    
-        >.box6 {
-            margin: 5vh;
-            border-radius: 6vh;
-            background-color: rgba(128, 128, 128, 0.124);
-    
-            @media only screen and (max-width: 1024px) {
-                margin: 2vh;
-                position: relative;
-                height: 175px;
-            }
-    
-            >img {
-                width: 20vh;
-                padding: 1vh 8vh;
-                margin-top: 6vh;
-    
-                @media only screen and (max-width: 1024px) {
-                    width: 12.5vh;
-                    padding: 0;
-                    position: absolute;
-                    top: 15%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                }
-            }
-    
-            >.pret {
-                margin-left: 10vh;
-                color: rgba(128, 128, 128, 0.6);
-                font-size: 2.5vh;
-    
-                >span {
-                    color: black;
-                }
-    
-                @media only screen and (max-width: 1024px) {
-                    margin: 0px;
-                    position: absolute;
-                    top: 70%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                    font-size: 1.5vh;
-                }
-            }
-    
-            >button {
-                float: right;
-                border: none;
-                background-color: rgba(0, 0, 0, 0.787);
-                margin: -1vh -1vh -1vh -1vh;
-                width: 6vh;
-                height: 6vh;
-                border-radius: 2vh;
-                cursor: pointer;
-    
-                >img {
-                    margin-top: 0.1vh;
-                    width: 3vh;
-                    height: 3vh;
-                }
-    
-                @media only screen and (max-width: 1024px) {
-                    margin: 0px;
-                    padding: 10px;
-                    position: absolute;
-                    top: 95%;
-                    left: 85%;
-                    transform: translate(-50%, -50%);
-                    font-size: 1.5vh;
-                }
-            }
-        }
+        @media only screen and (max-width: 1024px) {
+            margin: 0px;
+            padding: 10px;
+            position: absolute;
+            top: 95%;
+            left: 85%;
+            transform: translate(-50%, -50%);
+            font-size: 1.5vh;
+          }
+      }
     }
+
+    > .box3 {
+      margin: 5vh;
+      border-radius: 6vh;
+      background-color: rgba(128, 128, 128, 0.124);
+      @media only screen and (max-width: 1024px) {
+        margin: 2vh;
+        position: relative;
+        height: 175px;
+      }
+
+      > img {
+        width: 20vh;
+        padding: 1vh 8vh;
+        margin-top: 6vh;
+        @media only screen and (max-width: 1024px) {
+            width: 20vh;
+            padding: 0;
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+      }
+
+      > .pret {
+        margin-left: 10vh;
+        color: rgba(128, 128, 128, 0.6);
+        font-size: 2.5vh;
+
+        > span {
+          color: black;
+        }
+        @media only screen and (max-width: 1024px) {
+            margin: 0px;
+            position: absolute;
+            top: 70%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 1.5vh;
+          }
+      }
+
+      > button {
+        margin-top: 0.2vh;
+        float: right;
+        border: none;
+        background-color: rgba(0, 0, 0, 0.787);
+        margin: -1vh -1vh -1vh -1vh;
+        width: 6vh;
+        height: 6vh;
+        border-radius: 2vh;
+        cursor: pointer;
+
+        > img {
+          margin-top: 0.1vh;
+          width: 3vh;
+          height: 3vh;
+        }
+        @media only screen and (max-width: 1024px) {
+            margin: 0px;
+            padding: 10px;
+            position: absolute;
+            top: 95%;
+            left: 85%;
+            transform: translate(-50%, -50%);
+            font-size: 1.5vh;
+          }
+      }
+    }
+  }
+
+  .row {
+    > .box4 {
+      margin: 5vh;
+      border-radius: 6vh;
+      background-color: rgba(128, 128, 128, 0.124);
+      @media only screen and (max-width: 1024px) {
+        margin: 2vh;
+        position: relative;
+        height: 175px;
+      }
+
+      > img {
+        width: 20vh;
+        padding: 1vh 8vh;
+        margin-top: 6vh;
+        @media only screen and (max-width: 1024px) {
+            width: 12.5vh;
+            padding: 0;
+            position: absolute;
+            top: 15%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+      }
+
+      > .pret {
+        margin-left: 10vh;
+        color: rgba(128, 128, 128, 0.6);
+        font-size: 2.5vh;
+
+        > span {
+          color: black;
+        }
+        @media only screen and (max-width: 1024px) {
+            margin: 0px;
+            position: absolute;
+            top: 70%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 1.5vh;
+          }
+      }
+
+      > button {
+        float: right;
+        border: none;
+        background-color: rgba(0, 0, 0, 0.787);
+        margin: -1vh -1vh -1vh -1vh;
+        width: 6vh;
+        height: 6vh;
+        border-radius: 2vh;
+        cursor: pointer;
+
+        > img {
+          margin-top: 0.1vh;
+          width: 3vh;
+          height: 3vh;
+        }
+        @media only screen and (max-width: 1024px) {
+            margin: 0px;
+            padding: 10px;
+            position: absolute;
+            top: 95%;
+            left: 85%;
+            transform: translate(-50%, -50%);
+            font-size: 1.5vh;
+          }
+      }
+    }
+
+    > .box5 {
+      margin: 5vh;
+      border-radius: 6vh;
+      background-color: rgba(128, 128, 128, 0.124);
+      @media only screen and (max-width: 1024px) {
+        margin: 2vh;
+        position: relative;
+        height: 175px;
+      }
+
+      > img {
+        width: 20vh;
+        padding: 1vh 8vh;
+        margin-top: 6vh;
+        @media only screen and (max-width: 1024px) {
+            width: 12.5vh;
+            padding: 0;
+            position: absolute;
+            top: 15%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+      }
+
+      > .pret {
+        margin-left: 10vh;
+        color: rgba(128, 128, 128, 0.6);
+        font-size: 2.5vh;
+
+        > span {
+          color: black;
+        }
+        @media only screen and (max-width: 1024px) {
+            margin: 0px;
+            position: absolute;
+            top: 70%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 1.5vh;
+          }
+      }
+
+      > button {
+        float: right;
+        border: none;
+        background-color: rgba(0, 0, 0, 0.787);
+        margin: -1vh -1vh -1vh -1vh;
+        width: 6vh;
+        height: 6vh;
+        border-radius: 2vh;
+        cursor: pointer;
+
+        > img {
+          margin-top: 0.1vh;
+          width: 3vh;
+          height: 3vh;
+        }
+        @media only screen and (max-width: 1024px) {
+            margin: 0px;
+            padding: 10px;
+            position: absolute;
+            top: 95%;
+            left: 85%;
+            transform: translate(-50%, -50%);
+            font-size: 1.5vh;
+          }
+      }
+    }
+
+    > .box6 {
+      margin: 5vh;
+      border-radius: 6vh;
+      background-color: rgba(128, 128, 128, 0.124);
+      @media only screen and (max-width: 1024px) {
+        margin: 2vh;
+        position: relative;
+        height: 175px;
+      }
+
+      > img {
+        width: 20vh;
+        padding: 1vh 8vh;
+        margin-top: 6vh;
+        @media only screen and (max-width: 1024px) {
+            width: 12.5vh;
+            padding: 0;
+            position: absolute;
+            top: 15%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+      }
+
+      > .pret {
+        margin-left: 10vh;
+        color: rgba(128, 128, 128, 0.6);
+        font-size: 2.5vh;
+
+        > span {
+          color: black;
+        }
+        @media only screen and (max-width: 1024px) {
+            margin: 0px;
+            position: absolute;
+            top: 70%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 1.5vh;
+          }
+      }
+
+      > button {
+        float: right;
+        border: none;
+        background-color: rgba(0, 0, 0, 0.787);
+        margin: -1vh -1vh -1vh -1vh;
+        width: 6vh;
+        height: 6vh;
+        border-radius: 2vh;
+        cursor: pointer;
+
+        > img {
+          margin-top: 0.1vh;
+          width: 3vh;
+          height: 3vh;
+        }
+        @media only screen and (max-width: 1024px) {
+            margin: 0px;
+            padding: 10px;
+            position: absolute;
+            top: 95%;
+            left: 85%;
+            transform: translate(-50%, -50%);
+            font-size: 1.5vh;
+          }
+      }
+    }
+  }
 }
-h1{
-    display: flex;
-    justify-content: center;
-    padding: 50px 0 0;
-    font-size: 30px;
+h1 {
+  display: flex;
+  justify-content: center;
+  padding: 50px 0 0;
+  font-size: 30px;
 }
-footer{
-    display: flex;
+footer {
+  display: flex;
 }
