@@ -2,6 +2,12 @@
 @import "./reset.scss";
 .part1 {
   margin: 5vh auto;
+  
+  @media only screen and (max-width: 1024px){
+    position: relative;
+    top: 30%;
+    left: -100%;
+  }
 
   h1 {
     position: absolute;
@@ -14,6 +20,11 @@
         #ffffffe1 60%,
         #ffffff36 100%);
     border-radius: 1vh;
+    @media only screen and (max-width: 1024px){
+      position: relative;
+      top: 30%;
+      left: -100%;
+    }
   }
 
   img {
@@ -29,6 +40,13 @@
     text-align: center;
     margin-left: 3vh;
     line-height: normal;
+    @media only screen and (max-width: 1024px){
+      position: absolute;
+      top: 100%;
+      font-size: 20px;
+      left: 80%;
+      padding: 10%;
+    }
   }
 }
 
@@ -109,10 +127,11 @@
 
   .sageata {
     position: relative;
+    top: 5%;
     div {
       position: absolute;
-      top: 100%;
       left: 28%;
+      margin-top: -0.3%;
       z-index: 5;
 
       img {
@@ -136,25 +155,27 @@
     padding-top: 3vh;
 
     div {
-      display: inline-block;
+      position: relative;
+      text-align: center;
       font-size: 15px;
       color: rgba(129, 129, 129, 0.844);
     }
     >.d1{
-      float: left;
-      margin-left: 65vh;
+      position: absolute;
+      left: 32%;
     }
     >.d2{
-      float: left;
-      margin-left: 10.5vh;
+      position: absolute;
+      left: 42%;
     }
     >.d3{
-      float: left;
-      margin-left: 11.4vh;
+      position: absolute;
+      left: 53%;
+     
     }
     >.d4{
-      float: left;
-      margin-left: 13.4vh;
+      position: absolute;
+      left: 65%;
     }
   }
 }
