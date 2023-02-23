@@ -34,8 +34,7 @@
     width: 65vh;
     border-radius: 1.5vh;
     display: block;
-    margin-left: 70vh;
-    margin-right: 30vh;
+    margin: auto;
 
     @media only screen and (max-width: 1024px) {
       width: 75%;
@@ -53,9 +52,11 @@
     max-width: 650px;
     justify-content: center;
     display: flex;
+    margin: 2vh auto;
 
     @media only screen and (max-width: 1024px) {
       font-size: 2vh;
+      padding: 2vh;
     }
   }
 }
@@ -139,6 +140,7 @@
       text-decoration: none;
       text-align: center;
       line-height: 50px;
+
       @media only screen and (max-width: 1024px) {
         display: flex;
         margin: 0 auto;
