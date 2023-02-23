@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/home.css">
     <link rel="stylesheet" href="./css/footer.css">
+
+    <script src="./js/header.js"></script>
 </head>
 
 <body>
@@ -16,16 +18,22 @@
         <div>
             <a href="index.html"><img src="./image/logo.png"></a>
         </div>
-        <div>
-            <a href="index.html">Home</a>
-            <a href="products.html">Products</a>
-            <a href="contacts.html">Contacts</a>
-            <a href="aboutus.html">About Us</a>
+
+        <div id="fullmenu">
+
+            <div>
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="contacts.html">Contacts</a>
+                <a href="aboutus.html">About Us</a>
+            </div>
+            <div>
+                <a href="#"><img src="./image/search.png"></a>
+                <a href="#"><img src="./image/cart.png"></a>
+            </div>
         </div>
-        <div>
-            <a href="#"><img src="./image/search.png"></a>
-            <a href="#"><img src="./image/cart.png"></a>
-        </div>
+
+        <div onclick="openMenu()" class="burger">Open menu</div>
     </div>
 
 

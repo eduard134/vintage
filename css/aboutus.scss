@@ -6,14 +6,12 @@
 
   @media only screen and (max-width: 1024px) {
     position: relative;
-    top: 30%;
-    left: -100%;
   }
 
   h1 {
     position: absolute;
     margin-top: 5vh;
-    margin-left: 55vh;
+    margin-left: 50vh;
     font-size: 5vh;
     text-align: center;
     background-image: linear-gradient(to bottom right,
@@ -22,6 +20,14 @@
         #ffffff36 100%);
     border-radius: 1vh;
     height: 11%;
+
+    @media only screen and (max-width: 1024px) {
+      font-size: 3vh;
+      margin-left: 2vh;
+      margin-top: 2vh;
+      position: absolute;
+      height: 16%;
+    }
   }
 
   img {
@@ -30,6 +36,13 @@
     display: block;
     margin-left: 70vh;
     margin-right: 30vh;
+
+    @media only screen and (max-width: 1024px) {
+      width: 75%;
+      height: 75%;
+      margin: auto;
+
+    }
   }
 
   p {
@@ -39,11 +52,7 @@
     line-height: normal;
 
     @media only screen and (max-width: 1024px) {
-      position: absolute;
-      top: 100%;
-      font-size: 20px;
-      left: 80%;
-      padding: 10%;
+      font-size: 2vh;
     }
   }
 }
@@ -55,12 +64,20 @@
     font-size: 3vh;
     text-align: center;
     justify-content: space-between;
+
+    @media only screen and (max-width: 1024px) {
+      font-size: 2.5vh;
+    }
   }
 
   p {
     margin-top: 2vh;
     text-align: center;
     line-height: normal;
+
+    @media only screen and (max-width: 1024px) {
+      font-size: 2vh;
+    }
   }
 }
 
@@ -70,19 +87,37 @@
   padding: 5vh;
   position: relative;
 
+  @media only screen and (max-width: 1024px) {
+    display: initial;
+  }
+
   .box {
     display: inline;
     padding: 7vh;
 
+    @media only screen and (max-width: 1024px) {
+      display: block;
+    }
 
     h1 {
       font-size: 3vh;
       padding: .5vh;
+
+      @media only screen and (max-width: 1024px) {
+        text-align: center;
+        font-size: 2.5vh;
+      }
     }
 
     >p {
       padding: 1vh 0 3vh;
       line-height: normal;
+      max-width: 550px;
+
+      @media only screen and (max-width: 1024px) {
+        text-align: center;
+        font-size: 2vh;
+      }
     }
 
     a {
@@ -92,100 +127,127 @@
       border: none;
       outline: none;
       color: #fff;
-      height: 5.5vh;
+      height: 50px;
       border-radius: 20vh;
       top: 70%;
       left: 61%;
-      display: flex;
+      display: block;
       justify-content: center;
       text-decoration: none;
-      position: absolute;
+      text-align: center;
+      line-height: 50px;
+      @media only screen and (max-width: 1024px) {
+        display: flex;
+        margin: 0 auto;
+      }
     }
   }
 
   .image {
     display: inline;
 
+
     img {
       width: 65vh;
       border-radius: 1.5vh;
+
+      @media only screen and (max-width: 1024px) {
+        width: 75%;
+        height: 75%;
+      }
     }
   }
 }
 
-.axa {
-  background-color: #efe9f4;
-  padding: 3.5vh;
-  height: 13vh;
+.axe {
+  display: flex;
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+  overflow-x: scroll;
 
-  .ani {
-    text-align: center;
-    position: relative;
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 85%;
+    height: 3px;
+    background-color: black;
+    top: 80px;
+    transform: translate(10%, 10%)
+  }
 
-    div {
-      display: inline-block;
-      font-size: 3vh;
-      margin: 20px 3.5vw;
-
+  @media screen {
+    &::before {
+      transform: translate(10%, 10%);
+      width: 200%;
     }
   }
 
-  .sageata {
+  >div {
+    flex: 1;
+    margin-right: 90px;
     position: relative;
-    top: 5%;
+    padding: 0 30px;
 
-    div {
+    &::before {
+      content: '';
+      display: block;
+      width: 45px;
+      height: 30px;
       position: absolute;
-      left: 28%;
-      margin-top: -0.3%;
-      z-index: 5;
-
-      img {
-        display: inline-block;
-        margin: 0 9.5vh;
-        width: 2vh;
-      }
+      top: 66px;
+      background-image: url(/image/axa.png);
+      background-size: 45px 30px;
+      margin-left: 3vh;
     }
 
-    hr {
-      position: absolute;
-      width: 64vh;
-      margin: 0;
-      left: 33.5%;
-      background-color: rgb(0, 0, 0);
-      height: .15vh;
+    &:last-of-type {
+      margin-right: 0;
     }
-  }
 
-  .desc {
-    padding-top: 3vh;
+    >span {
+      font-size: 48px;
+      font-weight: 600;
+      color: gray;
+      overflow: hidden;
+    }
 
-    div {
-      position: relative;
+    >p {
+      margin-top: 60px;
       text-align: center;
-      font-size: 15px;
-      color: rgba(129, 129, 129, 0.844);
     }
+  }
+}
 
-    >.d1 {
-      position: absolute;
-      left: 32%;
-    }
+.desc {
+  padding-top: 3vh;
 
-    >.d2 {
-      position: absolute;
-      left: 42%;
-    }
+  div {
+    position: relative;
+    text-align: center;
+    font-size: 15px;
+    color: rgba(129, 129, 129, 0.844);
+  }
 
-    >.d3 {
-      position: absolute;
-      left: 53%;
+  >.d1 {
+    position: absolute;
+    left: 32%;
+  }
 
-    }
+  >.d2 {
+    position: absolute;
+    left: 42%;
+  }
 
-    >.d4 {
-      position: absolute;
-      left: 65%;
-    }
+  >.d3 {
+    position: absolute;
+    left: 53%;
+
+  }
+
+  >.d4 {
+    position: absolute;
+    left: 65%;
   }
 }
