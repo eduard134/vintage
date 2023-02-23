@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/home.css">
     <link rel="stylesheet" href="./css/footer.css">
+
+    <script src="./js/header.js"></script>
 </head>
 
 <body>
@@ -16,15 +18,25 @@
         <div>
             <a href="index.html"><img src="./image/logo.png"></a>
         </div>
-        <div>
-            <a href="index.html">Home</a>
-            <a href="products.html">Products</a>
-            <a href="contacts.html">Contacts</a>
-            <a href="aboutus.html">About Us</a>
+
+        <div id="fullmenu">
+
+            <div>
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="contacts.html">Contacts</a>
+                <a href="aboutus.html">About Us</a>
+            </div>
+            <div>
+                <a href="#"><img src="./image/search.png"></a>
+                <a href="#"><img src="./image/cart.png"></a>
+            </div>
         </div>
-        <div>
-            <a href="#"><img src="./image/search.png"></a>
-            <a href="#"><img src="./image/cart.png"></a>
+
+        <div onclick="openMenu()" class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
         </div>
     </div>
 
@@ -87,10 +99,10 @@
         </div>
         <div class="r3">
             <div class="title">SOCIAL</div>
-            <div><a href="https://www.facebook.com/buffy.cookies/"><img src="./image/facebook.png"></a></div>
-            <div><a href="https://www.instagram.com/buffycookies/"><img src="./image/insta.png"></a></div>
-        </div>
-
+            <div class="images">
+                <a href="https://www.facebook.com/buffy.cookies/"><img src="./image/facebook.png"></a>
+                <a href="https://www.instagram.com/buffycookies/"><img src="./image/insta.png"></a>
+            </div>
     </footer>
 </body>
 

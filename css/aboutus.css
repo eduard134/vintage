@@ -136,27 +136,58 @@ table {
 .part1 {
   margin: 5vh auto;
 }
+@media only screen and (max-width: 1024px) {
+  .part1 {
+    position: relative;
+  }
+}
 .part1 h1 {
   position: absolute;
   margin-top: 5vh;
-  margin-left: 55vh;
+  margin-left: 50vh;
   font-size: 5vh;
   text-align: center;
   background-image: linear-gradient(to bottom right, #ffffff 0%, rgba(255, 255, 255, 0.8823529412) 60%, rgba(255, 255, 255, 0.2117647059) 100%);
   border-radius: 1vh;
+  height: 11%;
+}
+@media only screen and (max-width: 1024px) {
+  .part1 h1 {
+    font-size: 3vh;
+    margin-left: 2vh;
+    margin-top: 2vh;
+    position: absolute;
+    height: 16%;
+  }
 }
 .part1 img {
   width: 65vh;
   border-radius: 1.5vh;
   display: block;
-  margin-left: 70vh;
-  margin-right: 30vh;
+  margin: auto;
+}
+@media only screen and (max-width: 1024px) {
+  .part1 img {
+    width: 75%;
+    height: 75%;
+    margin: auto;
+  }
 }
 .part1 p {
   margin-top: 2vh;
   text-align: center;
   margin-left: 3vh;
   line-height: normal;
+  max-width: 650px;
+  justify-content: center;
+  display: flex;
+  margin: 2vh auto;
+}
+@media only screen and (max-width: 1024px) {
+  .part1 p {
+    font-size: 2vh;
+    padding: 2vh;
+  }
 }
 
 .part3 {
@@ -167,40 +198,85 @@ table {
   text-align: center;
   justify-content: space-between;
 }
+@media only screen and (max-width: 1024px) {
+  .part3 h1 {
+    font-size: 2.5vh;
+  }
+}
 .part3 p {
   margin-top: 2vh;
   text-align: center;
   line-height: normal;
+}
+@media only screen and (max-width: 1024px) {
+  .part3 p {
+    font-size: 2vh;
+  }
 }
 
 .part4 {
   display: flex;
   justify-content: center;
   padding: 5vh;
+  position: relative;
+}
+@media only screen and (max-width: 1024px) {
+  .part4 {
+    display: initial;
+  }
 }
 .part4 .box {
   display: inline;
   padding: 7vh;
 }
+@media only screen and (max-width: 1024px) {
+  .part4 .box {
+    display: block;
+  }
+}
 .part4 .box h1 {
   font-size: 3vh;
   padding: 0.5vh;
 }
+@media only screen and (max-width: 1024px) {
+  .part4 .box h1 {
+    text-align: center;
+    font-size: 2.5vh;
+  }
+}
 .part4 .box > p {
   padding: 1vh 0 3vh;
   line-height: normal;
+  max-width: 550px;
 }
-.part4 .box button {
+@media only screen and (max-width: 1024px) {
+  .part4 .box > p {
+    text-align: center;
+    font-size: 2vh;
+  }
+}
+.part4 .box a {
   cursor: pointer;
   background: #489FB5;
   width: 20vh;
   border: none;
   outline: none;
   color: #fff;
-  height: 5.5vh;
+  height: 50px;
   border-radius: 20vh;
-  margin: auto;
+  top: 70%;
+  left: 61%;
   display: block;
+  justify-content: center;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+}
+@media only screen and (max-width: 1024px) {
+  .part4 .box a {
+    display: flex;
+    margin: 0 auto;
+  }
 }
 .part4 .image {
   display: inline;
@@ -209,62 +285,84 @@ table {
   width: 65vh;
   border-radius: 1.5vh;
 }
+@media only screen and (max-width: 1024px) {
+  .part4 .image img {
+    width: 75%;
+    height: 75%;
+  }
+}
 
-.axa {
-  background-color: #efe9f4;
-  padding: 3.5vh;
-  height: 13vh;
+.axe {
+  display: flex;
+  max-width: 950px;
+  margin: 0 auto;
+  position: relative;
+  overflow-x: scroll;
+  overflow-y: hidden;
 }
-.axa .ani {
+.axe::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 780px;
+  height: 3px;
+  background-color: black;
+  top: 80px;
+  transform: translate(8%, 8%);
+}
+.axe > div {
+  flex: 1;
+  margin-right: 90px;
+  position: relative;
+  padding: 0 30px;
+}
+.axe > div::before {
+  content: "";
+  display: block;
+  width: 45px;
+  height: 30px;
+  position: absolute;
+  top: 66px;
+  background-image: url(/image/axa.png);
+  background-size: 45px 30px;
+  margin-left: 3vh;
+}
+.axe > div:last-of-type {
+  margin-right: 0;
+}
+.axe > div > span {
+  font-size: 48px;
+  font-weight: 600;
+  color: gray;
+  overflow: hidden;
+}
+.axe > div > p {
+  margin-top: 60px;
   text-align: center;
-  justify-content: space-between;
 }
-.axa .ani div {
-  display: inline-block;
-  font-size: 3vh;
-  margin: 2.5vh 3.5vw;
-  padding-bottom: 1vh;
+
+.desc {
+  padding-top: 3vh;
 }
-.axa .sageata div {
+.desc div {
+  position: relative;
   text-align: center;
-  justify-content: space-between;
-  margin-top: -0.9vh;
-  z-index: 5;
-}
-.axa .sageata div img {
-  display: inline-block;
-  margin: 0 10vh;
-  width: 2vh;
-}
-.axa .sageata hr {
-  width: 68vh;
-  margin: -1.8vh 70vh;
-  background-color: rgb(0, 0, 0);
-  height: 0.15vh;
-}
-.axa .desc {
-  text-align: center;
-  justify-content: space-between;
-  padding-top: 1vh;
-}
-.axa .desc div {
-  display: inline-block;
-  font-size: 10px;
+  font-size: 15px;
   color: rgba(129, 129, 129, 0.844);
 }
-.axa .desc > .d1 {
-  float: left;
-  margin-left: 65vh;
+.desc > .d1 {
+  position: absolute;
+  left: 32%;
 }
-.axa .desc > .d2 {
-  float: left;
-  margin-left: 10.5vh;
+.desc > .d2 {
+  position: absolute;
+  left: 42%;
 }
-.axa .desc > .d3 {
-  float: left;
-  margin-left: 11.4vh;
+.desc > .d3 {
+  position: absolute;
+  left: 53%;
 }
-.axa .desc > .d4 {
-  float: left;
-  margin-left: 13.4vh;
+.desc > .d4 {
+  position: absolute;
+  left: 65%;
 }/*# sourceMappingURL=aboutus.css.map */

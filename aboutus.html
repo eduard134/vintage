@@ -8,22 +8,33 @@
     <title>Vintage</title>
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/aboutus.css">
+    <link rel="stylesheet" href="./css/footer.css">
 </head>
 
 <body>
     <div class="header" id="header">
         <div>
-           <a href="./index.html"><img src="./image/logo.png"></a>
+            <a href="index.html"><img src="./image/logo.png"></a>
         </div>
-        <div>
-            <a href="index.html">Home</a>
-            <a href="products.html">Products</a>
-            <a href="contacts.html">Contacts</a>
-            <a href="aboutus.html">About Us</a>
+
+        <div id="fullmenu">
+
+            <div>
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="contacts.html">Contacts</a>
+                <a href="aboutus.html">About Us</a>
+            </div>
+            <div>
+                <a href="#"><img src="./image/search.png"></a>
+                <a href="#"><img src="./image/cart.png"></a>
+            </div>
         </div>
-        <div>
-            <a href="#"><img src="./image/search.png"></a>
-            <a href="#"><img src="./image/cart.png"></a>
+
+        <div onclick="openMenu()" class="burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
         </div>
     </div>
 
@@ -31,34 +42,38 @@
         <h1>Noi suntem <br>Vintage</h1>
         <img src="./image/fabrica temporar.jpg" alt="">
         <p>La firma noastră de biscuiți, suntem mândri să oferim produse de calitate superioară, care să încânte
-            <br>gusturile tuturor clienților noștri. Încă de la înființarea noastră, ne-am străduit să dezvoltăm rețete
-            unice <br> și delicioase, folosind ingrediente de cea mai bună calitate.
+            gusturile tuturor clienților noștri. Încă de la înființarea noastră, ne-am străduit să dezvoltăm rețete
+            unice și delicioase, folosind ingrediente de cea mai bună calitate.
         </p>
     </div>
-    <!-- Axa ani -->
-    <div class="axa">
-        <div class="ani">
-            <div class="p1">2018</div>
-            <div class="p2">2020</div>
-            <div class="p3">2022</div>
-            <div class="p4">2023</div>
+
+    <div class="axe">
+        <div>
+            <span>
+                2018
+            </span>
+            <p>Ne-am deschis</p>
         </div>
-        <div class="sageata">
-            <hr>
-            <div>
-                <img src="/image/axa.png">
-                <img src="/image/axa.png">
-                <img src="/image/axa.png">
-                <img src="/image/axa.png">
-            </div>
+        <div>
+            <span>
+                2020
+            </span>
+            <p>Venit: 6.542.500 MDL</p>
         </div>
-        <div class="desc">
-            <div class="d1">NE-AM DESCHIS</div>
-            <div class="d2">VENIT: <br>12,893,500 MDL</div>
-            <div class="d3">VENIT: <br>12,893,500 MDL</div>
-            <div class="d4">PREZENT</div>
+        <div>
+            <span>
+                2022
+            </span>
+            <p>Venit: 30.986.000 MDL</p>
+        </div>
+        <div>
+            <span>
+                2023
+            </span>
+            <p>Prezent</p>
         </div>
     </div>
+
     <div class="part3">
         <h1>Valorile noastre</h1>
         <p> Suntem dedicați să ne îmbunătățim continuu procesele de producție și ambalare,<br> pentru a ne asigura că
@@ -71,13 +86,40 @@
         </div>
         <div class="box">
             <h1>Încercăm să facem clienții fericiți</h1>
-            <p>Nu suntem doar o companie de producție a biscuiților - suntem <br> și o echipă de oameni pasionați, care își
-                dedică timpul și energia <br> pentru a oferi servicii excelente clienților noștri. Suntem mereu <br> dispuși să
-                ascultăm sugestiile și feedback-ul clienților noștri, <br> pentru a ne asigura că oferim produsele și
-                serviciile cele mai <br> bune posibile.</p>
-            <button> Lăsați feedback!</button>
+            <p>Nu suntem doar o companie de producție a biscuiților - suntem și o echipă de oameni pasionați, care
+                își
+                dedică timpul și energia pentru a oferi servicii excelente clienților noștri. Suntem mereu
+                dispuși să
+                ascultăm sugestiile și feedback-ul clienților noștri, pentru a ne asigura că oferim produsele și
+                serviciile cele mai bune posibile.</p>
+            <a href="./contacts.html"> Lăsați feedback!</a>
         </div>
     </div>
+    <footer>
+        <div class="r1">
+            <div class="title">PAGES</div>
+            <div><a href="index.html">Home</a></div>
+            <div><a href="products.html">Products</a></div>
+            <div><a href="contacts.html">Contacts</a></div>
+            <div><a href="aboutus.html">About Us</a></div>
+        </div>
+        <div class="r2">
+            <div class="title">CONTACTS</div>
+            <div>+37369833822</div>
+            <div>+37360438138</div>
+            <div>
+                <a
+                    href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWsTKzjHXPfWsfNsQwHJkFnXSbMvwcZqpQcCDzGdRkpkwcccqTbshHFLcXXMTNTQDKDZcHGvq">sales.buffy@gmail.com</a>
+            </div>
+            <div>Ialoveni, s. Suruceni, str. M. Eminescu 54</div>
+        </div>
+        <div class="r3">
+            <div class="title">SOCIAL</div>
+            <div class="images">
+                <a href="https://www.facebook.com/buffy.cookies/"><img src="./image/facebook.png"></a>
+                <a href="https://www.instagram.com/buffycookies/"><img src="./image/insta.png"></a>
+            </div>
+    </footer>
 </body>
 
 </html>

@@ -1,4 +1,4 @@
-[ 
+const products=[ 
     {
       id:1,
       image: "dame_in_ciocolata.png",  
