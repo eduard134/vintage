@@ -136,6 +136,13 @@ table {
 .part1 {
   margin: 5vh auto;
 }
+@media only screen and (max-width: 1024px) {
+  .part1 {
+    position: relative;
+    top: 30%;
+    left: -100%;
+  }
+}
 .part1 h1 {
   position: absolute;
   margin-top: 5vh;
@@ -144,6 +151,13 @@ table {
   text-align: center;
   background-image: linear-gradient(to bottom right, #ffffff 0%, rgba(255, 255, 255, 0.8823529412) 60%, rgba(255, 255, 255, 0.2117647059) 100%);
   border-radius: 1vh;
+}
+@media only screen and (max-width: 1024px) {
+  .part1 h1 {
+    position: relative;
+    top: 30%;
+    left: -100%;
+  }
 }
 .part1 img {
   width: 65vh;
@@ -157,6 +171,15 @@ table {
   text-align: center;
   margin-left: 3vh;
   line-height: normal;
+}
+@media only screen and (max-width: 1024px) {
+  .part1 p {
+    position: absolute;
+    top: 100%;
+    font-size: 20px;
+    left: 80%;
+    padding: 10%;
+  }
 }
 
 .part3 {
@@ -226,11 +249,12 @@ table {
 }
 .axa .sageata {
   position: relative;
+  top: 5%;
 }
 .axa .sageata div {
   position: absolute;
-  top: 100%;
   left: 28%;
+  margin-top: -0.3%;
   z-index: 5;
 }
 .axa .sageata div img {
@@ -250,23 +274,24 @@ table {
   padding-top: 3vh;
 }
 .axa .desc div {
-  display: inline-block;
+  position: relative;
+  text-align: center;
   font-size: 15px;
   color: rgba(129, 129, 129, 0.844);
 }
 .axa .desc > .d1 {
-  float: left;
-  margin-left: 65vh;
+  position: absolute;
+  left: 32%;
 }
 .axa .desc > .d2 {
-  float: left;
-  margin-left: 10.5vh;
+  position: absolute;
+  left: 42%;
 }
 .axa .desc > .d3 {
-  float: left;
-  margin-left: 11.4vh;
+  position: absolute;
+  left: 53%;
 }
 .axa .desc > .d4 {
-  float: left;
-  margin-left: 13.4vh;
+  position: absolute;
+  left: 65%;
 }/*# sourceMappingURL=aboutus.css.map */
