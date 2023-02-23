@@ -19,12 +19,7 @@
         #ffffff 0%,
         #ffffffe1 60%,
         #ffffff36 100%);
-    border-radius: 1vh;
-    @media only screen and (max-width: 1024px){
-      position: relative;
-      top: 30%;
-      left: -100%;
-    }
+    border-radius: 1vh; 
   }
 
   img {
