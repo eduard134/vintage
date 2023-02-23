@@ -13,7 +13,7 @@
           width: 110px;
 
           @media only screen and (max-width: 1024px) {
-            width: 80px;
+            width: 80px;  
           }
         }
       }
@@ -94,9 +94,21 @@
   }
   .burger {
     display: none;
+    position: absolute;
+    top: 3vh;
+    right: 5vh;
+    z-index: 3;
 
     @media only screen and (max-width: 1024px) {
       display: block;
+    }
+
+    >.line{
+      height: .3vh;
+      width: 3vh; 
+      border-radius: 10px;
+      background-color: black;
+      margin-bottom: .7vh;
     }
   }
 }
