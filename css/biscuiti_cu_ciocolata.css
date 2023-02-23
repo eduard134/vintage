@@ -514,6 +514,77 @@ table {
     font-size: 1.5vh;
   }
 }
+.boxuri .row > .box6 {
+  margin: 5vh;
+  border-radius: 6vh;
+  background-color: rgba(128, 128, 128, 0.124);
+}
+@media only screen and (max-width: 1024px) {
+  .boxuri .row > .box6 {
+    margin: 2vh;
+    position: relative;
+    height: 175px;
+  }
+}
+.boxuri .row > .box6 > img {
+  width: 20vh;
+  padding: 1vh 8vh;
+  margin-top: 6vh;
+}
+@media only screen and (max-width: 1024px) {
+  .boxuri .row > .box6 > img {
+    width: 12.5vh;
+    padding: 0;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+.boxuri .row > .box6 > .pret {
+  margin-left: 10vh;
+  color: rgba(128, 128, 128, 0.6);
+  font-size: 2.5vh;
+}
+.boxuri .row > .box6 > .pret > span {
+  color: black;
+}
+@media only screen and (max-width: 1024px) {
+  .boxuri .row > .box6 > .pret {
+    margin: 0px;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5vh;
+  }
+}
+.boxuri .row > .box6 > button {
+  float: right;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.787);
+  margin: -1vh -1vh -1vh -1vh;
+  width: 6vh;
+  height: 6vh;
+  border-radius: 2vh;
+  cursor: pointer;
+}
+.boxuri .row > .box6 > button > img {
+  margin-top: 0.1vh;
+  width: 3vh;
+  height: 3vh;
+}
+@media only screen and (max-width: 1024px) {
+  .boxuri .row > .box6 > button {
+    margin: 0px;
+    padding: 10px;
+    position: absolute;
+    top: 95%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5vh;
+  }
+}
 .boxuri .row > .box7 {
   margin: 5vh;
   border-radius: 6vh;
@@ -576,6 +647,77 @@ table {
 }
 @media only screen and (max-width: 1024px) {
   .boxuri .row > .box7 > button {
+    margin: 0px;
+    padding: 10px;
+    position: absolute;
+    top: 95%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5vh;
+  }
+}
+.boxuri .row > .box8 {
+  margin: 5vh;
+  border-radius: 6vh;
+  background-color: rgba(128, 128, 128, 0.124);
+}
+@media only screen and (max-width: 1024px) {
+  .boxuri .row > .box8 {
+    margin: 2vh;
+    position: relative;
+    height: 175px;
+  }
+}
+.boxuri .row > .box8 > img {
+  width: 20vh;
+  padding: 1vh 8vh;
+  margin-top: 6vh;
+}
+@media only screen and (max-width: 1024px) {
+  .boxuri .row > .box8 > img {
+    width: 12.5vh;
+    padding: 0;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+.boxuri .row > .box8 > .pret {
+  margin-left: 10vh;
+  color: rgba(128, 128, 128, 0.6);
+  font-size: 2.5vh;
+}
+.boxuri .row > .box8 > .pret > span {
+  color: black;
+}
+@media only screen and (max-width: 1024px) {
+  .boxuri .row > .box8 > .pret {
+    margin: 0px;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5vh;
+  }
+}
+.boxuri .row > .box8 > button {
+  float: right;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.787);
+  margin: -1vh -1vh -1vh -1vh;
+  width: 6vh;
+  height: 6vh;
+  border-radius: 2vh;
+  cursor: pointer;
+}
+.boxuri .row > .box8 > button > img {
+  margin-top: 0.1vh;
+  width: 3vh;
+  height: 3vh;
+}
+@media only screen and (max-width: 1024px) {
+  .boxuri .row > .box8 > button {
     margin: 0px;
     padding: 10px;
     position: absolute;
