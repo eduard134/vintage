@@ -151,6 +151,7 @@ table {
   text-align: center;
   background-image: linear-gradient(to bottom right, #ffffff 0%, rgba(255, 255, 255, 0.8823529412) 60%, rgba(255, 255, 255, 0.2117647059) 100%);
   border-radius: 1vh;
+  height: 11%;
 }
 .part1 img {
   width: 65vh;
@@ -193,6 +194,7 @@ table {
   display: flex;
   justify-content: center;
   padding: 5vh;
+  position: relative;
 }
 .part4 .box {
   display: inline;
@@ -206,7 +208,7 @@ table {
   padding: 1vh 0 3vh;
   line-height: normal;
 }
-.part4 .box button {
+.part4 .box a {
   cursor: pointer;
   background: #489FB5;
   width: 20vh;
@@ -215,8 +217,12 @@ table {
   color: #fff;
   height: 5.5vh;
   border-radius: 20vh;
-  margin: auto;
-  display: block;
+  top: 70%;
+  left: 61%;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  position: absolute;
 }
 .part4 .image {
   display: inline;
