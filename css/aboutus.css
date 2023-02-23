@@ -152,13 +152,6 @@ table {
   background-image: linear-gradient(to bottom right, #ffffff 0%, rgba(255, 255, 255, 0.8823529412) 60%, rgba(255, 255, 255, 0.2117647059) 100%);
   border-radius: 1vh;
 }
-@media only screen and (max-width: 1024px) {
-  .part1 h1 {
-    position: relative;
-    top: 30%;
-    left: -100%;
-  }
-}
 .part1 img {
   width: 65vh;
   border-radius: 1.5vh;
