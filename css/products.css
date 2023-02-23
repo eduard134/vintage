@@ -199,6 +199,7 @@ table {
 }
 .produse .row1 > a > .magiun {
   width: 70%;
+  padding: 10px;
 }
 .produse > .row2 {
   display: flex;

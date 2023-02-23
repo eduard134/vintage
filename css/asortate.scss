@@ -2,6 +2,7 @@
 @import "./reset.scss";
 
 .boxuri {
+    justify-content: center;
     flex-wrap: wrap;
     display: flex;
     margin: 2vh;
@@ -9,7 +10,7 @@
 
     >.row{
         display: flex;
-        flex-basis: 100%;
+        flex-basis: 50%;
         >.box1,
         .box2,
         .box3{
@@ -20,7 +21,6 @@
             }
     
         }
-    
         @media only screen and (max-width: 1024px) {
             flex-wrap: wrap;
         }
@@ -38,9 +38,9 @@
             }
     
             >img {
-                width: 30vh;
-                padding: 0 3vh;
-                margin-top: 4vh;
+                width: 20vh;
+                padding: 1vh 8vh;
+                margin-top: 6vh;
     
                 @media only screen and (max-width: 1024px) {
                     width: 17.5vh;
@@ -100,7 +100,7 @@
         }
     
         >.box2 {
-            margin: 5vh -1.5vh;
+            margin: 5vh;
             border-radius: 6vh;
             background-color: rgba(128, 128, 128, 0.124);
     
@@ -111,9 +111,9 @@
             }
     
             >img {
-                width: 30vh;
-                padding: 0 3vh;
-                margin-top: 4vh;
+                width: 20vh;
+                padding: 1vh 8vh;
+                margin-top: 6vh;
     
                 @media only screen and (max-width: 1024px) {
                     width: 20vh;
@@ -184,9 +184,9 @@
             }
     
             >img {
-                width: 30vh;
-                padding: 0 3vh;
-                margin-top: 4vh;
+                width: 20vh;
+                padding: 1vh 8vh;
+                margin-top: 6vh;
     
                 @media only screen and (max-width: 1024px) {
                     width: 20vh;
@@ -264,8 +264,7 @@
             flex-wrap: wrap;
         }
         >.box4 {
-            flex-wrap: wrap;
-            margin: 5vh 1.5vh;
+            margin: 5vh;
             border-radius: 6vh;
             background-color: rgba(128, 128, 128, 0.124);
     
@@ -338,7 +337,7 @@
         }
     
         >.box5 {
-            margin: 5vh -1.5vh;
+            margin: 5vh;
             border-radius: 6vh;
             background-color: rgba(128, 128, 128, 0.124);
     
@@ -411,7 +410,7 @@
         }
     
         >.box6 {
-            margin: 5vh -1.5vh;
+            margin: 5vh;
             border-radius: 6vh;
             background-color: rgba(128, 128, 128, 0.124);
     
@@ -483,4 +482,13 @@
             }
         }
     }
+}
+h1{
+    display: flex;
+    justify-content: center;
+    padding: 50px 0 0;
+    font-size: 30px;
+}
+footer{
+    display: flex;
 }

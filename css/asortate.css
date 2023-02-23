@@ -134,6 +134,7 @@ table {
 }
 
 .boxuri {
+  justify-content: center;
   flex-wrap: wrap;
   display: flex;
   margin: 2vh;
@@ -141,7 +142,7 @@ table {
 }
 .boxuri > .row {
   display: flex;
-  flex-basis: 100%;
+  flex-basis: 50%;
 }
 @media only screen and (max-width: 1024px) {
   .boxuri > .row > .box1,
@@ -170,9 +171,9 @@ table {
   }
 }
 .boxuri > .row > .box1 > img {
-  width: 30vh;
-  padding: 0 3vh;
-  margin-top: 4vh;
+  width: 20vh;
+  padding: 1vh 8vh;
+  margin-top: 6vh;
 }
 @media only screen and (max-width: 1024px) {
   .boxuri > .row > .box1 > img {
@@ -229,7 +230,7 @@ table {
   }
 }
 .boxuri > .row > .box2 {
-  margin: 5vh -1.5vh;
+  margin: 5vh;
   border-radius: 6vh;
   background-color: rgba(128, 128, 128, 0.124);
 }
@@ -241,9 +242,9 @@ table {
   }
 }
 .boxuri > .row > .box2 > img {
-  width: 30vh;
-  padding: 0 3vh;
-  margin-top: 4vh;
+  width: 20vh;
+  padding: 1vh 8vh;
+  margin-top: 6vh;
 }
 @media only screen and (max-width: 1024px) {
   .boxuri > .row > .box2 > img {
@@ -312,9 +313,9 @@ table {
   }
 }
 .boxuri > .row > .box3 > img {
-  width: 30vh;
-  padding: 0 3vh;
-  margin-top: 4vh;
+  width: 20vh;
+  padding: 1vh 8vh;
+  margin-top: 6vh;
 }
 @media only screen and (max-width: 1024px) {
   .boxuri > .row > .box3 > img {
@@ -386,8 +387,7 @@ table {
   }
 }
 .boxuri .row > .box4 {
-  flex-wrap: wrap;
-  margin: 5vh 1.5vh;
+  margin: 5vh;
   border-radius: 6vh;
   background-color: rgba(128, 128, 128, 0.124);
 }
@@ -458,7 +458,7 @@ table {
   }
 }
 .boxuri .row > .box5 {
-  margin: 5vh -1.5vh;
+  margin: 5vh;
   border-radius: 6vh;
   background-color: rgba(128, 128, 128, 0.124);
 }
@@ -529,7 +529,7 @@ table {
   }
 }
 .boxuri .row > .box6 {
-  margin: 5vh -1.5vh;
+  margin: 5vh;
   border-radius: 6vh;
   background-color: rgba(128, 128, 128, 0.124);
 }
@@ -598,4 +598,15 @@ table {
     transform: translate(-50%, -50%);
     font-size: 1.5vh;
   }
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  padding: 50px 0 0;
+  font-size: 30px;
+}
+
+footer {
+  display: flex;
 }/*# sourceMappingURL=asortate.css.map */
