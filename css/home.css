@@ -236,9 +236,9 @@ body {
 }
 @media only screen and (max-width: 1024px) {
   .produse > .boxuri > .box1,
-  .produse > .boxuri .box2,
-  .produse > .boxuri .box3,
-  .produse > .boxuri .box4 {
+.produse > .boxuri .box2,
+.produse > .boxuri .box3,
+.produse > .boxuri .box4 {
     width: 40%;
     margin-bottom: 20px;
     justify-content: space-between;
