@@ -179,6 +179,9 @@ table {
   text-align: center;
   margin-left: 3vh;
   line-height: normal;
+  max-width: 650px;
+  justify-content: center;
+  display: flex;
 }
 @media only screen and (max-width: 1024px) {
   .part1 p {
@@ -290,26 +293,21 @@ table {
 
 .axe {
   display: flex;
-  max-width: 900px;
+  max-width: 950px;
   margin: 0 auto;
   position: relative;
   overflow-x: scroll;
+  overflow-y: hidden;
 }
 .axe::before {
   content: "";
   display: block;
   position: absolute;
-  width: 85%;
+  width: 780px;
   height: 3px;
   background-color: black;
   top: 80px;
-  transform: translate(10%, 10%);
-}
-@media screen {
-  .axe::before {
-    transform: translate(10%, 10%);
-    width: 200%;
-  }
+  transform: translate(8%, 8%);
 }
 .axe > div {
   flex: 1;
