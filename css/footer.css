@@ -181,7 +181,7 @@ footer > .r1 > div > a {
   }
 }
 footer > .r2 {
-  line-height: 2vh;
+  line-height: 2.5vh;
   padding: 2.5vh 10vh;
 }
 @media only screen and (max-width: 1024px) {
@@ -202,6 +202,11 @@ footer > .r2 > .title {
 footer > .r2 > div > a {
   text-decoration: none;
   color: black;
+}
+@media only screen and (max-width: 1024px) {
+  footer > .r2 > div > a {
+    font-size: 2.25vh;
+  }
 }
 footer > .r3 {
   line-height: 2.5vh;
