@@ -193,6 +193,14 @@ table {
   align-items: center;
   overflow: hidden;
 }
+@media only screen and (max-width: 1024px) {
+  .header > div:nth-child(2) > div:nth-child(2) {
+    top: -30vh;
+    width: 9vh;
+    justify-content: center;
+    margin: auto;
+  }
+}
 .header > div:nth-child(2) > div:nth-child(2) a {
   padding: 5px 10px;
 }

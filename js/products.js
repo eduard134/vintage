@@ -363,6 +363,7 @@ function initCategories() {
   document.getElementById("categorii").innerHTML = categorii
     .map(
       (category) => `
+      
     <a href="./products.html?categoryId=${category.id}">
       <p>${category.denumire}</p>
       <img src="image/${category.img}"> 
@@ -373,30 +374,34 @@ function initCategories() {
 }
 
 function initProducts() {
-  const urlSearchParams = new URLSearchParams(window.location.search);
-  const params = Object.fromEntries(urlSearchParams.entries());
+        const urlSearchParams = new URLSearchParams(window.location.search);
+        const params = Object.fromEntries(urlSearchParams.entries());
 
-  document.getElementById("produse").innerHTML = products
-    .filter((item) => item.categoryId === parseInt(params.categoryId))
-    .map(
-      (product) => `
+
+
+        document.getElementById("produse").innerHTML = products
+
+          .filter((item) => item.categoryId === parseInt(params.categoryId))
+          .map(
+            (product) => `
+
     <a href="./product.html?id=${product.id}">
       <p>${product.name}</p>
       <img src="image/${product.image}">
       
     </a>
   `
-    )
-    .join("");
-}
+          )
+          .join("");
+      }
 
 function initProduct() {
-  const urlSearchParams = new URLSearchParams(window.location.search);
-  const params = Object.fromEntries(urlSearchParams.entries());
+        const urlSearchParams = new URLSearchParams(window.location.search);
+        const params = Object.fromEntries(urlSearchParams.entries());
 
-  const product = products.find((item) => item.id === parseInt(params.id));
+        const product = products.find((item) => item.id === parseInt(params.id));
 
-  document.getElementById("dateProdus").innerHTML = `
+        document.getElementById("dateProdus").innerHTML = `
   <div class="produs">
   <div href="./product.html?id=${product.id}">
   <div class="h1"><h1>${product.name}</h1></div>
@@ -409,25 +414,23 @@ function initProduct() {
       <span class="kg">/${product.kg1}</span> 
     </div>
 
-    ${
-      product.pret2 && product.kg2
-        ? `<div>
+    ${product.pret2 && product.kg2
+            ? `<div>
     <div class="pretul">
     <span id="pret">${product.pret2}</span>
     <span class="kg">/${product.kg2}</span> 
     </div>`
-        : ""
-    }
+            : ""
+          }
     
-    ${
-      product.pret3 && product.kg3
-        ? `<div>
+    ${product.pret3 && product.kg3
+            ? `<div>
     <div class="pretul">
     <span id="pret">${product.pret3}</span>
     <span class="kg">/${product.kg3}</span> > 
     </div>`
-        : ""
-    }
+            : ""
+          }
 
     
 
@@ -446,11 +449,11 @@ function initProduct() {
     </button>
     </div>  
   `;
-}
+      }
 
 function initHomeProducts() {
-  document.getElementById("homeProducts").innerHTML = products.filter(item => item.home).map(
-    (product) => `
+        document.getElementById("homeProducts").innerHTML = products.filter(item => item.home).map(
+          (product) => `
   <div >
     <img src="image/${product.image}">
     <a href="./product.html?id=${product.id}">${product.name}</a>
@@ -458,5 +461,5 @@ function initHomeProducts() {
     <button><img src="image/plus.png"></button>
   </div>
   `
-  ).join('');
-}
+        ).join('');
+      }

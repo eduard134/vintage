@@ -1,31 +1,65 @@
 @import "./colors.scss";
 @import "./reset.scss";
-body{
-    overflow-x: hidden;
+body {
+  overflow-x: hidden;
+  overflow-y: visible;
 }
 
 .cart {
   display: flex;
   justify-content: center;
+  margin-top: 10vh;
+  @media only screen and (max-width: 1024px) {
+    flex-wrap: wrap;
+    margin-top: 5vh;
+  }
   > table {
+    > thead {
+      @media only screen and (max-width: 1024px) {
+        display: none;
+      }
+    }
     > tbody {
       > tr {
+        height: 30vh;
+        @media only screen and (max-width: 1024px) {
+          display: block;
+          margin-bottom: 20px;
+        }
         > td {
           vertical-align: middle;
           text-align: center;
+          @media only screen and (max-width: 1024px) {
+            float: left;
+            display: table-cell;
+          }
           > .cross {
             background-color: transparent;
             border: none;
             width: 2.5vh;
             cursor: pointer;
             padding: 5vh;
+            @media only screen and (max-width: 1024px){
+                width: 2vh;
+                padding: 2vh;
+                margin-top: 3vh;
+            }
           }
           > .photo {
             max-width: 150px;
             padding: 5vh;
+            @media only screen and (max-width: 1024px){
+                max-width: 100px;
+                padding: 2.5vh;
+            }
+
           }
           > .product_name {
             padding: 0 5vh;
+            @media only screen and (max-width: 1024px){
+                font-size: 12.5px;
+        
+            }
             > a {
               color: black;
             }
@@ -33,16 +67,38 @@ body{
           > .product_type {
             font-size: 12.5px;
             margin-top: 5px;
+            @media only screen and (max-width: 1024px){
+                font-size: 11px;
+            }
           }
           > .product_price {
             padding: 5vh;
+            @media only screen and (max-width: 1024px){
+                padding: 2.5vh;
+                font-size: 12.5px;
+                margin-top: 1.5vh;
+            }
           }
+          > .product_price_final {
+            padding: 5vh;
+            font-weight: 600;
+            
+          }
+          >.sub{
+                display: none;
+                @media only screen and (max-width: 1024px){
+                    display: initial;
+                }
+            }
         }
         > .counter {
           display: flex;
           align-items: center;
           flex-direction: row;
           padding: 5vh;
+          @media only screen and (max-width: 1024px){
+            padding: 1vh;
+          }
           > .minus {
             background-color: white;
             border: none;
@@ -52,10 +108,17 @@ body{
             width: 35px;
             height: 35px;
             cursor: pointer;
+            @media only screen and (max-width: 1024px){
+                width: 20px;
+                height: 20px;
+            }
           }
           > .number {
             font-size: 25px;
             font-weight: 600;
+            @media only screen and (max-width: 1024px){
+                font-size: 15px;
+            }
           }
           > .plus {
             background-color: white;
@@ -66,12 +129,19 @@ body{
             width: 35px;
             height: 35px;
             cursor: pointer;
+            @media only screen and (max-width: 1024px){
+                width: 20px;
+                height: 20px;
+            }
           }
         }
       }
     }
 
     > tfoot {
+      @media only screen and (max-width: 1024px) {
+        display: block;
+      }
       > tr {
         > td {
           > .total {
