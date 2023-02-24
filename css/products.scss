@@ -1,108 +1,51 @@
 @import "./colors.scss";
 @import "./reset.scss";
 
-.produse {
-  margin: 5vh auto;
-  @media only screen and (max-width: 1024px)  {
-    justify-content: center;
-    align-items: center;
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 960px;
+  margin: 30px auto 0;
+  justify-content: center;
+
+  @media only screen and (max-width: 1024px) {
+    padding: 0 20px 60px;
   }
 
-  .row1 {
-    display: flex;
-    margin: 0vh 30vh;
-    justify-content: space-between;  
-    @media only screen and (max-width: 1024px){
-      margin:0 1vh ;
-      padding: 1vh 1vh;
-      justify-content: center; 
-    }
-    > a {
-      background-color: #489fb54a;
-      width: 45vh;
-      height: 32vh;
-      border-radius: 1.5vh;
-      text-decoration: none;
-      @media only screen and (max-width: 1024px){
-        width: 14vh;
-        height: 14vh;
-        margin: 10px;
-      }
-      > p {
-        font-size: 3vh;
-        text-align: center;
-        margin-top: 10%;
-        color: $dark;
-        @media only screen and (max-width: 1024px){
-          font-size: 2vh;
-          font-weight: 500;
-        }
-      }
-      > img {
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
-      }
-      > .asortate {
-        margin-top: 20px;
-        width: 60%;
-        
-      }
-      > .cookies {
-        width: 50%;
-        @media only screen and (max-width: 1024px){
-          margin-top: 10px;
-        }
-      }
-      > .magiun {
-        width: 70%;
-        padding: 10px;
-      }
-    }
-  }
-  > .row2 {
-    display: flex;
-    margin: 2vh 30vh;
-    justify-content: center;
-    @media only screen and (max-width: 1024px){
-      margin: 0;
-      padding: 1vh;
+  > a {
+    width: calc(100% / 3 - 20px);
+    background-color: $fountain-blue-29;
+    border-radius: 12px;
+    margin-right: 30px;
+    margin-top: 30px;
+    padding: 20px 0;
+    text-decoration: none;
+
+    @media only screen and (max-width: 1024px) {
+      width: 100%;
+      margin-right: 0;
     }
 
-    > a {
-      background-color: #489fb54a;
-      width: 45vh;
-      height: 32vh;
-      border-radius: 1.5vh;
-      text-decoration: none;
-      margin: 15px;
-      @media only screen and (max-width: 1024px){
-        width: 14vh;
-        height: 14vh;
-        margin: 10px;
-      }
-      > p {
-        font-size: 3vh;
-        text-align: center;
-        margin-top: 10%;
-        color: $dark;
-        @media only screen and (max-width: 1024px){
-          font-size: 2vh;
-          font-weight: 500;
-        }
-      }
-      > img {
-        margin: auto;
-        display: block;
-        position: relative;
-        top: 10px;
-      }
-      >.ciocolata{
-        width: 55%;
-      }
-      >.altele{
-        width: 70%;
-      }
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    > p {
+      font-size: 24px;
+      font-weight: 500;
+      text-align: center;
+      color: $dark;
+    }
+
+    > img {
+      margin-top: 30px;
+      width: 100%;
+      height: 120px;
+      object-fit: contain;
     }
   }
 }
