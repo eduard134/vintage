@@ -361,7 +361,7 @@ function initCategories() {
       (category) => `
     <a href="./products.html?categoryId=${category.id}">
       <p>${category.denumire}</p>
-      <img src="image/${category.img}">
+      <img src="image/${category.img}"> 
     </a>
   `
     )
@@ -379,6 +379,7 @@ function initProducts() {
     <a href="./product.html?id=${product.id}">
       <p>${product.name}</p>
       <img src="image/${product.image}">
+      
     </a>
   `
     )
@@ -392,9 +393,47 @@ function initProduct() {
   const product = products.find((item) => item.id === parseInt(params.id));
 
   document.getElementById("dateProdus").innerHTML = `
-  <a href="./product.html?id=${product.id}">
-    <p>${product.name}</p>
-    <img src="image/${product.image}">
-  </a>
+  <div class="produs">
+  <div href="./product.html?id=${product.id}">
+  <div class="h1"><h1>${product.name}</h1></div>
+        <div class="asort-comp" id="b-imagine">
+        <img class="ph" src="./image/${product.image}">
+    </div>
+    <div>
+      <div class="pretul">
+      <span id="pret">${product.pret1}</span>
+      <span class="kg">/${product.kg1}</span> 
+    </div>
+
+    ${product.pret2 && product.kg2 ?
+    `<div>
+    <div class="pretul">
+    <span id="pret">${product.pret2}</span>
+    <span class="kg">/${product.kg2}</span> 
+    </div>` : ''}
+    
+    ${product.pret3 && product.kg3 ?
+    `<div>
+    <div class="pretul">
+    <span id="pret">${product.pret3}</span>
+    <span class="kg">/${product.kg3}</span> > 
+    </div>` : ''}
+
+    
+
+    <div class="block_count">
+        <div class="input_minus" id="minus">-</div>
+        <div class="number" id="num">${product.cantitate}</div>
+        <div class="input_plus" id="plus">+</div>
+    </div>  
+  </div>
+
+  <button class="adauga-la-cos" id="adauga-cos">
+        <!-- Imaginea cart -->
+        <img class="bt" src="./image/cart.png" alt="Adaugă la coș">
+        <!-- Textul -->
+        <p class="bt_p">Adaugă în coș</p>
+    </button>
+    </div>  
   `;
 }
