@@ -451,8 +451,9 @@ function initProduct() {
 function initHomeProducts() {
   document.getElementById("homeProducts").innerHTML = products.filter(item => item.home).map(
     (product) => `
-  <div>
+  <div >
     <img src="image/${product.image}">
+    <a href="./product.html?id=${product.id}">${product.name}</a>
     <p>Prețul: <span>${product.pret1} lei</span></p>
     <button><img src="image/plus.png"></button>
   </div>
