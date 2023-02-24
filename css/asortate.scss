@@ -17,7 +17,7 @@
     }
     > .box1,
     .box2,
-    .box3
+    .box3,  
     .box4,
     .box5,
     .box6 {
@@ -65,7 +65,7 @@
             position: absolute;
             top: 70%;
             left: 50%;
-            transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
             font-size: 1.5vh;
           }
       }
@@ -170,10 +170,12 @@
       margin: 5vh;
       border-radius: 6vh;
       background-color: rgba(128, 128, 128, 0.124);
+      text-decoration: none;
       @media only screen and (max-width: 1024px) {
         margin: 2vh;
         position: relative;
         height: 175px;
+        
       }
 
       > img {
@@ -242,6 +244,7 @@
       margin: 5vh;
       border-radius: 6vh;
       background-color: rgba(128, 128, 128, 0.124);
+      text-decoration: none;
       @media only screen and (max-width: 1024px) {
         margin: 2vh;
         position: relative;

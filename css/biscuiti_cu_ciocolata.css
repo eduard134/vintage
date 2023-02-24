@@ -146,8 +146,8 @@ table {
 }
 @media only screen and (max-width: 1024px) {
   .boxuri > .row > .box1,
-  .boxuri > .row .box2,
-  .boxuri > .row .box3 {
+.boxuri > .row .box2,
+.boxuri > .row .box3 {
     width: 40%;
     margin-bottom: 20px;
     justify-content: space-between;
@@ -301,6 +301,7 @@ table {
   }
 }
 .boxuri > .row > .box3 {
+  text-decoration: none;
   margin: 5vh;
   border-radius: 6vh;
   background-color: rgba(128, 128, 128, 0.124);
