@@ -159,11 +159,6 @@ table {
     justify-content: space-between;
   }
 }
-@media only screen and (max-width: 1024px) {
-  .boxuri {
-    flex-wrap: wrap;
-  }
-}
 .boxuri > .box1 {
   margin: 5vh;
   border-radius: 6vh;
