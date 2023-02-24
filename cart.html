@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vintage</title>
+    <link rel="stylesheet" href="./css/cart.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+</head>
+
+<body>
+    <div class="header" id="header">
+        <div>
+            <a href="index.html"><img src="./image/logo.png"></a>
+        </div>
+
+        <div id="fullmenu">
+
+            <div>
+                <a href="index.html">Home</a>
+                <a href="categories.html">Products</a>
+                <a href="contacts.html">Contacts</a>
+                <a href="aboutus.html">About Us</a>
+            </div>
+            <div>
+                <a href="cart.html"><img src="./image/cart.png"></a>
+            </div>
+        </div>
+
+        <div onclick="openMenu()" class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </div>
+    <div class="cart">
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th></th>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Subtotal</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="./image/x.png" class="cross"></td>
+                    <td><img src="./image/Fursec Minutka.png" class="photo"></td>
+                    <td>
+                        <p class="product_name"><a href="product.html">Fursec Minutka</a></p>
+                        <p class="product_type">Greutate: 0.4kg</p>
+                    </td>
+                    <td>
+                        <p class="product_price">24.00 Lei</p>
+                    </td>
+                    <td class="counter">
+                        <button class="minus">-</button>
+                        <p class="number">1</p>
+                        <button class="plus">+</button>
+                    </td>
+                    <td>
+                        <p class="product_price">24.00 Lei</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="./image/x.png" class="cross"></td>
+                    <td><img src="./image/Asortat Mini-Prezent.png" class="photo"></td>
+                    <td>
+                        <p class="product_name"><a href="product.html">Asortat Mini-Prezent</a></p>
+                        <p class="product_type">Greutate: 1 buc.</p>
+                    </td>
+                    <td>
+                        <p class="product_price">32.50 Lei</p>
+                    </td>
+                    <td class="counter">
+                        <button class="minus">-</button>
+                        <p class="number">1</p>
+                        <button class="plus">+</button>
+                    </td>
+                    <td>
+                        <p class="product_price">32.50 Lei</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="./image/x.png" class="cross"></td>
+                    <td><img src="./image/Fursec Fantezie.png" class="photo"></td>
+                    <td>
+                        <p class="product_name"><a href="product.html">Fursec Fantezie</a></p>
+                        <p class="product_type">Greutate: 0.5kg</p>
+                    </td>
+                    <td>
+                        <p class="product_price">31.00 Lei</p>
+                    </td>
+                    <td class="counter">
+                        <button class="minus">-</button>
+                        <p class="number">1</p>
+                        <button class="plus">+</button>
+                    </td>
+                    <td>
+                        <p class="product_price">31.00 Lei</p>
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4"></td>
+                    <td>
+                        <p class="total">Total</p>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="box1">
+                                    <td><p class="bold">Subtotal:</p></td>
+                                    <td>87.5 Lei</td>
+                                </tr>
+                                <tr class="box2">
+                                    <td><p class="bold">Shipping:</p></td>
+                                    <td>Free</td>
+                                </tr>
+                                <tr class="box3">
+                                    <td>Total:</td>
+                                    <td>87.5 Lei</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2"><button class="btn">Proceed To Checkout</button></td>
+                                    <td ></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                    </td>
+
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+    <div>
+
+    </div>
+
+
+    <footer>
+        <div class="r1">
+            <div class="title">PAGES</div>
+            <div><a href="index.html">Home</a></div>
+            <div><a href="categories.html">Products</a></div>
+            <div><a href="contacts.html">Contacts</a></div>
+            <div><a href="aboutus.html">About Us</a></div>
+        </div>
+        <div class="r2">
+            <div class="title">CONTACTS</div>
+            <div>+37369833822</div>
+            <div>+37360438138</div>
+            <div>
+                <a
+                    href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWsTKzjHXPfWsfNsQwHJkFnXSbMvwcZqpQcCDzGdRkpkwcccqTbshHFLcXXMTNTQDKDZcHGvq">sales.buffy@gmail.com</a>
+            </div>
+            <div>Ialoveni, s. Suruceni, str. M. Eminescu 54</div>
+        </div>
+        <div class="r3">
+            <div class="title">SOCIAL</div>
+            <div class="images">
+                <a href="https://www.facebook.com/buffy.cookies/"><img src="./image/facebook.png"></a>
+                <a href="https://www.instagram.com/buffycookies/"><img src="./image/insta.png"></a>
+            </div>
+    </footer>
+
+</body>
+
+</html>

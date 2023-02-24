@@ -327,6 +327,7 @@ body {
 @media only screen and (max-width: 1024px) {
   .products > h3 {
     font-size: 32px;
+    text-align: center;
   }
   .products > h3 > br {
     display: none;

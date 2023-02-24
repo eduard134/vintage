@@ -147,9 +147,9 @@ table {
 }
 @media only screen and (max-width: 1024px) {
   .boxuri > .box1,
-.boxuri .box2,
-.boxuri .box3,
-.boxuri .box4 {
+  .boxuri .box2,
+  .boxuri .box3,
+  .boxuri .box4 {
     width: 40%;
     justify-content: space-between;
   }

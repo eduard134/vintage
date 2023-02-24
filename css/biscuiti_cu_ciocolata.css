@@ -152,9 +152,9 @@ table {
 }
 @media only screen and (max-width: 1024px) {
   .boxuri > .row > .box1,
-.boxuri > .row .box2,
-.boxuri > .row .box3,
-.boxuri > .row .box4 {
+  .boxuri > .row .box2,
+  .boxuri > .row .box3,
+  .boxuri > .row .box4 {
     width: 40%;
     margin-bottom: 20px;
     justify-content: space-between;
