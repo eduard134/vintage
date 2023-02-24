@@ -1,5 +1,8 @@
 @import "./colors.scss";
 @import "./reset.scss";
+body{
+    overflow-x: hidden;
+}
 
 .cart {
   display: flex;

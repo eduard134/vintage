@@ -133,6 +133,10 @@ table {
   border-spacing: 0;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .cart {
   display: flex;
   justify-content: center;
