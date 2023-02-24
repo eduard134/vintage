@@ -14,7 +14,8 @@
 
         >.box1,
         .box2,
-        .box3 {
+        .box3,
+        .box4 { text-decoration: none;
             @media only screen and (max-width: 1024px) {
                 width: 40%;
                 margin-bottom: 20px;
