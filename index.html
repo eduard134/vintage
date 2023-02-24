@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./css/home.css">
     <link rel="stylesheet" href="./css/footer.css">
     <script src="./js/header.js"></script>
+    <script src="./js/products.js"></script>
 </head>
 
 <body>
@@ -52,28 +53,7 @@
     </div>
 
     <div class="products">
-        <div>
-            <div>
-                <img src="image/dame_in_ciocolata.png">
-                <p>Prețul: <span>80 lei</span></p>
-                <button><img src="image/plus.png"></button>
-            </div>
-            <div>
-                <img src="image/cookies3.png">
-                <p>Prețul: <span>82 lei</span></p>
-                <button><img src="image/plus.png"></button>
-            </div>
-            <div>
-                <img src="image/dame_in_cocos.png">
-                <p>Prețul: <span> 80 lei</span></p>
-                <button><img src="image/plus.png"></button>
-            </div>
-            <div>
-                <img src="image/Biscuiti Matinali.png">
-                <p>Prețul: <span>67 lei</span></p>
-                <button><img src="image/plus.png"></button>
-            </div>
-        </div>
+        <div id="homeProducts"></div>
         <h3>Dulciurile <br> Noastre <br> Populare</h3>
     </div>
 
@@ -103,5 +83,9 @@
             </div>
     </footer>
 </body>
+
+<script type="text/javascript">
+    initHomeProducts();
+</script>
 
 </html>

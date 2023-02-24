@@ -30,6 +30,7 @@ const products = [
   {
     id: 1,
     categoryId: 4,
+    home: true,
     image: "dame_in_ciocolata.png",
     name: "Dame în Ciocolată",
     pret1: "40.00",
@@ -312,6 +313,7 @@ const products = [
   },
   {
     id: 28,
+    home: true,
     image: "dame_in_cocos.png",
     name: "Dame în cocos",
     pret1: "41.50",
@@ -332,6 +334,7 @@ const products = [
   },
   {
     id: 30,
+    home: true,
     image: "Biscuiti Matinali.png",
     name: "Biscuiți Matinali",
     pret1: "31.00",
@@ -344,6 +347,7 @@ const products = [
   {
     id: 31,
     image: "cookies3.png",
+    home: true,
     name: "Biscuiți",
     pret1: "34.00",
     pret2: "65.50",
@@ -405,19 +409,25 @@ function initProduct() {
       <span class="kg">/${product.kg1}</span> 
     </div>
 
-    ${product.pret2 && product.kg2 ?
-    `<div>
+    ${
+      product.pret2 && product.kg2
+        ? `<div>
     <div class="pretul">
     <span id="pret">${product.pret2}</span>
     <span class="kg">/${product.kg2}</span> 
-    </div>` : ''}
+    </div>`
+        : ""
+    }
     
-    ${product.pret3 && product.kg3 ?
-    `<div>
+    ${
+      product.pret3 && product.kg3
+        ? `<div>
     <div class="pretul">
     <span id="pret">${product.pret3}</span>
     <span class="kg">/${product.kg3}</span> > 
-    </div>` : ''}
+    </div>`
+        : ""
+    }
 
     
 
@@ -436,4 +446,16 @@ function initProduct() {
     </button>
     </div>  
   `;
+}
+
+function initHomeProducts() {
+  document.getElementById("homeProducts").innerHTML = products.filter(item => item.home).map(
+    (product) => `
+  <div>
+    <img src="image/${product.image}">
+    <p>Prețul: <span>${product.pret1} lei</span></p>
+    <button><img src="image/plus.png"></button>
+  </div>
+  `
+  ).join('');
 }
