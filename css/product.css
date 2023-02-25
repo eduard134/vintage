@@ -140,17 +140,18 @@ table {
 }
 .produs > div:first-of-type > img {
   max-width: 650px;
+  margin: 5vh 5vh;
 }
 .produs > div:last-of-type .text > p {
   font-size: 4vh;
   font-weight: 600;
   padding: 2vh 0;
 }
-
-.butoane {
+.produs > div:last-of-type > .butoane {
   cursor: pointer;
+  margin: 2vh 0;
 }
-.butoane > .kg {
+.produs > div:last-of-type > .butoane > .kg {
   background-color: white;
   color: black;
   border: 1px solid #489fb5;
@@ -162,14 +163,24 @@ table {
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 3px 4px 0 rgba(0, 0, 0, 0.19);
   cursor: pointer;
 }
-.butoane > .kg:hover {
+.produs > div:last-of-type > .butoane > .kg:hover {
   background-color: #489fb5;
   color: white;
 }
-
-.block_count {
+.produs > div:last-of-type > .pretul {
+  margin-top: 4vh;
+}
+.produs > div:last-of-type > .pretul > .pret {
+  font-size: 4vh;
+}
+.produs > div:last-of-type > .pretul .kg {
+  font-size: 2vh;
+}
+.produs > div:last-of-type > .last_row {
+  display: inline-flex;
+}
+.produs > div:last-of-type > .last_row > .block_count {
   position: relative;
-  height: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -177,42 +188,48 @@ table {
   border-radius: 20px;
   -webkit-user-select: none;
      -moz-user-select: none;
+      -ms-user-select: none;
           user-select: none;
+  width: 15vh;
+  margin: 2vh 2vh;
+  height: 60px;
+  margin-left: 0;
 }
-
-.block_count div {
+.produs > div:last-of-type > .last_row > .block_count > div {
+  padding: 2vh;
   text-align: center;
+  font-size: 2.5vh;
 }
-
-.input_minus {
+.produs > div:last-of-type > .last_row > .block_count > .input_minus {
   cursor: pointer;
 }
-
-.input_plus {
+.produs > div:last-of-type > .last_row > .block_count > .input_plus {
   cursor: pointer;
 }
-
-.adauga-la-cos {
+.produs > div:last-of-type > .last_row > .adauga-la-cos {
   position: relative;
   background: #489fb5;
   border-radius: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 80px;
+  height: 60px;
   border-style: none;
   cursor: pointer;
+  width: 30vh;
+  margin: 2vh 2vh;
+  margin-left: 0;
 }
-
-.bt {
+.produs > div:last-of-type > .last_row > .adauga-la-cos > .bt {
   position: relative;
-  left: -25px;
-  width: 45px;
-  height: 45px;
+  left: -3vh;
+  width: 4vh;
+  height: 4vh;
 }
-
-.bt_p {
+.produs > div:last-of-type > .last_row > .adauga-la-cos > .bt_p {
   text-align: center;
   text-decoration: none;
   color: rgb(255, 255, 255);
+  font-size: 2vh;
+  font-weight: 600;
 }/*# sourceMappingURL=product.css.map */
