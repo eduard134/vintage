@@ -214,7 +214,7 @@ table {
 .header .burger {
   display: none;
   position: absolute;
-  top: 3vh;
+  top: 5vh;
   right: 5vh;
   z-index: 3;
 }
@@ -229,4 +229,24 @@ table {
   border-radius: 10px;
   background-color: black;
   margin-bottom: 0.7vh;
+}
+
+.close-btn {
+  display: none;
+  position: absolute;
+  top: 4vh;
+  right: 5vh;
+  font-size: 24px;
+  color: #333;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  z-index: 5;
+}
+
+.close-btn:hover {
+  color: #fff;
+  background-color: #333;
+  border-radius: 50%;
 }/*# sourceMappingURL=header.css.map */

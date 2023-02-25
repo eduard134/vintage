@@ -32,19 +32,23 @@
             </div>
         </div>
 
-        <div onclick="openMenu()" class="burger">
+        <div onclick="openMenu()" class="burger" id="burger">
             <div class="line"></div>
             <div class="line"></div>
             <div class="line"></div>
         </div>
+        <div onclick="closeMenu()" class="close-btn" id="close-btn">&#x2715;</div>
     </div>
 
-    <div id="produse" class="products"></div>
+    <div id="produse" class="products">
+
+    </div>
 
 </body>
 
 <script type="text/javascript">
     initProducts();
+
 </script>
 
 </html>

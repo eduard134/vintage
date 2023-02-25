@@ -23,31 +23,8 @@
                 }
             }
 
-            >.butoane {
-                cursor: pointer;
-                margin: 2vh 0;
-
-                >.kg {
-                    background-color: white;
-                    color: black;
-                    border: 1px solid $fountain_blue;
-                    font-size: 1.75vh;
-                    padding: 1vh 2vh;
-                    font-weight: 500;
-                    transition-duration: 0.4s;
-                    border-radius: 20px;
-                    box-shadow: 0 12px 16px 0 rgb(0 0 0 / 24%), 0 3px 4px 0 rgb(0 0 0 / 19%);
-                    cursor: pointer;
-                }
-
-                >.kg:hover {
-                    background-color: $fountain-blue;
-                    color: white;
-                }
-            }
-
             >.pretul {
-                margin-top: 4vh;
+                margin-top: 2vh;
 
                 >.pret {
                     font-size: 4vh;

@@ -145,30 +145,10 @@ table {
 .produs > div:last-of-type .text > p {
   font-size: 4vh;
   font-weight: 600;
-  padding: 2vh 0;
-}
-.produs > div:last-of-type > .butoane {
-  cursor: pointer;
-  margin: 2vh 0;
-}
-.produs > div:last-of-type > .butoane > .kg {
-  background-color: white;
-  color: black;
-  border: 1px solid #489fb5;
-  font-size: 1.75vh;
-  padding: 1vh 2vh;
-  font-weight: 500;
-  transition-duration: 0.4s;
-  border-radius: 20px;
-  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 3px 4px 0 rgba(0, 0, 0, 0.19);
-  cursor: pointer;
-}
-.produs > div:last-of-type > .butoane > .kg:hover {
-  background-color: #489fb5;
-  color: white;
+  padding: 2vh 0vh;
 }
 .produs > div:last-of-type > .pretul {
-  margin-top: 4vh;
+  margin-top: 2vh;
 }
 .produs > div:last-of-type > .pretul > .pret {
   font-size: 4vh;
@@ -188,7 +168,6 @@ table {
   border-radius: 20px;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
   width: 15vh;
   margin: 2vh 2vh;

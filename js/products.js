@@ -403,14 +403,13 @@ function initProducts() {
   const urlSearchParams = new URLSearchParams(window.location.search);
   const params = Object.fromEntries(urlSearchParams.entries());
 
-
-
   document.getElementById("produse").innerHTML = products
+
 
     .filter((item) => item.categoryId === parseInt(params.categoryId))
     .map(
       (product) => `
-
+      
     <a href="./product.html?id=${product.id}">
       <p>${product.name}</p>
       <img src="image/${product.image}">
@@ -419,23 +418,6 @@ function initProducts() {
   `
     )
     .join("");
-}
-
-function pretButton() {
-  document.getElementById('but1').onclick = function () {
-    document.getElementById("pret").innerHTML = `${product.pret1} Lei`;
-    document.getElementById("kg").innerHTML = `/${product.kg1}`;
-  }
-
-  document.getElementById('but2').onclick = function () {
-    document.getElementById("pret").innerHTML = `${product.pret2} Lei`;
-    document.getElementById("kg").innerHTML = `/${product.kg2}`;
-  }
-
-  document.getElementById('but3').onclick = function () {
-    document.getElementById("pret").innerHTML = `${product.pret3} Lei`;
-    document.getElementById("kg").innerHTML = `/${product.kg3}`;
-  }
 }
 
 function initProduct() {
@@ -454,13 +436,6 @@ function initProduct() {
     <div class="right">
       <div class="text">
         <p>${product.name}</p>
-      </div>
-
-      <div class="butoane">
-        
-        <button class="kg" id="but1">${product.kg1}</button>
-        ${product.kg2 ? `<button class="kg" id="but2">${product.kg2}</button>` : ""}
-        ${product.kg3 ? `<button class="kg" id="but3">${product.kg3}</button>` : ""}
       </div>
 
       <div class="pretul">

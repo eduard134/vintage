@@ -149,10 +149,16 @@ body {
     margin-top: 5vh;
   }
 }
+.cart > table > thead {
+  border-bottom: 1px solid black;
+}
 @media only screen and (max-width: 1024px) {
   .cart > table > thead {
     display: none;
   }
+}
+.cart > table > thead > tr > th {
+  padding-bottom: 2vh;
 }
 .cart > table > tbody > tr {
   height: 30vh;
