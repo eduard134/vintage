@@ -85,6 +85,7 @@ const products = [
   },
   {
     id: 6,
+    categoryId: 1,
     image: "Asortat Prezent.png",
     name: "Asortat Prezent",
     pret1: "63.00",
@@ -93,6 +94,7 @@ const products = [
   },
   {
     id: 7,
+    categoryId: 1,
     image: "Asortat Mini-Compromis.png",
     name: "Asortat Prezent",
     pret1: "34.50",
@@ -101,6 +103,7 @@ const products = [
   },
   {
     id: 8,
+    categoryId: 1,
     image: "Asortat Premium.png",
     name: "Asortat Premium",
     pret1: "53.00",
@@ -109,6 +112,7 @@ const products = [
   },
   {
     id: 9,
+    categoryId: 1,
     image: "Asortat Mini-Prezent.png",
     name: "Asortat Mini-Prezent",
     pret1: "32.50",
@@ -117,6 +121,7 @@ const products = [
   },
   {
     id: 10,
+    categoryId: 2,
     image: "Fursec Minutka.png",
     name: "Fursec Minutka",
     pret1: "24.00",
@@ -129,6 +134,7 @@ const products = [
   },
   {
     id: 11,
+    categoryId: 2,
     image: "Fursec Fantezie.png",
     name: "Fursec Fantezie",
     pret1: "31.00",
@@ -141,6 +147,7 @@ const products = [
   },
   {
     id: 12,
+    categoryId: 2,
     image: "Fursec de porumb.png",
     name: "Fursec de Porumb",
     pret1: "23.00",
@@ -153,6 +160,7 @@ const products = [
   },
   {
     id: 13,
+    categoryId: 2,
     image: "Fursec de ovaz.png",
     name: "Fursec de Ovăz",
     pret1: "89.00",
@@ -161,8 +169,9 @@ const products = [
   },
   {
     id: 14,
-    image: "Fursec urechiuse.png",
-    name: "Fursec Urechiușe",
+    categoryId: 5,
+    image: "Foitaj_urechiuse.png",
+    name: "Urechiușe",
     pret1: "26.50",
     pret2: "43.50",
     pret3: "171.00",
@@ -173,7 +182,8 @@ const products = [
   },
   {
     id: 15,
-    image: "Foitaj cu cereale.png",
+    categoryId: 5,
+    image: "Foitaj_cu_cereale.png",
     name: "Fursec cu Cereale",
     pret1: "29.00",
     pret2: "59.50",
@@ -185,6 +195,7 @@ const products = [
   },
   {
     id: 16,
+    categoryId: 3,
     image: "Fursec cornulete1.png",
     name: "Fursec Cornulețe",
     pret1: "32.50",
@@ -197,6 +208,7 @@ const products = [
   },
   {
     id: 17,
+    categoryId: 3,
     image: "Fursec Mini-Frutis.png",
     name: "Fursec Mini-Frutis",
     pret1: "32.00",
@@ -209,6 +221,7 @@ const products = [
   },
   {
     id: 18,
+    categoryId: 3,
     image: "Fursec Frutta.png",
     name: "Fursec Frutta",
     pret1: "33.00",
@@ -221,6 +234,7 @@ const products = [
   },
   {
     id: 19,
+    categoryId: 4,
     image: "Deliciu White MArshmello.png",
     name: "Fursec White Marshmello",
     pret1: "142.50",
@@ -229,6 +243,7 @@ const products = [
   },
   {
     id: 20,
+    categoryId: 4,
     image: "Ineluse glazurate2.png",
     name: "Inelușe Glazurate",
     pret1: "42.00",
@@ -241,6 +256,7 @@ const products = [
   },
   {
     id: 21,
+    categoryId: 4,
     image: "Ineluse pe ciocolata.png",
     name: "Inelușe pe Ciocolată",
     pret1: "31.00",
@@ -253,8 +269,9 @@ const products = [
   },
   {
     id: 22,
+    categoryId: 3,
     image: "Fursec Frutta Glazurata.png",
-    name: "Inelușe pe Ciocolată",
+    name: "Fursec Frutta Glazurata",
     pret1: "40.50",
     pret2: "189.00",
     kg1: "0.5kg",
@@ -263,6 +280,7 @@ const products = [
   },
   {
     id: 23,
+    categoryId: 4,
     image: "Deliciu Black Marshmello.png",
     name: "Deliciu Black Marshmello",
     pret1: "41.50",
@@ -273,6 +291,7 @@ const products = [
   },
   {
     id: 24,
+    categoryId: 5,
     image: "Fursec Paradis.png",
     name: "Fursec Paradis",
     pret1: "38.00",
@@ -285,6 +304,7 @@ const products = [
   },
   {
     id: 25,
+    categoryId: 5,
     image: "Bezele1.png",
     name: "Bezele",
     pret1: "21.00",
@@ -293,7 +313,8 @@ const products = [
   },
   {
     id: 26,
-    image: "Ineluse delicioase.png",
+    categoryId: 5,
+    image: "Ineluse_delicioase.png",
     name: "Inelușe Deliciose",
     pret1: "31.00",
     pret2: "53.00",
@@ -305,7 +326,8 @@ const products = [
   },
   {
     id: 27,
-    image: "Muffin cu cioburi de ciocolată.png",
+    categoryId: 4,
+    image: "Muffin_cu_cioburi_de_ciocolată.png",
     name: "Muffin cu Ciocuri de Ciocolată, 15 Bucăți",
     pret1: "120.00",
     kg1: "buc.",
@@ -313,6 +335,7 @@ const products = [
   },
   {
     id: 28,
+    categoryId: 5,
     home: true,
     image: "dame_in_cocos.png",
     name: "Dame în cocos",
@@ -326,7 +349,8 @@ const products = [
   },
   {
     id: 29,
-    image: "Muffin cu visina.png",
+    categoryId: 3,
+    image: "Muffin_cu_visina.png",
     name: "Muffin cu Vișină",
     pret1: "120.00",
     kg1: "buc.",
@@ -334,6 +358,7 @@ const products = [
   },
   {
     id: 30,
+    categoryId: 5,
     home: true,
     image: "Biscuiti Matinali.png",
     name: "Biscuiți Matinali",
@@ -346,6 +371,7 @@ const products = [
   },
   {
     id: 31,
+    categoryId: 2,
     image: "cookies3.png",
     home: true,
     name: "Biscuiți",
@@ -395,20 +421,22 @@ function initProducts() {
     .join("");
 }
 
-document.getElementById('but1').onclick = function() {
-    document.getElementById("pret").innerHTML=`${product.pret1} Lei`;
-    document.getElementById("kg").innerHTML=`/${product.kg1}` ;
+function pretButton() {
+  document.getElementById('but1').onclick = function () {
+    document.getElementById("pret").innerHTML = `${product.pret1} Lei`;
+    document.getElementById("kg").innerHTML = `/${product.kg1}`;
   }
-  
-  document.getElementById('but2').onclick = function() {
-    document.getElementById("pret").innerHTML=`${product.pret2} Lei`; 
-    document.getElementById("kg").innerHTML=`/${product.kg2}`;
+
+  document.getElementById('but2').onclick = function () {
+    document.getElementById("pret").innerHTML = `${product.pret2} Lei`;
+    document.getElementById("kg").innerHTML = `/${product.kg2}`;
   }
-  
-  document.getElementById('but3').onclick = function() {
-    document.getElementById("pret").innerHTML=`${product.pret3} Lei`;  
-    document.getElementById("kg").innerHTML=`/${product.kg3}`;
+
+  document.getElementById('but3').onclick = function () {
+    document.getElementById("pret").innerHTML = `${product.pret3} Lei`;
+    document.getElementById("kg").innerHTML = `/${product.kg3}`;
   }
+}
 
 function initProduct() {
   const urlSearchParams = new URLSearchParams(window.location.search);
@@ -430,32 +458,28 @@ function initProduct() {
 
       <div class="butoane">
         
-      
         <button class="kg" id="but1">${product.kg1}</button>
         ${product.kg2 ? `<button class="kg" id="but2">${product.kg2}</button>` : ""}
         ${product.kg3 ? `<button class="kg" id="but3">${product.kg3}</button>` : ""}
       </div>
 
       <div class="pretul">
-        <span id="pret">${product.pret1} Lei</span>
-        <span class="kg" id="kg"></span> 
+        <span id="pret" class="pret">${product.pret1} Lei</span>
+        <span class="kg" id="kg">/${product.kg1}</span> 
       </div>
+      <div class="last_row">
+        <div class="block_count">
+          <div class="input_minus" id="minus">-</div>
+          <div class="number" id="num">${product.cantitate}</div>
+          <div class="input_plus" id="plus">+</div>
+        </div>  
 
-          
-  
-
-      <div class="block_count">
-        <div class="input_minus" id="minus">-</div>
-        <div class="number" id="num">${product.cantitate}</div>
-        <div class="input_plus" id="plus">+</div>
+        <button class="adauga-la-cos" id="adauga-cos">
+          <img class="bt" src="./image/cart.png" alt="Adaugă la coș">
+          <p class="bt_p">Adaugă în coș</p>
+        </button>
       </div>  
-
-
-      <button class="adauga-la-cos" id="adauga-cos">
-        <img class="bt" src="./image/cart.png" alt="Adaugă la coș">
-        <p class="bt_p">Adaugă în coș</p>
-      </button>
-      </div>  
+    </div>
     </div>
   `;
 }
