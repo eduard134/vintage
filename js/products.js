@@ -374,16 +374,16 @@ function initCategories() {
 }
 
 function initProducts() {
-        const urlSearchParams = new URLSearchParams(window.location.search);
-        const params = Object.fromEntries(urlSearchParams.entries());
+  const urlSearchParams = new URLSearchParams(window.location.search);
+  const params = Object.fromEntries(urlSearchParams.entries());
 
 
 
-        document.getElementById("produse").innerHTML = products
+  document.getElementById("produse").innerHTML = products
 
-          .filter((item) => item.categoryId === parseInt(params.categoryId))
-          .map(
-            (product) => `
+    .filter((item) => item.categoryId === parseInt(params.categoryId))
+    .map(
+      (product) => `
 
     <a href="./product.html?id=${product.id}">
       <p>${product.name}</p>
@@ -391,69 +391,78 @@ function initProducts() {
       
     </a>
   `
-          )
-          .join("");
-      }
+    )
+    .join("");
+}
+
+document.getElementById('but1').onclick = function() {
+    document.getElementById("pret").innerHTML=`${product.pret1} Lei`;
+    document.getElementById("kg").innerHTML=`/${product.kg1}` ;
+  }
+  
+  document.getElementById('but2').onclick = function() {
+    document.getElementById("pret").innerHTML=`${product.pret2} Lei`; 
+    document.getElementById("kg").innerHTML=`/${product.kg2}`;
+  }
+  
+  document.getElementById('but3').onclick = function() {
+    document.getElementById("pret").innerHTML=`${product.pret3} Lei`;  
+    document.getElementById("kg").innerHTML=`/${product.kg3}`;
+  }
 
 function initProduct() {
-        const urlSearchParams = new URLSearchParams(window.location.search);
-        const params = Object.fromEntries(urlSearchParams.entries());
+  const urlSearchParams = new URLSearchParams(window.location.search);
+  const params = Object.fromEntries(urlSearchParams.entries());
 
-        const product = products.find((item) => item.id === parseInt(params.id));
+  const product = products.find((item) => item.id === parseInt(params.id));
 
-        document.getElementById("dateProdus").innerHTML = `
+
+
+  document.getElementById("dateProdus").innerHTML = `
   <div class="produs">
-  <div href="./product.html?id=${product.id}">
-  <div class="h1"><h1>${product.name}</h1></div>
-        <div class="asort-comp" id="b-imagine">
-        <img class="ph" src="./image/${product.image}">
+    <div href="./product.html?id=${product.id}">
+      <img class="ph" src="./image/${product.image}">
     </div>
-    <div>
+    <div class="right">
+      <div class="text">
+        <p>${product.name}</p>
+      </div>
+
+      <div class="butoane">
+        
+      
+        <button class="kg" id="but1">${product.kg1}</button>
+        ${product.kg2 ? `<button class="kg" id="but2">${product.kg2}</button>` : ""}
+        ${product.kg3 ? `<button class="kg" id="but3">${product.kg3}</button>` : ""}
+      </div>
+
       <div class="pretul">
-      <span id="pret">${product.pret1}</span>
-      <span class="kg">/${product.kg1}</span> 
-    </div>
+        <span id="pret">${product.pret1} Lei</span>
+        <span class="kg" id="kg"></span> 
+      </div>
 
-    ${product.pret2 && product.kg2
-            ? `<div>
-    <div class="pretul">
-    <span id="pret">${product.pret2}</span>
-    <span class="kg">/${product.kg2}</span> 
-    </div>`
-            : ""
-          }
-    
-    ${product.pret3 && product.kg3
-            ? `<div>
-    <div class="pretul">
-    <span id="pret">${product.pret3}</span>
-    <span class="kg">/${product.kg3}</span> > 
-    </div>`
-            : ""
-          }
+          
+  
 
-    
-
-    <div class="block_count">
+      <div class="block_count">
         <div class="input_minus" id="minus">-</div>
         <div class="number" id="num">${product.cantitate}</div>
         <div class="input_plus" id="plus">+</div>
-    </div>  
-  </div>
+      </div>  
 
-  <button class="adauga-la-cos" id="adauga-cos">
-        <!-- Imaginea cart -->
+
+      <button class="adauga-la-cos" id="adauga-cos">
         <img class="bt" src="./image/cart.png" alt="Adaugă la coș">
-        <!-- Textul -->
         <p class="bt_p">Adaugă în coș</p>
-    </button>
-    </div>  
+      </button>
+      </div>  
+    </div>
   `;
-      }
+}
 
 function initHomeProducts() {
-        document.getElementById("homeProducts").innerHTML = products.filter(item => item.home).map(
-          (product) => `
+  document.getElementById("homeProducts").innerHTML = products.filter(item => item.home).map(
+    (product) => `
   <div >
     <img src="image/${product.image}">
     <a href="./product.html?id=${product.id}">${product.name}</a>
@@ -461,5 +470,5 @@ function initHomeProducts() {
     <button><img src="image/plus.png"></button>
   </div>
   `
-        ).join('');
-      }
+  ).join('');
+}

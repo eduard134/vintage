@@ -149,15 +149,15 @@ table {
   text-align: center;
   background-image: linear-gradient(to bottom right, #ffffff 0%, rgba(255, 255, 255, 0.8823529412) 60%, rgba(255, 255, 255, 0.2117647059) 100%);
   border-radius: 1vh;
-  height: 11%;
+  padding: 1vh 0.7vh;
 }
 @media only screen and (max-width: 1024px) {
   .part1 h1 {
     font-size: 3vh;
     margin-left: 2vh;
     margin-top: 2vh;
+    padding: 0.7vh 0.7vh;
     position: absolute;
-    height: 16%;
   }
 }
 .part1 img {
@@ -257,7 +257,7 @@ table {
 }
 .part4 .box a {
   cursor: pointer;
-  background: #489FB5;
+  background: #489fb5;
   width: 20vh;
   border: none;
   outline: none;
@@ -297,8 +297,13 @@ table {
   max-width: 950px;
   margin: 0 auto;
   position: relative;
-  overflow-x: scroll;
   overflow-y: hidden;
+  overflow-x: hidden;
+}
+@media only screen and (max-width: 1024px) {
+  .axe {
+    overflow-x: scroll;
+  }
 }
 .axe::before {
   content: "";

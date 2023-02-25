@@ -133,6 +133,10 @@ table {
   border-spacing: 0;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 footer {
   display: flex;
   text-align: center;
@@ -199,14 +203,17 @@ footer > .r2 > .title {
     font-size: 3vh;
   }
 }
+footer > .r2 > div {
+  font-size: 1.75vh;
+}
+@media only screen and (max-width: 1024px) {
+  footer > .r2 > div {
+    font-size: 2.25vh;
+  }
+}
 footer > .r2 > div > a {
   text-decoration: none;
   color: black;
-}
-@media only screen and (max-width: 1024px) {
-  footer > .r2 > div > a {
-    font-size: 2.25vh;
-  }
 }
 footer > .r3 {
   line-height: 2.5vh;

@@ -14,19 +14,20 @@
     margin-left: 50vh;
     font-size: 5vh;
     text-align: center;
-    background-image: linear-gradient(to bottom right,
-        #ffffff 0%,
-        #ffffffe1 60%,
-        #ffffff36 100%);
+    background-image: linear-gradient(
+      to bottom right,
+      #ffffff 0%,
+      #ffffffe1 60%,
+      #ffffff36 100%
+    );
     border-radius: 1vh;
-    height: 11%;
-
+    padding: 1vh .7vh;
     @media only screen and (max-width: 1024px) {
       font-size: 3vh;
       margin-left: 2vh;
       margin-top: 2vh;
+      padding: .7vh .7vh;
       position: absolute;
-      height: 16%;
     }
   }
 
@@ -40,7 +41,6 @@
       width: 75%;
       height: 75%;
       margin: auto;
-
     }
   }
 
@@ -105,7 +105,7 @@
 
     h1 {
       font-size: 3vh;
-      padding: .5vh;
+      padding: 0.5vh;
 
       @media only screen and (max-width: 1024px) {
         text-align: center;
@@ -113,7 +113,7 @@
       }
     }
 
-    >p {
+    > p {
       padding: 1vh 0 3vh;
       line-height: normal;
       max-width: 550px;
@@ -126,7 +126,7 @@
 
     a {
       cursor: pointer;
-      background: #489FB5;
+      background: #489fb5;
       width: 20vh;
       border: none;
       outline: none;
@@ -151,7 +151,6 @@
   .image {
     display: inline;
 
-
     img {
       width: 65vh;
       border-radius: 1.5vh;
@@ -169,28 +168,31 @@
   max-width: 950px;
   margin: 0 auto;
   position: relative;
-  overflow-x: scroll;
-  overflow-y: hidden;
 
+  overflow-y: hidden;
+  overflow-x: hidden;
+  @media only screen and (max-width: 1024px) {
+    overflow-x: scroll;
+  }
   &::before {
-    content: '';
+    content: "";
     display: block;
     position: absolute;
     width: 780px;
     height: 3px;
     background-color: black;
     top: 80px;
-    transform: translate(8%, 8%)
+    transform: translate(8%, 8%);
   }
 
-  >div {
+  > div {
     flex: 1;
     margin-right: 90px;
     position: relative;
     padding: 0 30px;
 
     &::before {
-      content: '';
+      content: "";
       display: block;
       width: 45px;
       height: 30px;
@@ -205,14 +207,14 @@
       margin-right: 0;
     }
 
-    >span {
+    > span {
       font-size: 48px;
       font-weight: 600;
       color: gray;
       overflow: hidden;
     }
 
-    >p {
+    > p {
       margin-top: 60px;
       text-align: center;
     }
@@ -229,23 +231,22 @@
     color: rgba(129, 129, 129, 0.844);
   }
 
-  >.d1 {
+  > .d1 {
     position: absolute;
     left: 32%;
   }
 
-  >.d2 {
+  > .d2 {
     position: absolute;
     left: 42%;
   }
 
-  >.d3 {
+  > .d3 {
     position: absolute;
     left: 53%;
-
   }
 
-  >.d4 {
+  > .d4 {
     position: absolute;
     left: 65%;
   }
