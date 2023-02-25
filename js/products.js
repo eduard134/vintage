@@ -395,6 +395,21 @@ function initProducts() {
     .join("");
 }
 
+document.getElementById('but1').onclick = function() {
+    document.getElementById("pret").innerHTML=`${product.pret1} Lei`;
+    document.getElementById("kg").innerHTML=`/${product.kg1}` ;
+  }
+  
+  document.getElementById('but2').onclick = function() {
+    document.getElementById("pret").innerHTML=`${product.pret2} Lei`; 
+    document.getElementById("kg").innerHTML=`/${product.kg2}`;
+  }
+  
+  document.getElementById('but3').onclick = function() {
+    document.getElementById("pret").innerHTML=`${product.pret3} Lei`;  
+    document.getElementById("kg").innerHTML=`/${product.kg3}`;
+  }
+
 function initProduct() {
   const urlSearchParams = new URLSearchParams(window.location.search);
   const params = Object.fromEntries(urlSearchParams.entries());
@@ -412,6 +427,15 @@ function initProduct() {
       <div class="text">
         <p>${product.name}</p>
       </div>
+
+      <div class="butoane">
+        
+      
+        <button class="kg" id="but1">${product.kg1}</button>
+        ${product.kg2 ? `<button class="kg" id="but2">${product.kg2}</button>` : ""}
+        ${product.kg3 ? `<button class="kg" id="but3">${product.kg3}</button>` : ""}
+      </div>
+
       <div class="pretul">
         <span id="pret">${product.pret1} Lei</span>
         <span class="kg" id="kg"></span> 
