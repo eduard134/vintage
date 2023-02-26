@@ -202,8 +202,8 @@ body {
 @media only screen and (max-width: 1024px) {
   .cart > table > tbody > tr > td > .cross {
     width: 2vh;
-    padding: 2vh;
-    margin-top: 3vh;
+    margin-top: 2vh;
+    padding: 1vh;
   }
 }
 .cart > table > tbody > tr > td > .photo {
@@ -213,7 +213,7 @@ body {
 @media only screen and (max-width: 1024px) {
   .cart > table > tbody > tr > td > .photo {
     max-width: 100px;
-    padding: 2.5vh;
+    padding: 2vh;
   }
 }
 .cart > table > tbody > tr > td > .product_name {
@@ -221,7 +221,9 @@ body {
 }
 @media only screen and (max-width: 1024px) {
   .cart > table > tbody > tr > td > .product_name {
-    font-size: 12.5px;
+    font-size: 15px;
+    margin-top: 2vh;
+    padding: 0 2.5vh;
   }
 }
 .cart > table > tbody > tr > td > .product_name > a {
@@ -241,7 +243,7 @@ body {
 }
 @media only screen and (max-width: 1024px) {
   .cart > table > tbody > tr > td > .product_price {
-    padding: 2.5vh;
+    padding: 2vh;
     font-size: 12.5px;
     margin-top: 1.5vh;
   }
@@ -267,7 +269,7 @@ body {
 }
 @media only screen and (max-width: 1024px) {
   .cart > table > tbody > tr > td > .counter {
-    padding: 1vh;
+    padding: 1vh 0;
   }
 }
 .cart > table > tbody > tr > td > .counter > .minus {
@@ -313,7 +315,9 @@ body {
 }
 @media only screen and (max-width: 1024px) {
   .cart > table > tfoot {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 .cart > table > tfoot > tr > td > .total {

@@ -194,12 +194,8 @@ body {
   font-size: 2vh;
 }
 .produs > div:first-of-type > .block_count {
-  position: relative;
   display: flex;
   align-items: center;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
 }
 .produs > div:first-of-type > .block_count > div {
   padding: 2vh 2vh;
@@ -235,7 +231,7 @@ body {
   margin: 2vh;
   width: 10px;
   height: 10px;
-  line-height: 12px;
+  line-height: 10px;
   cursor: pointer;
   text-align: center;
 }
