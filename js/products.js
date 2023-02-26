@@ -404,23 +404,22 @@ function initProduct() {
 
   const product = products.find((item) => item.id === parseInt(params.id));
 
-
-
   document.getElementById("dateProdus").innerHTML = `
   <div class="produs">
     <div href="./product.html?id=${product.id}">
-      <img class="ph" src="./image/${product.image}">
+      <img class="ph" src="./image/${product.image1}">
     </div>
     <div class="right">
       <div class="text">
         <p>${product.name}</p>
       </div>
-
+        <div class="descriere">
+      <p>${product.descriere}</p>
+    </div>
       <div class="pretul">
         <span id="pret" class="pret">${product.pret1} Lei</span>
         <span class="kg" id="kg">/${product.kg1}</span> 
       </div>
-      <div class="last_row">
         <div class="block_count">
           <div class="input_minus" id="minus">-</div>
           <div class="number" id="num">${product.cantitate}</div>
@@ -431,7 +430,7 @@ function initProduct() {
           <img class="bt" src="./image/cart.png" alt="Adaugă la coș">
           <p class="bt_p">Adaugă în coș</p>
         </button>
-      </div>  
+ 
     </div>
     </div>
   `;
