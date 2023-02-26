@@ -32,6 +32,7 @@ function setItemsCart() {
                     </td>
                     <td>
                         <p class="product_price_final">
+                        <span class="sub">Subtotal: </span>
                         ${current.pret1 * item.count} Lei
                         </p>
                     </td>
