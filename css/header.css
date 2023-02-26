@@ -216,6 +216,7 @@ body {
 .header > div:nth-child(2) > div:nth-child(2) a > img {
   width: 25px;
   margin: 5px;
+  margin-left: 3px;
 }
 .header .burger {
   display: none;
