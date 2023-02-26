@@ -6,6 +6,10 @@ body {
 }
 
 .cart {
+  flex: 1;
+}
+
+.cart {
   display: flex;
   justify-content: center;
   margin-top: 10vh;
@@ -22,6 +26,9 @@ body {
       > tr {
         > th {
           padding-bottom: 2vh;
+          &:nth-child(4){
+            padding-left: 4vh ;
+          }
         }
       }
     }
@@ -192,5 +199,15 @@ body {
         }
       }
     }
+  }
+}
+
+footer {
+  bottom: 0;
+  display: flex;
+  padding: 20px;
+  @media only screen and (max-width: 1024px) {
+    position: relative;
+    padding: 0;
   }
 }

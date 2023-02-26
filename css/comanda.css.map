@@ -1,1 +1,1 @@
-{"version":3,"sources":["comanda.scss","comanda.css"],"names":[],"mappings":"AAAA;EACI,kBAAA;EACA,SAAA;EACA,aAAA;EACA,aAAA;ACCJ;ADAI;EALJ;IAMM,kBAAA;IACA,UAAA;ECGJ;AACF","file":"comanda.css"}
+{"version":3,"sources":["comanda.scss","comanda.css"],"names":[],"mappings":"AAAA;EACE,OAAA;ACCF;;ADEA;EACE,SAAA;EACA,aAAA;EACA,aAAA;ACCF;ADAE;EAJF;IAKI,kBAAA;IACA,UAAA;ECGF;AACF","file":"comanda.css"}

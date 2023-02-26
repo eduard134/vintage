@@ -1,10 +1,13 @@
-footer{
-    position: absolute;
-    bottom: 0;
-    display: flex;
-    padding: 20px;
-    @media only screen and (max-width: 1024px){
-      position: relative;
-      padding: 0;
-    }
+.continut {
+  flex: 1;
+}
+
+footer {
+  bottom: 0;
+  display: flex;
+  padding: 20px;
+  @media only screen and (max-width: 1024px) {
+    position: relative;
+    padding: 0;
+  }
 }

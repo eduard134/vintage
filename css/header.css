@@ -184,7 +184,7 @@ body {
 }
 .header > div:nth-child(2) > div:nth-child(1) a {
   text-decoration: none;
-  color: #1b264f;
+  color: #000000;
   margin: 20px;
 }
 .header > div:nth-child(2) > div:nth-child(1) a:hover {
