@@ -268,10 +268,11 @@ body {
   }
 }
 .products > div > div > img {
-  width: 100%;
+  width: 90%;
   height: 120px;
   -o-object-fit: contain;
      object-fit: contain;
+  padding: 1vh 1vh;
 }
 .products > div > div > p,
 .products > div > div a {

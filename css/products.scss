@@ -4,7 +4,7 @@
 .products {
   display: flex;
   flex-wrap: wrap;
-  max-width: 960px;
+  max-width: 850px;
   margin: 60px auto;
   padding: 30px 60px;
   justify-content: center;
@@ -16,10 +16,12 @@
 >div{
   display: flex;
     flex: 1;
-    margin-right: 60px;
+    margin-right: 30px;
+    margin-top: 30px;
+    
     @media only screen and (max-width: 1024px) {
       flex-direction: column;
-      margin-right: 0;
+      margin-right: 0;  
     }
   >div {
     flex: 1;
@@ -32,6 +34,8 @@
     justify-content: center;
     position: relative;
     text-decoration: none;
+    padding: 2vh 2vh;
+
 
     &:last-of-type {
       margin-right: 0px;
@@ -45,7 +49,7 @@
     }
 
     >img {
-      width: 350px;
+        max-width: 250px;
       margin: 1.5vh 3vh;
     }
 
