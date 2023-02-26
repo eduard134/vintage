@@ -1,6 +1,7 @@
 @import "./colors.scss";
 @import "./reset.scss";
 
+
 .produs {
     display: flex;
     justify-content: center;
@@ -99,4 +100,7 @@
             }
         }
     }
+}
+footer{
+    display: flex;
 }

@@ -211,4 +211,8 @@ table {
   color: rgb(255, 255, 255);
   font-size: 2vh;
   font-weight: 600;
+}
+
+footer {
+  display: flex;
 }/*# sourceMappingURL=product.css.map */
