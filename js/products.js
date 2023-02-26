@@ -106,7 +106,7 @@ const products = [
       "Asorți de biscuiți cu umplutură și fără (3-5 tipuri în asortiment)",
     image: "Asortat Mini-Compromis.png",
     image1: "Asortat Mini-Compromis.png",
-    name: "Asortat Prezent",
+    name: "Asortat Mini-Compromis",
     pret1: "34.50",
     kg1: "buc.",
     cantitate: 1,
