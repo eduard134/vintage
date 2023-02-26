@@ -419,8 +419,10 @@ function initProducts() {
     .map(
       (product) => `
       
+    
      <div>
       <div>
+
       <img src="image/${product.image}">
       <a href="./product.html?id=${product.id}">${product.name}</a>
       <p>Prețul: <span>${product.pret1} lei</span></p>
