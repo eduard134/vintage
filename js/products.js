@@ -57,8 +57,8 @@ const products = [
     descriere:
       "Fursec din aluat fraged cu umplutură de zmeură și fulgi de cocos",
     image: "Paleuri cu zmeura.png",
-    image1: "Paleuri cu zmeura.png",
-    name: "Paleuri cu Magiun și Fulgi de Cocos",
+    image1: "Paleuri cu zmeura1.png",
+    name: "Paleuri cu Magiun",
     pret1: "28.50",
     kg1: "0.4kg",
     cantitate: 1,
