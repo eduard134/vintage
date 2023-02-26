@@ -433,6 +433,8 @@ function initProducts() {
     .join("");
 }
 
+let countProduct = 1;
+
 function initProduct() {
   const urlSearchParams = new URLSearchParams(window.location.search);
   const params = Object.fromEntries(urlSearchParams.entries());
@@ -441,9 +443,7 @@ function initProduct() {
 
   document.getElementById("dateProdus").innerHTML = `
   <div class="produs">
-    <div href="./product.html?id=${product.id}">
-      <img class="ph" src="./image/${product.image1}">
-    </div>
+    <img class="ph" src="./image/${product.image1}"/>
     <div class="right">
       <div class="text">
         <p>${product.name}</p>
@@ -456,9 +456,9 @@ function initProduct() {
         <span class="kg" id="kg">/${product.kg1}</span> 
       </div>
         <div class="block_count">
-          <div class="input_minus" id="minus">-</div>
-          <div class="number" id="num">${product.cantitate}</div>
-          <div class="input_plus" id="plus">+</div>
+          <div onClick={removeCount()} class="input_minus" id="minus">-</div>
+          <div class="number" id="num">${countProduct}</div>
+          <div onClick={addCount()} class="input_plus" id="plus">+</div>
         </div>  
 
         <button onClick="addItem(${product.id})" class="add-cart">
@@ -469,6 +469,18 @@ function initProduct() {
     </div>
     </div>
   `;
+}
+
+function addCount() {
+  countProduct++;
+  initProduct();
+}
+
+function removeCount() {
+  if (countProduct > 1) {
+    countProduct--;
+    initProduct();
+  }
 }
 
 function initHomeProducts() {
@@ -497,9 +509,9 @@ function addItem(id) {
   const current = getCurrent();
   const newItemList = current.some((item) => item.id === id)
     ? current.map((item) =>
-        item.id === id ? { ...item, count: item.count + 1 } : item
+        item.id === id ? { ...item, count: item.count + countProduct } : item
       )
-    : [{ id, count: 1 }, ...current];
+    : [{ id, count: countProduct }, ...current];
 
   localStorage.setItem("items", JSON.stringify(newItemList));
   window.location.href = "./cart.html";

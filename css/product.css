@@ -151,63 +151,68 @@ body {
   display: flex;
   justify-content: center;
   margin: 5vh 5vh;
+  align-items: flex-start;
+  max-width: 100vw;
+  box-sizing: border-box;
+  padding: 0 10vw;
 }
 @media only screen and (max-width: 1024px) {
   .produs {
     flex-wrap: wrap;
   }
 }
-.produs > div:first-of-type > img {
-  max-height: 275px;
-  max-width: 600px;
-  margin: 0 5vh;
+.produs > img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  display: block;
+  max-width: 300px;
+  width: 100%;
+  height: 100%;
+  margin-right: 30px;
 }
-@media only screen and (max-width: 1024px) {
-  .produs > div:first-of-type > img {
-    max-width: 300px;
-  }
+.produs > div:first-of-type {
+  display: flex;
+  flex-direction: column;
 }
-.produs > div:last-of-type > .text > p {
+.produs > div:first-of-type > .text > p {
   font-size: 4vh;
   font-weight: 600;
   padding: 1vh 0vh;
 }
-.produs > div:last-of-type > .descriere {
+.produs > div:first-of-type > .descriere {
   font-size: 15px;
   max-width: 400px;
   line-height: 1.1;
 }
-.produs > div:last-of-type > .pretul {
+.produs > div:first-of-type > .pretul {
   margin-top: 4vh;
 }
-.produs > div:last-of-type > .pretul > .pret {
+.produs > div:first-of-type > .pretul > .pret {
   font-size: 4vh;
 }
-.produs > div:last-of-type > .pretul .kg {
+.produs > div:first-of-type > .pretul .kg {
   font-size: 2vh;
 }
-.produs > div:last-of-type > .block_count {
+.produs > div:first-of-type > .block_count {
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: center;
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
-  float: left;
 }
-.produs > div:last-of-type > .block_count > div {
+.produs > div:first-of-type > .block_count > div {
   padding: 2vh 2vh;
   text-align: center;
   font-size: 25px;
   font-weight: 600;
 }
 @media only screen and (max-width: 1024px) {
-  .produs > div:last-of-type > .block_count > div {
+  .produs > div:first-of-type > .block_count > div {
     font-size: 15px;
   }
 }
-.produs > div:last-of-type > .block_count > .input_minus {
+.produs > div:first-of-type > .block_count > .input_minus {
   background-color: white;
   border: none;
   border-radius: 50%;
@@ -219,10 +224,10 @@ body {
   padding-top: 2vh;
   line-height: 12px;
 }
-.produs > div:last-of-type > .block_count .number {
+.produs > div:first-of-type > .block_count .number {
   padding-right: 0;
 }
-.produs > div:last-of-type > .block_count > .input_plus {
+.produs > div:first-of-type > .block_count > .input_plus {
   background-color: white;
   border: none;
   border-radius: 50%;
@@ -234,7 +239,7 @@ body {
   cursor: pointer;
   text-align: center;
 }
-.produs > div:last-of-type > .add-cart {
+.produs > div:first-of-type > .add-cart {
   position: relative;
   background: black;
   border-radius: 5px;
@@ -248,21 +253,22 @@ body {
   margin-left: 0;
   float: left;
   width: 100%;
+  max-width: 250px;
 }
-.produs > div:last-of-type > .add-cart > .bt {
+.produs > div:first-of-type > .add-cart > .bt {
   position: relative;
   left: -3vh;
   width: 4vh;
   height: 4vh;
 }
-.produs > div:last-of-type > .add-cart > .bt_p {
+.produs > div:first-of-type > .add-cart > .bt_p {
   text-align: center;
   text-decoration: none;
   color: rgb(255, 255, 255);
   font-size: 2vh;
   font-weight: 600;
 }
-.produs > div:last-of-type > .add-cart:hover {
+.produs > div:first-of-type > .add-cart:hover {
   opacity: 0.8;
 }
 

@@ -9,7 +9,7 @@ function setItemsCart() {
                     <td onClick="removeItem(${current.id})"><img src="./image/x.png" class="cross"></td>
                     <td><img src="./image/${current.image}" class="photo"></td>
                     <td>
-                        <p class="product_name"><a href="product.html">${
+                        <p class="product_name"><a href="product.html?id=${current.id}">${
                           current.name
                         }</a></p>
                         <p class="product_type">Greutate: ${current.kg1}</p>
