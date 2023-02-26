@@ -141,7 +141,6 @@ const products = [
     descriere: "Fursec din aluat fraged cu gust de Vanilie",
     image: "minutka.png",
     image1: "min.png",
-    image1: "minutka.png",
     name: "Fursec Minutka",
     pret1: "24.00",
     kg1: "0.4kg",
