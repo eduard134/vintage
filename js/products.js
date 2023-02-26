@@ -386,7 +386,9 @@ function initProduct() {
       <div class="text">
         <p>${product.name}</p>
       </div>
-
+        <div class="descriere">
+      <p>${product.descriere}</p>
+    </div>
       <div class="pretul">
         <span id="pret" class="pret">${product.pret1} Lei</span>
         <span class="kg" id="kg">/${product.kg1}</span> 
