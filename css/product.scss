@@ -15,16 +15,21 @@
     }
 
     &:last-of-type {
-      .text {
+      > .text {
         > p {
           font-size: 4vh;
           font-weight: 600;
-          padding: 2vh 0vh;
+          padding: 1vh 0vh;
         }
+      }
+      > .descriere {
+        font-size: 15px;
+        max-width: 400px;
+        line-height: 1.1;
       }
 
       > .pretul {
-        margin-top: 2vh;
+        margin-top: 4vh;
 
         > .pret {
           font-size: 4vh;
@@ -35,83 +40,88 @@
         }
       }
 
-        > .block_count {
-          position: relative;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          user-select: none;
-          margin: 2vh 2vh;
-          margin-left: 0;
+      > .block_count {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        user-select: none;
+        margin-left: -25vh;
 
-          > div {
-            padding: 2vh;
-            text-align: center;
-            font-size: 25px;
-            font-weight: 600;
-            @media only screen and (max-width: 1024px){
-                font-size: 15px;
-            }
-          }
-
-          > .input_minus {
-            background-color: white;
-            border: none;
-            border-radius: 50%;
-            box-shadow: 1px 1px 1px 1px rgb(206, 206, 206);
-            margin: 2vh;
-            width: 20px;
-            height: 20px;
-            cursor: pointer;
-            @media only screen and (max-width: 1024px) {
-              width: 20px;
-              height: 20px;
-            }
-          }
-
-          > .input_plus {
-            background-color: white;
-            border: none;
-            border-radius: 50%;
-            box-shadow: 1px 1px 1px 1px rgb(206, 206, 206);
-            margin: 2vh;
-            width: 20px;
-            height: 20px;
-            cursor: pointer;
-            @media only screen and (max-width: 1024px){
-                width: 20px;
-                height: 20px;
-            }
+        > div {
+          padding: 2vh 2vh;
+          text-align: center;
+          font-size: 25px;
+          font-weight: 600;
+          @media only screen and (max-width: 1024px) {
+            font-size: 15px;
           }
         }
 
-        > .adauga-la-cos {
-          position: relative;
-          background: $fountain-blue;
-          border-radius: 20px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          height: 60px;
-          border-style: none;
+        > .input_minus {
+          background-color: white;
+          border: none;
+          border-radius: 50%;
+          box-shadow: 2px 2px 2px 2px rgb(206, 206, 206);
+          width: 10px;
+          height: 10px;
           cursor: pointer;
-          width: 30vh;
-          margin: 2vh 2vh;
-          margin-left: 0;
-          > .bt {
-            position: relative;
-            left: -3vh;
-            width: 4vh;
-            height: 4vh;
+          text-align: center;
+          padding-top: 2vh;
+          line-height: 12px;
+          @media only screen and (max-width: 1024px) {
+            width: 20px;
+            height: 20px;
           }
+        }
+        .number{
+            padding-right: 0;
+        }
 
-          > .bt_p {
-            text-align: center;
-            text-decoration: none;
-            color: rgb(255, 255, 255);
-            font-size: 2vh;
-            font-weight: 600;
-          
+        > .input_plus {
+          background-color: white;
+          border: none;
+          border-radius: 50%;
+          box-shadow: 2px 2px 2px 2px rgb(206, 206, 206);
+          margin: 2vh;
+          width: 10px;
+          height: 10px;
+          line-height: 12px;
+          cursor: pointer;
+          text-align: center;
+          @media only screen and (max-width: 1024px) {
+            width: 20px;
+            height: 20px;
+          }
+        }
+      }
+
+      > .adauga-la-cos {
+        position: relative;
+        background: black;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 60px;
+        border-style: none;
+        cursor: pointer;
+        width: 30vh;
+        margin: 0vh 2vh;
+        margin-left: 0;
+        > .bt {
+          position: relative;
+          left: -3vh;
+          width: 4vh;
+          height: 4vh;
+        }
+
+        > .bt_p {
+          text-align: center;
+          text-decoration: none;
+          color: rgb(255, 255, 255);
+          font-size: 2vh;
+          font-weight: 600;
         }
       }
     }

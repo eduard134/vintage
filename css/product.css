@@ -142,13 +142,18 @@ table {
   max-width: 650px;
   margin: 5vh 5vh;
 }
-.produs > div:last-of-type .text > p {
+.produs > div:last-of-type > .text > p {
   font-size: 4vh;
   font-weight: 600;
-  padding: 2vh 0vh;
+  padding: 1vh 0vh;
+}
+.produs > div:last-of-type > .descriere {
+  font-size: 15px;
+  max-width: 400px;
+  line-height: 1.1;
 }
 .produs > div:last-of-type > .pretul {
-  margin-top: 2vh;
+  margin-top: 4vh;
 }
 .produs > div:last-of-type > .pretul > .pret {
   font-size: 4vh;
@@ -164,11 +169,10 @@ table {
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
-  margin: 2vh 2vh;
-  margin-left: 0;
+  margin-left: -25vh;
 }
 .produs > div:last-of-type > .block_count > div {
-  padding: 2vh;
+  padding: 2vh 2vh;
   text-align: center;
   font-size: 25px;
   font-weight: 600;
@@ -182,11 +186,13 @@ table {
   background-color: white;
   border: none;
   border-radius: 50%;
-  box-shadow: 1px 1px 1px 1px rgb(206, 206, 206);
-  margin: 2vh;
-  width: 20px;
-  height: 20px;
+  box-shadow: 2px 2px 2px 2px rgb(206, 206, 206);
+  width: 10px;
+  height: 10px;
   cursor: pointer;
+  text-align: center;
+  padding-top: 2vh;
+  line-height: 12px;
 }
 @media only screen and (max-width: 1024px) {
   .produs > div:last-of-type > .block_count > .input_minus {
@@ -194,15 +200,20 @@ table {
     height: 20px;
   }
 }
+.produs > div:last-of-type > .block_count .number {
+  padding-right: 0;
+}
 .produs > div:last-of-type > .block_count > .input_plus {
   background-color: white;
   border: none;
   border-radius: 50%;
-  box-shadow: 1px 1px 1px 1px rgb(206, 206, 206);
+  box-shadow: 2px 2px 2px 2px rgb(206, 206, 206);
   margin: 2vh;
-  width: 20px;
-  height: 20px;
+  width: 10px;
+  height: 10px;
+  line-height: 12px;
   cursor: pointer;
+  text-align: center;
 }
 @media only screen and (max-width: 1024px) {
   .produs > div:last-of-type > .block_count > .input_plus {
@@ -212,8 +223,8 @@ table {
 }
 .produs > div:last-of-type > .adauga-la-cos {
   position: relative;
-  background: #489fb5;
-  border-radius: 20px;
+  background: black;
+  border-radius: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -221,7 +232,7 @@ table {
   border-style: none;
   cursor: pointer;
   width: 30vh;
-  margin: 2vh 2vh;
+  margin: 0vh 2vh;
   margin-left: 0;
 }
 .produs > div:last-of-type > .adauga-la-cos > .bt {

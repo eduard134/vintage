@@ -375,12 +375,10 @@ function initProduct() {
 
   const product = products.find((item) => item.id === parseInt(params.id));
 
-
-
   document.getElementById("dateProdus").innerHTML = `
   <div class="produs">
     <div href="./product.html?id=${product.id}">
-      <img class="ph" src="./image/${product.image}">
+      <img class="ph" src="./image/${product.image2}">
     </div>
     <div class="right">
       <div class="text">
