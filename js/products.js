@@ -378,7 +378,7 @@ function initProduct() {
   document.getElementById("dateProdus").innerHTML = `
   <div class="produs">
     <div href="./product.html?id=${product.id}">
-      <img class="ph" src="./image/${product.image2}">
+      <img class="ph" src="./image/${product.image1}">
     </div>
     <div class="right">
       <div class="text">
