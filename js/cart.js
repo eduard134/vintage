@@ -6,7 +6,7 @@ function setItemsCart() {
       const current = products.find((product) => product.id === item.id);
 
       return `<tr>
-                    <td onClick={removeItem(${current.id})}><img src="./image/x.png" class="cross"></td>
+                    <td onClick="removeItem(${current.id})"><img src="./image/x.png" class="cross"></td>
                     <td><img src="./image/${current.image}" class="photo"></td>
                     <td>
                         <p class="product_name"><a href="product.html">${
@@ -93,4 +93,9 @@ function removeItem(id) {
   const newList = current.filter((item) => item.id !== id);
   localStorage.setItem("items", JSON.stringify(newList));
   setItemsCart();
+}
+
+function finishOrder() {
+    localStorage.setItem("items", JSON.stringify([]));
+    window.location.href = "./comanda.html";
 }
