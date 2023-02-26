@@ -6,18 +6,21 @@ function setItemsCart() {
       const current = products.find((product) => product.id === item.id);
 
       return `<tr>
-                    <td onClick="removeItem(${current.id})"><img src="./image/x.png" class="cross"></td>
+                    <td onClick="removeItem(${
+                      current.id
+                    })"><img src="./image/x.png" class="cross"></td>
                     <td><img src="./image/${current.image}" class="photo"></td>
                     <td>
-                        <p class="product_name"><a href="product.html?id=${current.id}">${
-                          current.name
-                        }</a></p>
+                        <p class="product_name"><a href="product.html?id=${
+                          current.id
+                        }">${current.name}</a></p>
                         <p class="product_type">Greutate: ${current.kg1}</p>
                     </td>
                     <td>
                         <p class="product_price">${current.pret1} Lei</p>
                     </td>
-                    <td class="counter">
+                    <td>
+                        <div  class="counter"> 
                         <button onClick={removeCount(${
                           current.id
                         })} class="minus">-</button>
@@ -25,12 +28,11 @@ function setItemsCart() {
                         <button onClick={addCount(${
                           current.id
                         })} class="plus">+</button>
+                        </div>
                     </td>
                     <td>
                         <p class="product_price_final">
-                        <div class="sub">Subtotal: </div>${
-                          current.pret1 * item.count
-                        } Lei
+                        ${current.pret1 * item.count} Lei
                         </p>
                     </td>
                 </tr>`;
@@ -96,6 +98,6 @@ function removeItem(id) {
 }
 
 function finishOrder() {
-    localStorage.setItem("items", JSON.stringify([]));
-    window.location.href = "./comanda.html";
+  localStorage.setItem("items", JSON.stringify([]));
+  window.location.href = "./comanda.html";
 }

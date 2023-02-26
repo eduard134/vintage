@@ -251,7 +251,7 @@ body {
     display: initial;
   }
 }
-.cart > table > tbody > tr > .counter {
+.cart > table > tbody > tr > td > .counter {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -259,11 +259,11 @@ body {
   vertical-align: middle;
 }
 @media only screen and (max-width: 1024px) {
-  .cart > table > tbody > tr > .counter {
+  .cart > table > tbody > tr > td > .counter {
     padding: 1vh;
   }
 }
-.cart > table > tbody > tr > .counter > .minus {
+.cart > table > tbody > tr > td > .counter > .minus {
   background-color: white;
   border: none;
   border-radius: 50%;
@@ -274,21 +274,21 @@ body {
   cursor: pointer;
 }
 @media only screen and (max-width: 1024px) {
-  .cart > table > tbody > tr > .counter > .minus {
+  .cart > table > tbody > tr > td > .counter > .minus {
     width: 20px;
     height: 20px;
   }
 }
-.cart > table > tbody > tr > .counter > .number {
+.cart > table > tbody > tr > td > .counter > .number {
   font-size: 25px;
   font-weight: 600;
 }
 @media only screen and (max-width: 1024px) {
-  .cart > table > tbody > tr > .counter > .number {
+  .cart > table > tbody > tr > td > .counter > .number {
     font-size: 15px;
   }
 }
-.cart > table > tbody > tr > .counter > .plus {
+.cart > table > tbody > tr > td > .counter > .plus {
   background-color: white;
   border: none;
   border-radius: 50%;
@@ -299,7 +299,7 @@ body {
   cursor: pointer;
 }
 @media only screen and (max-width: 1024px) {
-  .cart > table > tbody > tr > .counter > .plus {
+  .cart > table > tbody > tr > td > .counter > .plus {
     width: 20px;
     height: 20px;
   }
