@@ -2,13 +2,18 @@
 @import "./reset.scss";
 
 body {
-    overflow-y: scroll;
-  }
+  overflow-y: scroll;
+}
+
+#dateProdus {
+  flex: 1;
+}
+
 .produs {
   display: flex;
   justify-content: center;
   margin: 5vh 5vh;
-  @media only screen and (max-width: 1024px){
+  @media only screen and (max-width: 1024px) {
     flex-wrap: wrap;
   }
 
@@ -17,8 +22,8 @@ body {
       > img {
         max-height: 275px;
         max-width: 600px;
-        margin:0 5vh;
-        @media only screen and (max-width: 1024px){
+        margin: 0 5vh;
+        @media only screen and (max-width: 1024px) {
           max-width: 300px;
         }
       }
@@ -79,8 +84,8 @@ body {
           padding-top: 2vh;
           line-height: 12px;
         }
-        .number{
-            padding-right: 0;
+        .number {
+          padding-right: 0;
         }
 
         > .input_plus {
@@ -93,7 +98,7 @@ body {
           height: 10px;
           line-height: 12px;
           cursor: pointer;
-          text-align: center
+          text-align: center;
         }
       }
 
@@ -125,19 +130,18 @@ body {
           font-size: 2vh;
           font-weight: 600;
         }
-        &:hover{
-            opacity: 0.8;
+        &:hover {
+          opacity: 0.8;
         }
       }
     }
   }
 }
 footer {
-  position: absolute;
   bottom: 0;
   display: flex;
   padding: 20px;
-  @media only screen and (max-width: 1024px){
+  @media only screen and (max-width: 1024px) {
     position: relative;
     padding: 0;
   }
