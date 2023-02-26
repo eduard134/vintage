@@ -97,8 +97,8 @@ body {
         > .counter {
           display: flex;
           align-items: center;
-          flex-direction: row;
-          padding: 5vh;
+          justify-content: center;
+          vertical-align: bottom;
           @media only screen and (max-width: 1024px) {
             padding: 1vh;
           }
