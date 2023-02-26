@@ -147,7 +147,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   max-width: 850px;
-  margin: 60px auto;
+  margin: 0 auto 40px;
   padding: 30px 60px;
   justify-content: center;
 }
