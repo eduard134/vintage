@@ -134,6 +134,12 @@ table {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+body {
   overflow-y: scroll;
 }
 
@@ -158,7 +164,7 @@ body {
   flex-basis: 75%;
 }
 .box > .b-left > .text {
-  margin-bottom: 5vh;
+  margin-bottom: 30px;
   line-height: 1.5;
   display: block;
 }
@@ -171,17 +177,19 @@ body {
   }
 }
 .box > .b-left > .text > .p1 {
-  color: #489FB5;
+  color: #489fb5;
   font-weight: 600;
 }
-.box > .b-left > table {
-  margin-top: 6vh;
-  line-height: 5;
+.box > .b-left > div > p {
+  padding: 20px 0;
 }
-@media only screen and (max-width: 1024px) {
-  .box > .b-left > table {
-    display: none;
-  }
+.box > .b-left > div > p > img {
+  vertical-align: middle;
+  width: 25px;
+  height: 25px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-right: 10px;
 }
 .box > .b-right {
   padding: 5vh 6vh;
@@ -209,7 +217,7 @@ body {
 }
 .box > .b-right > form > button {
   cursor: pointer;
-  background: #489FB5;
+  background: #489fb5;
   width: 105%;
   border: none;
   outline: none;

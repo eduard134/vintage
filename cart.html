@@ -5,19 +5,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Biscuiți delicioși pentru toate gusturile! Gama noastră variată de biscuiți proaspeți, crocanți și savuroși este pregătită să te surprindă. Comandă acum și bucură-te de cea mai bună experiență de cumpărare de biscuiți online!">
-    <meta name="keywords" content="biscuiti, biscuiti online, biscuiti de casa, biscuiti cu ciocolata, biscuiti cu fructe, biscuiti dietetici, biscuiti bio, biscuiti vegani, cumpara biscuiti, magazin online biscuiti, promotii biscuiti, oferte biscuiti, preturi biscuiti, livrare biscuiti, gustari, deserturi."> 
+    <meta name="description"
+        content="Biscuiți delicioși pentru toate gusturile! Gama noastră variată de biscuiți proaspeți, crocanți și savuroși este pregătită să te surprindă. Comandă acum și bucură-te de cea mai bună experiență de cumpărare de biscuiți online!">
+    <meta name="keywords"
+        content="biscuiti, biscuiti online, biscuiti de casa, biscuiti cu ciocolata, biscuiti cu fructe, biscuiti dietetici, biscuiti bio, biscuiti vegani, cumpara biscuiti, magazin online biscuiti, promotii biscuiti, oferte biscuiti, preturi biscuiti, livrare biscuiti, gustari, deserturi.">
     <title>Vintage</title>
     <link rel="stylesheet" href="./css/cart.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/footer.css">
     <script src="./js/products.js"></script>
+    <script src="./js/cart.js"></script>
 </head>
 
 <body>
     <div class="header" id="header">
         <div>
-            <a href="index.html"><img src="./image/logo.png" onmouseover="this.src='./image/logo2.png'" onmouseout="this.src='./image/logo.png';" alt="logo"></a>
+            <a href="index.html"><img src="./image/logo.png" onmouseover="this.src='./image/logo2.png'"
+                    onmouseout="this.src='./image/logo.png';" alt="logo"></a>
         </div>
 
         <div id="fullmenu">
@@ -52,67 +56,7 @@
                     <th>Subtotal</th>
                 </tr>
             </thead>
-            <tbody>
-                <tr>
-                    <td><img src="./image/x.png" class="cross"></td>
-                    <td><img src="./image/Fursec Minutka.png" class="photo"></td>
-                    <td>
-                        <p class="product_name"><a href="product.html">Fursec Minutka</a></p>
-                        <p class="product_type">Greutate: 0.4kg</p>
-                    </td>
-                    <td>
-                        <p class="product_price">24.00 Lei</p>
-                    </td>
-                    <td class="counter">
-                        <button class="minus">-</button>
-                        <p class="number">1</p>
-                        <button class="plus">+</button>
-                    </td>
-                    <td>
-                        <p class="product_price_final">
-                        <div class="sub">Subtotal: </div>24.00 Lei
-                        </p>
-                    </td>
-                </tr>
-                <tr>
-                    <td><img src="./image/x.png" class="cross"></td>
-                    <td><img src="./image/Asortat Mini-Prezent.png" class="photo"></td>
-                    <td>
-                        <p class="product_name"><a href="product.html">Asortat Mini-Prezent</a></p>
-                        <p class="product_type">Greutate: 1 buc.</p>
-                    </td>
-                    <td>
-                        <p class="product_price">32.50 Lei</p>
-                    </td>
-                    <td class="counter">
-                        <button class="minus">-</button>
-                        <p class="number">1</p>
-                        <button class="plus">+</button>
-                    </td>
-                    <td>
-                        <p class="product_price_final"> <div class="sub">Subtotal: </div>32.50 Lei</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td><img src="./image/x.png" class="cross"></td>
-                    <td><img src="./image/Fursec Fantezie.png" class="photo"></td>
-                    <td>
-                        <p class="product_name"><a href="product.html">Fursec Fantezie</a></p>
-                        <p class="product_type">Greutate: 0.5kg</p>
-                    </td>
-                    <td>
-                        <p class="product_price">31.00 Lei</p>
-                    </td>
-                    <td class="counter">
-                        <button class="minus">-</button>
-                        <p class="number">1</p>
-                        <button class="plus">+</button>
-                    </td>
-                    <td>
-                        <p class="product_price_final"> <div class="sub">Subtotal: </div>31.00 Lei</p>
-                    </td>
-                </tr>
-            </tbody>
+            <tbody id="items"></tbody>
             <tfoot>
                 <tr>
                     <td colspan="4"></td>
@@ -130,20 +74,20 @@
                                     <td>
                                         <p class="bold">Subtotal:</p>
                                     </td>
-                                    <td>87.5 Lei</td>
+                                    <td id="subtotal">87.5 Lei</td>
                                 </tr>
                                 <tr class="box2">
                                     <td>
                                         <p class="bold">Shipping:</p>
                                     </td>
-                                    <td>Free</td>
+                                    <td id="shippingPrice">Free</td>
                                 </tr>
                                 <tr class="box3">
                                     <td>Total:</td>
-                                    <td>87.5 Lei</td>
+                                    <td id="total">87.5 Lei</td>
                                 </tr>
                                 <tr>
-                                    <td colspan="2"><button class="btn">Proceed To Checkout</button></td>
+                                    <td colspan="2"><button onClick="finishOrder()" class="btn">Proceed To Checkout</button></td>
                                     <td></td>
                                 </tr>
                             </tbody>
@@ -182,11 +126,16 @@
         <div class="r3">
             <div class="title">SOCIAL</div>
             <div class="images">
-                <a href="https://www.facebook.com/buffy.cookies/"><img src="./image/facebook.png" alt="facebook logo"></a>
+                <a href="https://www.facebook.com/buffy.cookies/"><img src="./image/facebook.png"
+                        alt="facebook logo"></a>
                 <a href="https://www.instagram.com/buffycookies/"><img src="./image/insta.png" alt="instagram logo"></a>
             </div>
     </footer>
 
 </body>
+
+<script type="text/javascript">
+    setItemsCart();
+</script>
 
 </html>

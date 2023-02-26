@@ -31,7 +31,8 @@ const products = [
     id: 1,
     categoryId: 4,
     home: true,
-    descriere: "Biscuiți din aluat fraged, cu cacao pudră și umplutură de lapte condensat, acoperiți cu glazură neagră de cofetărie",
+    descriere:
+      "Biscuiți din aluat fraged, cu cacao pudră și umplutură de lapte condensat, acoperiți cu glazură neagră de cofetărie",
     image: "dame_in_ciocolata.png",
     image1: "dame_in_ciocolata1_.png",
     name: "Dame în Ciocolată",
@@ -53,7 +54,8 @@ const products = [
   {
     id: 3,
     categoryId: 3,
-    descriere: "Fursec din aluat fraged cu umplutură de zmeură și fulgi de cocos",
+    descriere:
+      "Fursec din aluat fraged cu umplutură de zmeură și fulgi de cocos",
     image: "Paleuri cu zmeura.png",
     image1: "Paleuri cu zmeura.png",
     name: "Paleuri cu Magiun și Fulgi de Cocos",
@@ -64,7 +66,8 @@ const products = [
   {
     id: 4,
     categoryId: 1,
-    descriere: "Asorți de biscuiți cu umplutură și fără (3-5 tipuri în asortiment)",
+    descriere:
+      "Asorți de biscuiți cu umplutură și fără (3-5 tipuri în asortiment)",
     image: "Asortat Compromis.png",
     image1: "Asortat Compromis.png",
     name: "Asortat Compromis",
@@ -75,7 +78,8 @@ const products = [
   {
     id: 5,
     categoryId: 1,
-    descriere: "Asorți de biscuiți cu umplutură și fără (3-5 tipuri în asortiment)",
+    descriere:
+      "Asorți de biscuiți cu umplutură și fără (3-5 tipuri în asortiment)",
     image: "Asortat Mini-Premium.png",
     image1: "Asortat Mini-Premium.png",
     name: "Asortat Mini-Premium",
@@ -86,7 +90,8 @@ const products = [
   {
     id: 6,
     categoryId: 1,
-    descriere: "Asorți de biscuiți cu umplutură și fără (3-5 tipuri în asortiment)",
+    descriere:
+      "Asorți de biscuiți cu umplutură și fără (3-5 tipuri în asortiment)",
     image: "Asortat Prezent.png",
     image1: "Asortat Prezent.png",
     name: "Asortat Prezent",
@@ -97,7 +102,8 @@ const products = [
   {
     id: 7,
     categoryId: 1,
-    descriere: "Asorți de biscuiți cu umplutură și fără (3-5 tipuri în asortiment)",
+    descriere:
+      "Asorți de biscuiți cu umplutură și fără (3-5 tipuri în asortiment)",
     image: "Asortat Mini-Compromis.png",
     image1: "Asortat Mini-Compromis.png",
     name: "Asortat Prezent",
@@ -108,7 +114,8 @@ const products = [
   {
     id: 8,
     categoryId: 1,
-    descriere: "Asorți de biscuiți cu umplutură și fără (3-5 tipuri în asortiment)",
+    descriere:
+      "Asorți de biscuiți cu umplutură și fără (3-5 tipuri în asortiment)",
     image: "Asortat Premium.png",
     image1: "Asortat Premium.png",
     name: "Asortat Premium",
@@ -119,7 +126,8 @@ const products = [
   {
     id: 9,
     categoryId: 1,
-    descriere: "Asorți de biscuiți cu umplutură și fără (3-5 tipuri în asortiment)",
+    descriere:
+      "Asorți de biscuiți cu umplutură și fără (3-5 tipuri în asortiment)",
     image: "Asortat Mini-Prezent.png",
     image1: "Asortat Mini-Prezent.png",
     name: "Asortat Mini-Prezent",
@@ -142,8 +150,9 @@ const products = [
   {
     id: 11,
     categoryId: 2,
-    descriere: "Fursec din aluat fraged cu semințe de in, susan și floarea soarelui",
-    image: "fitness.png", 
+    descriere:
+      "Fursec din aluat fraged cu semințe de in, susan și floarea soarelui",
+    image: "fitness.png",
     image1: "Fursec_Fantezie.png",
     name: "Fursec Fantezie",
     pret1: "31.00",
@@ -164,7 +173,8 @@ const products = [
   {
     id: 13,
     categoryId: 2,
-    descriere: "Biscuiți crocanți din făină de ovăz cu zahăr cristal și scorțișoară",
+    descriere:
+      "Biscuiți crocanți din făină de ovăz cu zahăr cristal și scorțișoară",
     image: "Fursec de ovaz.png",
     image1: "ovaz.png",
     name: "Fursec de Ovăz",
@@ -197,7 +207,8 @@ const products = [
   {
     id: 16,
     categoryId: 3,
-    descriere: "Fursec fărimicios cu umplutură gem de vișină presurați cu zahăr pudră",
+    descriere:
+      "Fursec fărimicios cu umplutură gem de vișină presurați cu zahăr pudră",
     image: "Fursec cornulete1.png",
     image1: "corn.png",
     name: "Fursec Cornulețe",
@@ -208,7 +219,8 @@ const products = [
   {
     id: 17,
     categoryId: 3,
-    descriere: "Fursec din aluat fraged cu umplutură de vișină presurați cu zahăr pudră",
+    descriere:
+      "Fursec din aluat fraged cu umplutură de vișină presurați cu zahăr pudră",
     image: "Fursec Mini-Frutis.png",
     image1: "Fursec Mini-Frutis1.png",
     name: "Fursec Mini-Frutis",
@@ -230,7 +242,8 @@ const products = [
   {
     id: 19,
     categoryId: 4,
-    descriere: "Biscuiți aromați cu zahăr și umplutură de marshmello, acoperită cu glazură de ciocolată albă",
+    descriere:
+      "Biscuiți aromați cu zahăr și umplutură de marshmello, acoperită cu glazură de ciocolată albă",
     image: "Deliciu White MArshmello.png",
     image1: "whitemarsh1.png",
     name: "Fursec White Marshmello",
@@ -252,7 +265,8 @@ const products = [
   {
     id: 21,
     categoryId: 4,
-    descriere: "Biscuiți din aluat fraged cu conținut de cacao pudră, pe talpă de glazură neagră de cofetărie",
+    descriere:
+      "Biscuiți din aluat fraged cu conținut de cacao pudră, pe talpă de glazură neagră de cofetărie",
     image: "Ineluse_pe_ciocolata.png",
     image1: "Ineluse pe ciocolata1.png",
     name: "Inelușe pe Ciocolată",
@@ -274,7 +288,8 @@ const products = [
   {
     id: 23,
     categoryId: 4,
-    descriere: "Biscuiți aromați cu zahăr și umplutură de marshmello, acoperită cu glazură de ciocolată",
+    descriere:
+      "Biscuiți aromați cu zahăr și umplutură de marshmello, acoperită cu glazură de ciocolată",
     image: "Deliciu Black Marshmello.png",
     image1: "marsh.png",
     name: "Deliciu Black Marshmello",
@@ -307,7 +322,8 @@ const products = [
   {
     id: 26,
     categoryId: 5,
-    descriere: "Fursec din aluat fraged cu gust de vanilie presurați cu zahăr pudră",
+    descriere:
+      "Fursec din aluat fraged cu gust de vanilie presurați cu zahăr pudră",
     image: "Ineluse_delicioase.png",
     image1: "Ineluse delicioase2.png",
     name: "Inelușe Deliciose",
@@ -318,7 +334,8 @@ const products = [
   {
     id: 27,
     categoryId: 4,
-    descriere: "O brioșă din ou, lapte, unt topit, praf de cacao, care pot fi servite simple sau pot fi pudrate cu zahăr pudră, acoperite cu glazură de ciocolată, 15 Bucăți",
+    descriere:
+      "O brioșă din ou, lapte, unt topit, praf de cacao, care pot fi servite simple sau pot fi pudrate cu zahăr pudră, acoperite cu glazură de ciocolată, 15 Bucăți",
     image: "Muffin_cu_cioburi_de_ciocolată.png",
     image1: "muf_cioc.png",
     name: "Muffin cu Ciocuri de Ciocolată",
@@ -329,7 +346,8 @@ const products = [
   {
     id: 28,
     categoryId: 5,
-    descriere: "Biscuiți din aluat fraged, cu umplutură de lapte condensat, acoperiți cu glazură albă de cofetărie și ornați cu fulgi de cocos",
+    descriere:
+      "Biscuiți din aluat fraged, cu umplutură de lapte condensat, acoperiți cu glazură albă de cofetărie și ornați cu fulgi de cocos",
     home: true,
     image: "dame_in_cocos.png",
     image1: "dame_in_cocos1.png",
@@ -341,7 +359,8 @@ const products = [
   {
     id: 29,
     categoryId: 3,
-    descriere: "O prăjitură din făină, zahăr, ouă, lapte, unt și vișine proaspete sau uscate. Acest tip de prajitură poate fi servit la micul dejun, la cafea sau ca gustare dulce, 15 Bucăți",
+    descriere:
+      "O prăjitură din făină, zahăr, ouă, lapte, unt și vișine proaspete sau uscate. Acest tip de prajitură poate fi servit la micul dejun, la cafea sau ca gustare dulce, 15 Bucăți",
     image: "Muffin_cu_visina.png",
     image1: "muf vis.png",
     name: "Muffin cu Vișină",
@@ -365,7 +384,8 @@ const products = [
   {
     id: 31,
     categoryId: 2,
-    descriere: "Fursec din aluat fraged, după rețeta americană cu picături de ciocolata",
+    descriere:
+      "Fursec din aluat fraged, după rețeta americană cu picături de ciocolata",
     image: "cookies3.png",
     image1: "cookies4.png",
     home: true,
@@ -396,7 +416,6 @@ function initProducts() {
 
   document.getElementById("produse").innerHTML = products
 
-
     .filter((item) => item.categoryId === parseInt(params.categoryId))
     .map(
       (product) => `
@@ -406,13 +425,15 @@ function initProducts() {
       <img src="image/${product.image}">
       <a href="./product.html?id=${product.id}">${product.name}</a>
       <p>Prețul: <span>${product.pret1} lei</span></p>
-      <button class="add-cart"><img src="image/plus.png"></button>
+      <button onClick="addItem(${product.id})" class="add-cart"><img src="image/plus.png"></button>
     </div>
     </div>
   `
     )
     .join("");
 }
+
+let countProduct = 1;
 
 function initProduct() {
   const urlSearchParams = new URLSearchParams(window.location.search);
@@ -422,9 +443,7 @@ function initProduct() {
 
   document.getElementById("dateProdus").innerHTML = `
   <div class="produs">
-    <div href="./product.html?id=${product.id}">
-      <img class="ph" src="./image/${product.image1}">
-    </div>
+    <img class="ph" src="./image/${product.image1}"/>
     <div class="right">
       <div class="text">
         <p>${product.name}</p>
@@ -437,12 +456,12 @@ function initProduct() {
         <span class="kg" id="kg">/${product.kg1}</span> 
       </div>
         <div class="block_count">
-          <div class="input_minus" id="minus">-</div>
-          <div class="number" id="num">${product.cantitate}</div>
-          <div class="input_plus" id="plus">+</div>
+          <div onClick={removeCount()} class="input_minus" id="minus">-</div>
+          <div class="number" id="num">${countProduct}</div>
+          <div onClick={addCount()} class="input_plus" id="plus">+</div>
         </div>  
 
-        <button class="add-cart">
+        <button onClick="addItem(${product.id})" class="add-cart">
           <img class="bt" src="./image/cart.png" alt="Adaugă la coș">
           <p class="bt_p" >Adaugă în coș</p>
         </button>
@@ -452,15 +471,48 @@ function initProduct() {
   `;
 }
 
+function addCount() {
+  countProduct++;
+  initProduct();
+}
+
+function removeCount() {
+  if (countProduct > 1) {
+    countProduct--;
+    initProduct();
+  }
+}
+
 function initHomeProducts() {
-  document.getElementById("homeProducts").innerHTML = products.filter(item => item.home).map(
-    (product) => `
+  document.getElementById("homeProducts").innerHTML = products
+    .filter((item) => item.home)
+    .map(
+      (product) => `
   <div >
     <img src="image/${product.image}">
     <a href="./product.html?id=${product.id}">${product.name}</a>
     <p>Prețul: <span>${product.pret1} lei</span></p>
-    <button class="add-cart"><img src="image/plus.png"></button>
+    <button onClick="addItem(${product.id})" class="add-cart"><img src="image/plus.png"></button>
   </div>
   `
-  ).join('');
+    )
+    .join("");
+}
+
+function getCurrent() {
+  return localStorage.getItem("items")
+    ? JSON.parse(localStorage.getItem("items"))
+    : [];
+}
+
+function addItem(id) {
+  const current = getCurrent();
+  const newItemList = current.some((item) => item.id === id)
+    ? current.map((item) =>
+        item.id === id ? { ...item, count: item.count + countProduct } : item
+      )
+    : [{ id, count: countProduct }, ...current];
+
+  localStorage.setItem("items", JSON.stringify(newItemList));
+  window.location.href = "./cart.html";
 }

@@ -94,48 +94,51 @@ body {
             }
           }
         }
-        > .counter {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          vertical-align: bottom;
-          vertical-align: middle;      
-          @media only screen and (max-width: 1024px) {
-            padding: 1vh;
-          }
-          > .minus {
-            background-color: white;
-            border: none;
-            border-radius: 50%;
-            box-shadow: 1px 1px 1px 1px rgb(206, 206, 206);
-            margin: 2vh;
-            width: 35px;
-            height: 35px;
-            cursor: pointer;
+
+        > td {
+          > .counter {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            vertical-align: bottom;
+            vertical-align: middle;
             @media only screen and (max-width: 1024px) {
-              width: 20px;
-              height: 20px;
+              padding: 1vh;
             }
-          }
-          > .number {
-            font-size: 25px;
-            font-weight: 600;
-            @media only screen and (max-width: 1024px) {
-              font-size: 15px;
+            > .minus {
+              background-color: white;
+              border: none;
+              border-radius: 50%;
+              box-shadow: 1px 1px 1px 1px rgb(206, 206, 206);
+              margin: 2vh;
+              width: 35px;
+              height: 35px;
+              cursor: pointer;
+              @media only screen and (max-width: 1024px) {
+                width: 20px;
+                height: 20px;
+              }
             }
-          }
-          > .plus {
-            background-color: white;
-            border: none;
-            border-radius: 50%;
-            box-shadow: 1px 1px 1px 1px rgb(206, 206, 206);
-            margin: 2vh;
-            width: 35px;
-            height: 35px;
-            cursor: pointer;
-            @media only screen and (max-width: 1024px) {
-              width: 20px;
-              height: 20px;
+            > .number {
+              font-size: 25px;
+              font-weight: 600;
+              @media only screen and (max-width: 1024px) {
+                font-size: 15px;
+              }
+            }
+            > .plus {
+              background-color: white;
+              border: none;
+              border-radius: 50%;
+              box-shadow: 1px 1px 1px 1px rgb(206, 206, 206);
+              margin: 2vh;
+              width: 35px;
+              height: 35px;
+              cursor: pointer;
+              @media only screen and (max-width: 1024px) {
+                width: 20px;
+                height: 20px;
+              }
             }
           }
         }
