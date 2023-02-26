@@ -148,7 +148,8 @@ body {
   }
 }
 .produs > div:first-of-type > img {
-  max-width: 650px;
+  max-height: 275px;
+  max-width: 600px;
   margin: 0 5vh;
 }
 @media only screen and (max-width: 1024px) {

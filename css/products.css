@@ -188,13 +188,13 @@ body {
   }
 }
 .products > div > div > img {
-  max-width: 250px;
+  max-width: 190px;
   margin: 1.5vh 3vh;
 }
 .products > div > div > p,
 .products > div > div a {
   color: rgba(128, 128, 128, 0.6);
-  font-size: 21px;
+  font-size: 18px;
   margin-top: 10px;
 }
 .products > div > div > p > span,
@@ -203,7 +203,7 @@ body {
 }
 .products > div > div > a {
   color: black;
-  font-size: 22.5px;
+  font-size: 19px;
   text-align: center;
 }
 .products > div > div > a:hover {
