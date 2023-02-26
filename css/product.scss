@@ -1,6 +1,9 @@
 @import "./colors.scss";
 @import "./reset.scss";
 
+body {
+    overflow-y: scroll;
+  }
 .produs {
   display: flex;
   justify-content: center;
@@ -46,8 +49,7 @@
         align-items: center;
         justify-content: center;
         user-select: none;
-        margin-left: -25vh;
-
+        float: left;
         > div {
           padding: 2vh 2vh;
           text-align: center;
@@ -122,6 +124,9 @@
           color: rgb(255, 255, 255);
           font-size: 2vh;
           font-weight: 600;
+        }
+        &:hover{
+            opacity: 0.8;
         }
       }
     }

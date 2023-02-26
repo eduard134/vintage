@@ -2,7 +2,7 @@
 @import "./reset.scss";
 body {
   overflow-x: hidden;
-  overflow-y: visible;
+  overflow-y: scroll;
 }
 
 .cart {
@@ -19,10 +19,11 @@ body {
       @media only screen and (max-width: 1024px) {
         display: none;
       }
-      >tr{
-        >th{
-        padding-bottom: 2vh;
-      }}
+      > tr {
+        > th {
+          padding-bottom: 2vh;
+        }
+      }
     }
     > tbody {
       > tr {
@@ -44,26 +45,24 @@ body {
             width: 2.5vh;
             cursor: pointer;
             padding: 5vh;
-            @media only screen and (max-width: 1024px){
-                width: 2vh;
-                padding: 2vh;
-                margin-top: 3vh;
+            @media only screen and (max-width: 1024px) {
+              width: 2vh;
+              padding: 2vh;
+              margin-top: 3vh;
             }
           }
           > .photo {
             max-width: 150px;
             padding: 5vh;
-            @media only screen and (max-width: 1024px){
-                max-width: 100px;
-                padding: 2.5vh;
+            @media only screen and (max-width: 1024px) {
+              max-width: 100px;
+              padding: 2.5vh;
             }
-
           }
           > .product_name {
             padding: 0 5vh;
-            @media only screen and (max-width: 1024px){
-                font-size: 12.5px;
-        
+            @media only screen and (max-width: 1024px) {
+              font-size: 12.5px;
             }
             > a {
               color: black;
@@ -72,36 +71,35 @@ body {
           > .product_type {
             font-size: 12.5px;
             margin-top: 5px;
-            @media only screen and (max-width: 1024px){
-                font-size: 11px;
+            @media only screen and (max-width: 1024px) {
+              font-size: 11px;
             }
           }
           > .product_price {
             padding: 5vh;
-            @media only screen and (max-width: 1024px){
-                padding: 2.5vh;
-                font-size: 12.5px;
-                margin-top: 1.5vh;
+            @media only screen and (max-width: 1024px) {
+              padding: 2.5vh;
+              font-size: 12.5px;
+              margin-top: 1.5vh;
             }
           }
           > .product_price_final {
             padding: 5vh;
             font-weight: 600;
-            
           }
-          >.sub{
-                display: none;
-                @media only screen and (max-width: 1024px){
-                    display: initial;
-                }
+          > .sub {
+            display: none;
+            @media only screen and (max-width: 1024px) {
+              display: initial;
             }
+          }
         }
         > .counter {
           display: flex;
           align-items: center;
           flex-direction: row;
           padding: 5vh;
-          @media only screen and (max-width: 1024px){
+          @media only screen and (max-width: 1024px) {
             padding: 1vh;
           }
           > .minus {
@@ -113,16 +111,16 @@ body {
             width: 35px;
             height: 35px;
             cursor: pointer;
-            @media only screen and (max-width: 1024px){
-                width: 20px;
-                height: 20px;
+            @media only screen and (max-width: 1024px) {
+              width: 20px;
+              height: 20px;
             }
           }
           > .number {
             font-size: 25px;
             font-weight: 600;
-            @media only screen and (max-width: 1024px){
-                font-size: 15px;
+            @media only screen and (max-width: 1024px) {
+              font-size: 15px;
             }
           }
           > .plus {
@@ -134,9 +132,9 @@ body {
             width: 35px;
             height: 35px;
             cursor: pointer;
-            @media only screen and (max-width: 1024px){
-                width: 20px;
-                height: 20px;
+            @media only screen and (max-width: 1024px) {
+              width: 20px;
+              height: 20px;
             }
           }
         }

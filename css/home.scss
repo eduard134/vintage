@@ -5,6 +5,7 @@ body {
   overflow-x: hidden;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  overflow-y: scroll;
 }
 
 .bgmain {
@@ -82,6 +83,10 @@ body {
       margin-top: 50px;
       font-weight: 400;
       box-shadow: #489fb54b 0px 1.4vh 2.8vh, #489fb517 0px 1vh 1vh;
+
+      &:hover {
+        background-color: $fountain-blue-2;
+      }
 
       @media only screen and (max-width: 1024px) {
         margin-top: 50px;

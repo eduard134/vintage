@@ -1,6 +1,10 @@
 @import "./colors.scss";
 @import "./reset.scss";
 
+body {
+  overflow-y: scroll;
+}
+
 .products {
   display: flex;
   flex-wrap: wrap;

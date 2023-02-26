@@ -1,6 +1,9 @@
 @import "./colors.scss";
 @import "./reset.scss";
 
+body {
+    overflow-y: scroll;
+  }
 .box {
     width: 60%;
     margin: 5vh auto;

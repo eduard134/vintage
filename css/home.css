@@ -136,6 +136,7 @@ table {
 body {
   overflow-x: hidden;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  overflow-y: scroll;
 }
 
 .bgmain {
@@ -214,6 +215,9 @@ body {
   margin-top: 50px;
   font-weight: 400;
   box-shadow: rgba(72, 159, 181, 0.2941176471) 0px 1.4vh 2.8vh, rgba(72, 159, 181, 0.0901960784) 0px 1vh 1vh;
+}
+.bgmain > div > a:hover {
+  background-color: rgba(72, 159, 181, 0.7960784314);
 }
 @media only screen and (max-width: 1024px) {
   .bgmain > div > a {

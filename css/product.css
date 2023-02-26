@@ -133,6 +133,10 @@ table {
   border-spacing: 0;
 }
 
+body {
+  overflow-y: scroll;
+}
+
 .produs {
   display: flex;
   justify-content: center;
@@ -169,7 +173,7 @@ table {
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
-  margin-left: -25vh;
+  float: left;
 }
 .produs > div:last-of-type > .block_count > div {
   padding: 2vh 2vh;
@@ -247,6 +251,9 @@ table {
   color: rgb(255, 255, 255);
   font-size: 2vh;
   font-weight: 600;
+}
+.produs > div:last-of-type > .adauga-la-cos:hover {
+  opacity: 0.8;
 }
 
 footer {

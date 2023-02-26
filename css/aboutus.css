@@ -133,6 +133,10 @@ table {
   border-spacing: 0;
 }
 
+body {
+  overflow-y: scroll;
+}
+
 .part1 {
   margin: 5vh auto;
 }

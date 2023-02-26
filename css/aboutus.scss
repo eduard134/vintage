@@ -1,6 +1,8 @@
 @import "./colors.scss";
 @import "./reset.scss";
-
+body {
+  overflow-y: scroll;
+}
 .part1 {
   margin: 5vh auto;
 
@@ -21,12 +23,12 @@
       #ffffff36 100%
     );
     border-radius: 1vh;
-    padding: 1vh .7vh;
+    padding: 1vh 0.7vh;
     @media only screen and (max-width: 1024px) {
       font-size: 3vh;
       margin-left: 2vh;
       margin-top: 2vh;
-      padding: .7vh .7vh;
+      padding: 0.7vh 0.7vh;
       position: absolute;
     }
   }
