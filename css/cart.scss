@@ -54,8 +54,8 @@ body {
             padding: 5vh;
             @media only screen and (max-width: 1024px) {
               width: 2vh;
-              padding: 2vh;
-              margin-top: 3vh;
+              margin-top: 2vh;
+              padding: 1vh;
             }
           }
           > .photo {
@@ -63,13 +63,18 @@ body {
             padding: 5vh;
             @media only screen and (max-width: 1024px) {
               max-width: 100px;
-              padding: 2.5vh;
+              padding: 2vh;
             }
           }
           > .product_name {
             padding: 0 5vh;
             @media only screen and (max-width: 1024px) {
-              font-size: 12.5px;
+              font-size: 15px;
+              margin-top: 2vh;
+              padding: 0 2.5vh;
+            }
+            @media only screen and (max-width: 280px){
+              
             }
             > a {
               color: black;
@@ -85,7 +90,7 @@ body {
           > .product_price {
             padding: 5vh;
             @media only screen and (max-width: 1024px) {
-              padding: 2.5vh;
+              padding: 2vh;
               font-size: 12.5px;
               margin-top: 1.5vh;
             }
@@ -110,7 +115,7 @@ body {
             vertical-align: bottom;
             vertical-align: middle;
             @media only screen and (max-width: 1024px) {
-              padding: 1vh;
+              padding: 1vh 0;
             }
             > .minus {
               background-color: white;
@@ -154,7 +159,9 @@ body {
 
     > tfoot {
       @media only screen and (max-width: 1024px) {
-        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
       > tr {
         > td {
