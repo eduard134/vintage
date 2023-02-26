@@ -255,4 +255,21 @@ body {
   .close-btn {
     position: fixed;
   }
+}
+
+.disclaimer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 4vh;
+  background-color: #000000;
+  color: white;
+}
+@media only screen and (max-width: 1024px) {
+  .disclaimer {
+    display: none;
+  }
+}
+.disclaimer > span {
+  font-weight: 800;
 }/*# sourceMappingURL=header.css.map */

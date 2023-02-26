@@ -62,10 +62,8 @@ body {
       }
 
       > .block_count {
-        position: relative;
         display: flex;
         align-items: center;
-        user-select: none;
 
         > div {
           padding: 2vh 2vh;
@@ -101,7 +99,7 @@ body {
           margin: 2vh;
           width: 10px;
           height: 10px;
-          line-height: 12px;
+          line-height: 10px;
           cursor: pointer;
           text-align: center;
         }
