@@ -26,41 +26,41 @@ const categorii = [
   },
 ];
 
-const products = [
-  {
-    id: 1,
-    categoryId: 4,
-    home: true,
-    descriere: "Biscuiți din aluat fraged, cu cacao pudră și umplutură de lapte condensat, acoperiți cu glazură neagră de cofetărie",
-    image: "dame_in_ciocolata.png",
-    image1: "dame_in_ciocolata.png",
-    name: "Dame în Ciocolată",
-    pret1: "40.00",
-    kg1: "0.5kg",
-    cantitate: 1,
-  },
-  {
-    id: 2,
-    categoryId: 5,
-    descriere: "Biscuiți din aluat fărimicios cu umplutură de lapte condensat",
-    image: "nuci.png",
-    image1: "nuci1.png",
-    name: "Nuci cu Lapte Condensat",
-    pret1: "53.00",
-    kg1: "0.6kg",
-    cantitate: 1,
-  },
-  {
-    id: 3,
-    categoryId: 3,
-    descriere: "Fursec din aluat fraged cu umplutură de zmeură și fulgi de cocos",
-    image: "Paleuri cu zmeura.png",
-    image1: "Paleuri cu zmeura.png",
-    name: "Paleuri cu Magiun de Zmeură și Fulgi de Cocos",
-    pret1: "28.50",
-    kg1: "0.4kg",
-    cantitate: 1,
-  },
+  const products = [
+    {
+      id: 1,
+      categoryId: 4,
+      home: true,
+      descriere: "Biscuiți din aluat fraged, cu cacao pudră și umplutură de lapte condensat, acoperiți cu glazură neagră de cofetărie",
+      image: "dame_in_ciocolata.png",
+      image1: "dame_in_ciocolata.png",
+      name: "Dame în Ciocolată",
+      pret1: "40.00",
+      kg1: "0.5kg",
+      cantitate: 1,
+    },
+    {
+      id: 2,
+      categoryId: 5,
+      descriere: "Biscuiți din aluat fărimicios cu umplutură de lapte condensat",
+      image: "nuci.png",
+      image1: "nuci1.png",
+      name: "Nuci cu Lapte Condensat",
+      pret1: "53.00",
+      kg1: "0.6kg",
+      cantitate: 1,
+    },
+    {
+      id: 3,
+      categoryId: 3,
+      descriere: "Fursec din aluat fraged cu umplutură de zmeură și fulgi de cocos",
+      image: "Paleuri cu zmeura.png",
+      image1: "Paleuri cu zmeura.png",
+      name: "Paleuri cu Magiun de Zmeură și Fulgi de Cocos",
+      pret1: "28.50",
+      kg1: "0.4kg",
+      cantitate: 1,
+    },
   {
     id: 4,
     categoryId: 1,
@@ -407,7 +407,7 @@ function initProducts() {
       <img src="image/${product.image}">
       <a href="./product.html?id=${product.id}">${product.name}</a>
       <p>Prețul: <span>${product.pret1} lei</span></p>
-      <button><img src="image/plus.png"></button>
+      <button class="add-cart"><img src="image/plus.png"></button>
     </div>
     </div>
   `
@@ -443,9 +443,9 @@ function initProduct() {
           <div class="input_plus" id="plus">+</div>
         </div>  
 
-        <button class="adauga-la-cos" id="adauga-cos">
+        <button class="add-cart">
           <img class="bt" src="./image/cart.png" alt="Adaugă la coș">
-          <p class="bt_p">Adaugă în coș</p>
+          <p class="bt_p" >Adaugă în coș</p>
         </button>
  
     </div>
@@ -460,7 +460,7 @@ function initHomeProducts() {
     <img src="image/${product.image}">
     <a href="./product.html?id=${product.id}">${product.name}</a>
     <p>Prețul: <span>${product.pret1} lei</span></p>
-    <button><img src="image/plus.png"></button>
+    <button class="add-cart"><img src="image/plus.png"></button>
   </div>
   `
   ).join('');

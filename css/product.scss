@@ -8,12 +8,18 @@ body {
   display: flex;
   justify-content: center;
   margin: 5vh 5vh;
+  @media only screen and (max-width: 1024px){
+    flex-wrap: wrap;
+  }
 
   > div {
     &:first-of-type {
       > img {
         max-width: 650px;
-        margin: 5vh 5vh;
+        margin:0 5vh;
+        @media only screen and (max-width: 1024px){
+          max-width: 300px;
+        }
       }
     }
 
@@ -71,10 +77,6 @@ body {
           text-align: center;
           padding-top: 2vh;
           line-height: 12px;
-          @media only screen and (max-width: 1024px) {
-            width: 20px;
-            height: 20px;
-          }
         }
         .number{
             padding-right: 0;
@@ -90,15 +92,11 @@ body {
           height: 10px;
           line-height: 12px;
           cursor: pointer;
-          text-align: center;
-          @media only screen and (max-width: 1024px) {
-            width: 20px;
-            height: 20px;
-          }
+          text-align: center
         }
       }
 
-      > .adauga-la-cos {
+      > .add-cart {
         position: relative;
         background: black;
         border-radius: 5px;
@@ -108,9 +106,10 @@ body {
         height: 60px;
         border-style: none;
         cursor: pointer;
-        width: 30vh;
         margin: 0vh 2vh;
         margin-left: 0;
+        float: left;
+        width: 100%;
         > .bt {
           position: relative;
           left: -3vh;
@@ -133,5 +132,8 @@ body {
   }
 }
 footer {
+  position: absolute;
+  bottom: 0;
   display: flex;
+  padding: 20px;
 }
