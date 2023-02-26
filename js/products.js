@@ -516,3 +516,7 @@ function addItem(id) {
   localStorage.setItem("items", JSON.stringify(newItemList));
   window.location.href = "./cart.html";
 }
+
+function sendFeedback(){
+  window.location.href = "./feedback.html";
+}

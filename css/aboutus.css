@@ -235,37 +235,37 @@ body {
     display: initial;
   }
 }
-.part4 .box {
+.part4 > .box {
   display: inline;
   padding: 7vh;
 }
 @media only screen and (max-width: 1024px) {
-  .part4 .box {
+  .part4 > .box {
     display: block;
   }
 }
-.part4 .box h1 {
+.part4 > .box h1 {
   font-size: 3vh;
   padding: 0.5vh;
 }
 @media only screen and (max-width: 1024px) {
-  .part4 .box h1 {
+  .part4 > .box h1 {
     text-align: center;
     font-size: 2.5vh;
   }
 }
-.part4 .box > p {
+.part4 > .box > p {
   padding: 1vh 0 3vh;
   line-height: normal;
   max-width: 550px;
 }
 @media only screen and (max-width: 1024px) {
-  .part4 .box > p {
+  .part4 > .box > p {
     text-align: center;
     font-size: 2vh;
   }
 }
-.part4 .box a {
+.part4 > .box a {
   cursor: pointer;
   background: #489fb5;
   width: 20vh;
@@ -283,7 +283,7 @@ body {
   line-height: 50px;
 }
 @media only screen and (max-width: 1024px) {
-  .part4 .box a {
+  .part4 > .box a {
     display: flex;
     margin: 0 auto;
   }
@@ -291,13 +291,19 @@ body {
 .part4 .image {
   display: inline;
 }
+@media only screen and (max-width: 1024px) {
+  .part4 .image {
+    justify-content: center;
+    display: flex;
+  }
+}
 .part4 .image img {
   width: 65vh;
   border-radius: 1.5vh;
 }
 @media only screen and (max-width: 1024px) {
   .part4 .image img {
-    width: 75%;
+    width: 90%;
     height: 75%;
   }
 }
@@ -305,14 +311,15 @@ body {
 .axe {
   display: flex;
   max-width: 950px;
-  margin: 0 auto;
   position: relative;
+  margin: 0 auto;
   overflow-y: hidden;
   overflow-x: hidden;
 }
 @media only screen and (max-width: 1024px) {
   .axe {
     overflow-x: scroll;
+    margin: 0 0;
   }
 }
 .axe::before {

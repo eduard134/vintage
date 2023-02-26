@@ -145,6 +145,10 @@ body {
 }
 
 .cart {
+  flex: 1;
+}
+
+.cart {
   display: flex;
   justify-content: center;
   margin-top: 10vh;
@@ -165,6 +169,9 @@ body {
 }
 .cart > table > thead > tr > th {
   padding-bottom: 2vh;
+}
+.cart > table > thead > tr > th:nth-child(4) {
+  padding-left: 4vh;
 }
 .cart > table > tbody > tr {
   height: 30vh;
@@ -339,4 +346,16 @@ body {
 .cart > table > tfoot > tr > td > table > tbody > .box3 {
   background-color: rgb(239, 239, 239);
   font-weight: 700;
+}
+
+footer {
+  bottom: 0;
+  display: flex;
+  padding: 20px;
+}
+@media only screen and (max-width: 1024px) {
+  footer {
+    position: relative;
+    padding: 0;
+  }
 }/*# sourceMappingURL=cart.css.map */

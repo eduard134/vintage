@@ -1,8 +1,10 @@
 @import "./colors.scss";
 @import "./reset.scss";
-body {
-  overflow-y: scroll;
+
+body{
+  overflow-y: scroll ;
 }
+
 .part1 {
   margin: 5vh auto;
 
@@ -23,12 +25,12 @@ body {
       #ffffff36 100%
     );
     border-radius: 1vh;
-    padding: 1vh 0.7vh;
+    padding: 1vh .7vh;
     @media only screen and (max-width: 1024px) {
       font-size: 3vh;
       margin-left: 2vh;
       margin-top: 2vh;
-      padding: 0.7vh 0.7vh;
+      padding: .7vh .7vh;
       position: absolute;
     }
   }
@@ -97,7 +99,8 @@ body {
     display: initial;
   }
 
-  .box {
+  
+  >.box {
     display: inline;
     padding: 7vh;
 
@@ -152,14 +155,18 @@ body {
 
   .image {
     display: inline;
-
+    @media only screen and (max-width: 1024px){
+      justify-content: center;
+        display: flex;
+    }
     img {
       width: 65vh;
       border-radius: 1.5vh;
 
       @media only screen and (max-width: 1024px) {
-        width: 75%;
+        width: 90%;
         height: 75%;
+        
       }
     }
   }
@@ -168,13 +175,13 @@ body {
 .axe {
   display: flex;
   max-width: 950px;
-  margin: 0 auto;
   position: relative;
-
+  margin: 0 auto;
   overflow-y: hidden;
   overflow-x: hidden;
   @media only screen and (max-width: 1024px) {
     overflow-x: scroll;
+    margin: 0 0;
   }
   &::before {
     content: "";
