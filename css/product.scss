@@ -1,106 +1,122 @@
 @import "./colors.scss";
 @import "./reset.scss";
 
-
 .produs {
-    display: flex;
-    justify-content: center;
-    margin: 5vh 5vh;
+  display: flex;
+  justify-content: center;
+  margin: 5vh 5vh;
 
-    >div {
-        &:first-of-type {
-            >img {
-                max-width: 650px;
-                margin: 5vh 5vh;
-            }
-        }
-
-        &:last-of-type {
-            .text {
-                >p {
-                    font-size: 4vh;
-                    font-weight: 600;
-                    padding: 2vh 0vh;
-                }
-            }
-
-            >.pretul {
-                margin-top: 2vh;
-
-                >.pret {
-                    font-size: 4vh;
-                }
-
-                .kg {
-                    font-size: 2vh;
-                }
-            }
-
-            >.last_row {
-                display: inline-flex;
-
-
-                >.block_count {
-                    position: relative;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    background: rgb(207, 207, 207);
-                    border-radius: 20px;
-                    user-select: none;
-                    width: 15vh;
-                    margin: 2vh 2vh;
-                    height: 60px;
-                    margin-left: 0;
-
-                    >div {
-                        padding: 2vh;
-                        text-align: center;
-                        font-size: 2.5vh;
-                    }
-
-                    >.input_minus {
-                        cursor: pointer;
-                    }
-
-                    >.input_plus {
-                        cursor: pointer;
-                    }
-
-                }
-
-                >.adauga-la-cos {
-                    position: relative;
-                    background: $fountain-blue;
-                    border-radius: 20px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    height: 60px;
-                    border-style: none;
-                    cursor: pointer;
-                    width: 30vh;
-                    margin: 2vh 2vh;
-                    margin-left: 0;
-                    >.bt {
-                        position: relative;
-                        left: -3vh;
-                        width: 4vh;
-                        height: 4vh;
-                    }
-
-                    >.bt_p {
-                        text-align: center;
-                        text-decoration: none;
-                        color: rgb(255, 255, 255);
-                        font-size: 2vh;
-                        font-weight: 600;
-                    }
-                }
-            }
-        }
+  > div {
+    &:first-of-type {
+      > img {
+        max-width: 650px;
+        margin: 5vh 5vh;
+      }
     }
+
+    &:last-of-type {
+      .text {
+        > p {
+          font-size: 4vh;
+          font-weight: 600;
+          padding: 2vh 0vh;
+        }
+      }
+
+      > .pretul {
+        margin-top: 2vh;
+
+        > .pret {
+          font-size: 4vh;
+        }
+
+        .kg {
+          font-size: 2vh;
+        }
+      }
+
+        > .block_count {
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          user-select: none;
+          margin: 2vh 2vh;
+          margin-left: 0;
+
+          > div {
+            padding: 2vh;
+            text-align: center;
+            font-size: 25px;
+            font-weight: 600;
+            @media only screen and (max-width: 1024px){
+                font-size: 15px;
+            }
+          }
+
+          > .input_minus {
+            background-color: white;
+            border: none;
+            border-radius: 50%;
+            box-shadow: 1px 1px 1px 1px rgb(206, 206, 206);
+            margin: 2vh;
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+            @media only screen and (max-width: 1024px) {
+              width: 20px;
+              height: 20px;
+            }
+          }
+
+          > .input_plus {
+            background-color: white;
+            border: none;
+            border-radius: 50%;
+            box-shadow: 1px 1px 1px 1px rgb(206, 206, 206);
+            margin: 2vh;
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+            @media only screen and (max-width: 1024px){
+                width: 20px;
+                height: 20px;
+            }
+          }
+        }
+
+        > .adauga-la-cos {
+          position: relative;
+          background: $fountain-blue;
+          border-radius: 20px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 60px;
+          border-style: none;
+          cursor: pointer;
+          width: 30vh;
+          margin: 2vh 2vh;
+          margin-left: 0;
+          > .bt {
+            position: relative;
+            left: -3vh;
+            width: 4vh;
+            height: 4vh;
+          }
+
+          > .bt_p {
+            text-align: center;
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            font-size: 2vh;
+            font-weight: 600;
+          
+        }
+      }
+    }
+  }
 }
-footer{
-    display: flex;
+footer {
+  display: flex;
 }
