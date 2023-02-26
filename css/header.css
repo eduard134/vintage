@@ -244,9 +244,8 @@ table {
   outline: none;
   z-index: 5;
 }
-
-.close-btn:hover {
-  color: #fff;
-  background-color: #333;
-  border-radius: 50%;
+@media only screen and (max-width: 1024px) {
+  .close-btn {
+    position: fixed;
+  }
 }/*# sourceMappingURL=header.css.map */
