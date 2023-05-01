@@ -102,3 +102,6 @@ function finishOrder() {
   localStorage.setItem("items", JSON.stringify([]));
   window.location.href = "./comanda.html";
 }
+
+
+
